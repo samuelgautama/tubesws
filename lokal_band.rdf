@@ -5470,6 +5470,8 @@
         <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band34_track7"/>
         <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band34_track8"/>
         <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band34_track9"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band34_track10"/>
+
         <lokal_band:about_band>
             Formed in 2017, Knuckle Bones consisted of four members; they are Michy (Drums), Raka (Guitars), Revi (Vocals), and Riki (Bass). This modern rock band came from South Jakarta. Growing up listening to different kinds of music, they are heavily influenced by My Chemical Romance, Sum 41, As I Lay Dying, and Saosin. The ambience they add fits perfectly in their music; even darker with the emotional lyrics.        </lokal_band:about_band>
         <lokal_band:asal_band>Jakarta</lokal_band:asal_band>
@@ -5538,6 +5540,556 @@
         <lokal_band:id_track>3lkH7R2FwubPD38torpa9K</lokal_band:id_track>
         <lokal_band:nama_track>Hujan</lokal_band:nama_track>
     </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band35">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Band"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band35_track1"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band35_track2"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band35_track3"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band35_track4"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band35_track5"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band35_track6"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band35_track7"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band35_track8"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band35_track9"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band35_track10"/>
+
+        <lokal_band:about_band>
+            Pop Band From Indonesia
+        </lokal_band:about_band>
+        <lokal_band:asal_band>Jakarta</lokal_band:asal_band>
+        <lokal_band:link_gambar>https://i.scdn.co/image/ab6761610000f178c10be7b7fff309b12b7657fd</lokal_band:link_gambar>
+        <lokal_band:genre>Indonesian Emo</lokal_band:genre>
+        <lokal_band:nama_band>Utopia</lokal_band:nama_band>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band35_track1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>30nitOpjzC3rV54QbLHTV8</lokal_band:id_track>
+        <lokal_band:nama_track>Hujan</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band35_track2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>2mDviWBPhnfsnrB3TB2KRO</lokal_band:id_track>
+        <lokal_band:nama_track>Antara Ada dan Tiada</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band35_track3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>4b1kSgvZk3yfOkYrRD8utB</lokal_band:id_track>
+        <lokal_band:nama_track>Serpihan Hati</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band35_track4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>525sHGS4t4GYsFvD3TDWHZ</lokal_band:id_track>
+        <lokal_band:nama_track>Baby Doll</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band35_track5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>5NGG41cEWnMSXOiN6FJmlH</lokal_band:id_track>
+        <lokal_band:nama_track>Mencintamu Sampai Mati</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band35_track6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>69TNtFkY7ft7FG8cjBb5QK</lokal_band:id_track>
+        <lokal_band:nama_track>Benci - Ballad Version</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band35_track7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>5FKEkZ0pxjgTVKRDCCeI7S</lokal_band:id_track>
+        <lokal_band:nama_track>Antara Ada dan Tiada - Acoustic Version</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band35_track8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>5QGdhyM8NV5A7esXywR0vm</lokal_band:id_track>
+        <lokal_band:nama_track>Benci</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band35_track9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>6ATvv96ugdnmU35jqa0G4G</lokal_band:id_track>
+        <lokal_band:nama_track>Lelah</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band35_track10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>5xy1b6qEuX5fj3hgdTxDtr</lokal_band:id_track>
+        <lokal_band:nama_track>Selamanya</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band36">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Band"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band36_track1"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band36_track2"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band36_track3"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band36_track4"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band36_track5"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band36_track6"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band36_track7"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band36_track8"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band36_track9"/>
+        <lokal_band:about_band>
+            Named after the dark confection loved the world over -- chocolate -- Indonesian pop group Cokelat formed in Bandung in 1996. The band would go through a number of roster changes in its time, but would continue to release albums and build up a sizable following, regionally speaking. 
+            Their first album, Untuk Bintang -- preceded by an appearance on a compilation record -- was released in 2000. Rasa Baru, their second full-length, followed in 2001 and was reissued in special-edition format a year later. In 2003 and 2004 their output was steady, including two studio albums -- Segitiga in 2003 and Dari Hati in 2004 -- and they made an appearance on the 2004 Ian Antono tribute album. In 2006 Cokelat released the ultimate testament to a band's popularity, the best-of compilation in 2006, entitled Tak Pernah Padam. But that was not to be their only release that year, as Cokelat also issued the album Untukmu Indonesiaku, which was a collection of Indonesian national hymns. ~ Chris True, Rovi
+        </lokal_band:about_band>
+        <lokal_band:asal_band>Bandung</lokal_band:asal_band>
+        <lokal_band:link_gambar>https://i.scdn.co/image/ab67616100005174a498277004f6ee0317346878</lokal_band:link_gambar>
+        <lokal_band:genre>Classic Rock</lokal_band:genre>
+        <lokal_band:nama_band>Cokelat</lokal_band:nama_band>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band36_track1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>4jkUGQkxRJm3s8IpyOcM1l</lokal_band:id_track>
+        <lokal_band:nama_track>Luka Lama</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band36_track2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>0BsTURzR1eWY6GXAKSqyVW</lokal_band:id_track>
+        <lokal_band:nama_track>Bendera</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band36_track3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>2iPgYGr2VMofVPy2j6E7G5</lokal_band:id_track>
+        <lokal_band:nama_track>Jauh</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band36_track4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>3FEtQaakW0R6b5KPxN7v2n</lokal_band:id_track>
+        <lokal_band:nama_track>Segitiga</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band36_track5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>6mMcsP3eGyUiO6FsmMWbkw</lokal_band:id_track>
+        <lokal_band:nama_track>Kupilih Dia</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band36_track6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>3rSVLcwdWUKluv19oLcW8k</lokal_band:id_track>
+        <lokal_band:nama_track>Bendera - New Version</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band36_track7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>5OXp8P1mZOm7HX5SN3oBeR</lokal_band:id_track>
+        <lokal_band:nama_track>Salah</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band36_track8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>42tajypcQR8QieT3F5wd9M</lokal_band:id_track>
+        <lokal_band:nama_track>Kebyar Kebyar</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band36_track9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>2XJWGHfL8kACp3hJ8bd7GM</lokal_band:id_track>
+        <lokal_band:nama_track>Hari Merdeka</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band37">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Band"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band37_track1"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band37_track2"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band37_track3"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band37_track4"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band37_track5"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band37_track6"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band37_track7"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band37_track8"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band37_track9"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band37_track10"/>
+        <lokal_band:about_band>
+            -
+        </lokal_band:about_band>
+        <lokal_band:asal_band>Jakarta</lokal_band:asal_band>
+        <lokal_band:link_gambar>https://i.scdn.co/image/ab67616100005174d27b42c8901b80c6809a7b66</lokal_band:link_gambar>
+        <lokal_band:genre>Alternative Rock</lokal_band:genre>
+        <lokal_band:nama_band>J-Rocks</lokal_band:nama_band>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band37_track1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>4HM7F8ymm5Ice2If8vRUfl</lokal_band:id_track>
+        <lokal_band:nama_track>Lepaskan Diriku</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band37_track2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>10RtTP5oG5coNZK0sxrbUP</lokal_band:id_track>
+        <lokal_band:nama_track>Ceria</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band37_track3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>4lv41kISupmlA1USRpqc8D</lokal_band:id_track>
+        <lokal_band:nama_track>Fallin' In Love</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band37_track4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>637uNCQIzV478m4Kra7vpo</lokal_band:id_track>
+        <lokal_band:nama_track>Kau Curi Lagi (feat. Prisa)</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band37_track5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>5Tq9maJ3ho8ba3v8sJ5BXl</lokal_band:id_track>
+        <lokal_band:nama_track>Cobalah Kau Mengerti</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band37_track6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>7nTGwRGqxOweb5GEJUUXZy</lokal_band:id_track>
+        <lokal_band:nama_track>Meraih Mimpi</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band37_track7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>0s2WlCbHephai1tCj58f8Q</lokal_band:id_track>
+        <lokal_band:nama_track>Berharap Kau Kembali</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band37_track8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>0li3kz75da55xbdFReGspB</lokal_band:id_track>
+        <lokal_band:nama_track>Madu dan Racun</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band37_track9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>31ihET40YJPQGcEM5lxLJO</lokal_band:id_track>
+        <lokal_band:nama_track>Ya Aku</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band37_track10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>3CcNPl4e00NlX7NEn5VBdB</lokal_band:id_track>
+        <lokal_band:nama_track>Selamat Tinggal Kekasihku</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band38">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Band"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band38_track1"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band38_track2"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band38_track3"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band38_track4"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band38_track5"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band38_track6"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band38_track7"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band38_track8"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band38_track9"/>
+        <lokal_band:about_band>
+            Alternative rock band was established in 2012. This band started when Rama who met Mamed (Ramadhan) and decided to make a new band with newer, funkier, and fresher concept. It was the time when Cynantia Pratita (vocal), Rama (guitar), Usay (guitar), Ramadhan (bass) and Garda Nusantara (drum) gathered as a basic form of Stereowall. 
+ However, two years later, the drummer Garda Nusantara passed away upon an accident. This band was once took a break for several months. We released our first EP in 2016 “Never Ending Drama”. 
+ Long story short, now in 2022 Stereo wall invites Rei (Inay) to contribute as co-producer to give a new color for our brand new music. For now on, Rei also fill the keyboard, synth, and guitar section for us.
+        </lokal_band:about_band>
+        <lokal_band:asal_band>Semarang</lokal_band:asal_band>
+        <lokal_band:link_gambar>https://i.scdn.co/image/ab6761610000517429fc1e7c1efc3d371241763f</lokal_band:link_gambar>
+        <lokal_band:genre>Pop Punk</lokal_band:genre>
+        <lokal_band:nama_band>Stereo Wall</lokal_band:nama_band>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band38_track1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>5hkQFKFRrr5gKdbbxsg6Lj</lokal_band:id_track>
+        <lokal_band:nama_track>Jakarta Hari Ini</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band38_track2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>6ctfFyMCcEJ0xa0p6qpjSZ</lokal_band:id_track>
+        <lokal_band:nama_track>Jaga Hati Ini</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band38_track3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>2NMdEvZmw5y4BCU1K6ZDOq</lokal_band:id_track>
+        <lokal_band:nama_track>terjebak imajinasi</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band38_track4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>1cyFGh1cXPTiSZ6Zftievz</lokal_band:id_track>
+        <lokal_band:nama_track>Alive</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band38_track5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>31n4oSvZcreJjcOIckc3X2</lokal_band:id_track>
+        <lokal_band:nama_track>Waktu Yang Hilang</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band38_track6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>352VFlc6ZV7hiU68UFC7ag</lokal_band:id_track>
+        <lokal_band:nama_track>Tentang kita</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band38_track7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>458SLgQcSbO5OCQT3EiEqD</lokal_band:id_track>
+        <lokal_band:nama_track>Forever</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band38_track8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>1bqlSVj5PCEDHo4Zfcb3iy</lokal_band:id_track>
+        <lokal_band:nama_track>sabotase jiwa</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band38_track9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>2MA2DIhakE3iKnR48cNzz4</lokal_band:id_track>
+        <lokal_band:nama_track>Home</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band39">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Band"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band39_track1"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band39_track2"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band39_track3"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band39_track4"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band39_track5"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band39_track6"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band39_track7"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band39_track8"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band39_track9"/>
+        <lokal_band:about_band>
+            Packed with energy and rambunctiousness, Superman Is Dead is the Pacific Rim&#39;s answer to pop-punk. The trio of guitarist Bobby Kool, bassist Eka Rock, and drummer/guitarist JRX, who share vocal duties, formed in Kuta, Bali in 1995 through a shared love of Green Day and NOFX, describing their sound as PunkRockaBali and taking their name as a play on Stone Temple Pilots&#39; &quot;Silverman Supergun&quot; along with the idea that no one is perfect. Between 1997 and 2002, the band self-released the albums Case 15 and Superman Is Dead and the EP Bad, Bad, Bad. Signing to Sony Music Indonesia in 2003 making them the first Balinese band to sign with an Indonesian major label. That May, the threesome offered “Kuta Rock City”, which not only went double platinum but also landed them a feature as MTV Exclusive Artist of the Month and netted MTV and AMI (Indonesian equivalent to Grammy) awards. Over 2005 and 2006 Superman Is Dead continued with the albums The Hangover Decade and Black Market Love, the latter of which earned another AMI nod, a win as Best Local Band from the Beat Awards, and a feature in Rolling Stone. The band made their Billboard debut January 2011 on Uncharted, a ranking of emerging artists with an emphasis on connecting with fans online. Now you can stream SID&#39;s new album &quot;Tiga Perompak Senja&quot; featuring hits single “Batas Cahaya” on Spotify.
+        </lokal_band:about_band>
+        <lokal_band:asal_band>Bali</lokal_band:asal_band>
+        <lokal_band:link_gambar>https://i.scdn.co/image/ab67616100005174c13af5ca3b43c78e7bebd564</lokal_band:link_gambar>
+        <lokal_band:genre>Pop Punk</lokal_band:genre>
+        <lokal_band:nama_band>Superman Is Dead</lokal_band:nama_band>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band39_track1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>1bfbixjy7OPG2n3MbLKrKu</lokal_band:id_track>
+        <lokal_band:nama_track>Sunset Di Tanah Anarki</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band39_track2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>7MfWfl5XcVefwtQWTdF1py</lokal_band:id_track>
+        <lokal_band:nama_track>Kuat Kita Bersinar</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band39_track3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>1zpocf8I1zsBso2C4Uv9CA</lokal_band:id_track>
+        <lokal_band:nama_track>Jadilah Legenda</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band39_track4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>1tjXK475zBScgGLld0IHEn</lokal_band:id_track>
+        <lokal_band:nama_track>Jika Kami Bersama</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band39_track5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>7b37k7LEXFHeHsHJsTSu2O</lokal_band:id_track>
+        <lokal_band:nama_track>The Opening (Ketika Senja)</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band39_track6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>3jFLkK5G0NVcOzsDGbjMsm</lokal_band:id_track>
+        <lokal_band:nama_track>Punk Hari Ini</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band39_track7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>2iPhUfi56zAPDpkcxx4UD6</lokal_band:id_track>
+        <lokal_band:nama_track>Kita adalah belati</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band39_track8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>764X3uE3vjmDCqTBAEMAQE</lokal_band:id_track>
+        <lokal_band:nama_track>Puisi Cinta Para Perompak</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band39_track9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>7gKV7ttqWS3iRWzXzLRCLo</lokal_band:id_track>
+        <lokal_band:nama_track>Kita Luka Hari Ini Mereka Luka Selamanya</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band40">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Band"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band40_track1"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band40_track2"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band40_track3"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band40_track4"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band40_track5"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band40_track6"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band40_track7"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band40_track8"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band40_track9"/>
+        <lokal_band:about_band>
+            -
+        </lokal_band:about_band>
+        <lokal_band:asal_band>Bandung</lokal_band:asal_band>
+        <lokal_band:link_gambar>https://i.scdn.co/image/ab67616d00001e02b80c41f31c47567120b99717</lokal_band:link_gambar>
+        <lokal_band:genre>Classic Rock</lokal_band:genre>
+        <lokal_band:nama_band>Jamrud</lokal_band:nama_band>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band40_track1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>0yCXPhBN9nNh3CVBmc96EQ</lokal_band:id_track>
+        <lokal_band:nama_track>Pelangi Di Matamu</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band40_track2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>3VOzfRZAGuufdD5KUtQeYn</lokal_band:id_track>
+        <lokal_band:nama_track>Ningrat</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band40_track3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>0myP0QMEK8kkCsEVlBG75T</lokal_band:id_track>
+        <lokal_band:nama_track>Kabari Aku</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band40_track4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>4Y18VW43jcFGP6EMQJxbnt</lokal_band:id_track>
+        <lokal_band:nama_track>Surti Tejo</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band40_track5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>39A4w4p2bh6KkPfyFwsx00</lokal_band:id_track>
+        <lokal_band:nama_track>Putri</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band40_track6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>7zXbRt9gkL7MXmpctf5K5T</lokal_band:id_track>
+        <lokal_band:nama_track>Dokter Suster</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band40_track7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>7CPrlGJ3PFPRRTw2IQZZmZ</lokal_band:id_track>
+        <lokal_band:nama_track>Berakit-Rakit</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band40_track8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>4q9Qk34AdgntdCYpLEpmPu</lokal_band:id_track>
+        <lokal_band:nama_track>Terima Kasih</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band40_track9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>6bzm6QohWZ9RtQa18pEMXl</lokal_band:id_track>
+        <lokal_band:nama_track>Maaf</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band40_track10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>6VgyRGeR4cw6yNGazjGFhu</lokal_band:id_track>
+        <lokal_band:nama_track>Selamat Ulang Tahun</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band41">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Band"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band41_track1"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band41_track2"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band41_track3"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band41_track4"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band41_track5"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band41_track6"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band41_track7"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band41_track8"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band41_track9"/>
+        <lokal_band:about_band>
+            NAFF, a music band from Bandung with Arda, Ade, Odeu, and Hilal as its members, is back with their newest single "Menualah Denganku". After 22 years in the music industry, NAFF's presence in Indonesia's entertainment scene no longer needs to be questioned. After releasing their previous single "Pulang", NAFF is now back to entertain all music listeners in Indonesia. With a fresh new image in music, production, and appearance, NAFF hopes this song can be warmly welcomed and have a positive impact, encouraging listeners to be more discerning in choosing a partner.
+        </lokal_band:about_band>
+        <lokal_band:asal_band>Bandung</lokal_band:asal_band>
+        <lokal_band:link_gambar>https://i.scdn.co/image/ab67616100005174845273b94019aa525d9fd0ef</lokal_band:link_gambar>
+        <lokal_band:genre>Pop Rock</lokal_band:genre>
+        <lokal_band:nama_band>NaFF</lokal_band:nama_band>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band41_track1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>0zJIPpVcHKWqmf2FaKXbQQ</lokal_band:id_track>
+        <lokal_band:nama_track>Kenanglah</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band41_track2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>6BoyG3bQ8rjDdqatMg5IWM</lokal_band:id_track>
+        <lokal_band:nama_track>Akhirnya Ku Menemukanmu</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band41_track3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>75oKENo18qceQGUKA7fZGc</lokal_band:id_track>
+        <lokal_band:nama_track>Terendap Laraku</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band41_track4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>4bf1MapeofdB3XKUqDMUOm</lokal_band:id_track>
+        <lokal_band:nama_track>Kau Masih Kekasihku</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band41_track5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>5DJilCqGJFPyTpXyYGzOL5</lokal_band:id_track>
+        <lokal_band:nama_track>Tak Seindah Cinta Yang Semestinya</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band41_track6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>3n9Rplkkr17DE8EWJ8nWiz</lokal_band:id_track>
+        <lokal_band:nama_track>Bila Nanti Kau Milikku</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band41_track7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>2IOv9Vyl6CzcgYQ8EDQqIz</lokal_band:id_track>
+        <lokal_band:nama_track>Dosa Apa</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band41_track8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>68JSq7FPxnLiommik8RzfF</lokal_band:id_track>
+        <lokal_band:nama_track>Kaulah Hidup dan Matiku</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band41_track9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>2Op2N8IzE1plfE7VxlssVt</lokal_band:id_track>
+        <lokal_band:nama_track>Ketika Semuanya Harus Berakhir</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band41_track10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>2BLTBuO5k4UhIze1NurG08</lokal_band:id_track>
+        <lokal_band:nama_track>Sebaiknya</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+
 
 </rdf:RDF>
 
