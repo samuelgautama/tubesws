@@ -3,7 +3,7 @@ error_reporting(E_ALL & ~E_DEPRECATED);
 require 'vendor/autoload.php'; // Pastikan autoload diinclude
 
 // Mengatur endpoint SPARQL
-$endpoint = 'http://localhost:3030/gig/query'; // Ganti dengan URL endpoint SPARQL Anda
+$endpoint = 'http://localhost:3030/band1/query'; // Ganti dengan URL endpoint SPARQL Anda
 
 // Membuat klien SPARQL
 $sparql = new EasyRdf\Sparql\Client($endpoint);
@@ -51,7 +51,6 @@ $result = $sparql->query($query);
 <?php include 'sidebar.php';?>
 <div class=" ml-4 flex justify-center">
     <div class="container mt-5">
-     <h class='font-bold text-3xl flex justify-center mb-4'>Daftar Band</h>
         <table class="table table-bordered">
             <thead>
                 <tr>
@@ -63,7 +62,7 @@ $result = $sparql->query($query);
                 foreach ($result as $row) {
                     echo "<div class='card lg:card-side bg-base-100 shadow-xl mb-6 ml-24'>
                     <div class='card-body'>
-                    <img class='w-32 h-48 w-48 rounded-lg' src='"
+                    <img class='min-w-32 min-h-48 w-48 rounded-lg' src='"
                       .htmlspecialchars($row->link).
                       "'/>
                       <h2 class='card-title'>".htmlspecialchars($row->band_name)."</h2>

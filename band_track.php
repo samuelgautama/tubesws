@@ -3,7 +3,7 @@ error_reporting(E_ALL & ~E_DEPRECATED);
 require 'vendor/autoload.php'; // Pastikan autoload diinclude
 
 // Mengatur endpoint SPARQL
-$endpoint = 'http://localhost:3030/gig/query'; // Ganti dengan URL endpoint SPARQL Anda
+$endpoint = 'http://localhost:3030/band1/query'; // Ganti dengan URL endpoint SPARQL Anda
 
 // Membuat klien SPARQL
 $sparql = new EasyRdf\Sparql\Client($endpoint);
@@ -14,9 +14,10 @@ $band_name = isset($_POST['band_name']) ? $_POST['band_name'] : '';
 $query = '
 PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
 
-SELECT  ?band_name ?id_spotify WHERE {
+SELECT  ?band_name ?id_spotify ?link WHERE {
         ?band uni:nama_band ?band_name;
-                uni:hasTrack ?track.
+                uni:hasTrack ?track;
+                uni:link_gambar ?link.
 
         ?track uni:id_track ?id_spotify.
     
@@ -24,13 +25,26 @@ SELECT  ?band_name ?id_spotify WHERE {
 }
 ';
 
+$query2 = '
+PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
+
+SELECT DISTINCT  ?band_name ?link ?tipe ?asal ?about ?genre_band WHERE {
+        ?band uni:nama_band ?band_name;
+                uni:link_gambar ?link;
+                uni:band_type ?tipe;
+                uni:asal_band ?asal;
+                uni:about_band ?about;
+                uni:genre ?genre_band.
+
+    
+    FILTER (regex(?band_name, "' . htmlspecialchars($band_name) . '", "i"))
+}
+';
 
 
-// Menjalankan query
 $result = $sparql->query($query);
+$result2 = $sparql->query($query2);
 
-
-// Mulai tampilan HTML
 ?>
 <!DOCTYPE html>
 <html lang="id">
@@ -48,9 +62,30 @@ $result = $sparql->query($query);
 
 <?php include 'sidebar.php';?>
 
-<div class="flex justify-center ml-6">
+
+
+<div class="flex justify-center min-w-screen ml-6">
     <div class="container mt-5">
-        <h class="flex justify-center text-3xl mb-4 font-bold">Daftar Track</h>
+        <div class="flex justify-center">
+        <?php foreach($result2 as $row){
+               echo"<div class='hero bg-base-200  rounded-lg mb-6'>
+                <div class='hero-content flex-col lg:flex-row'>
+                  <img
+                    src='".htmlspecialchars($row->link)."'
+                    class='max-w-sm rounded-lg shadow-2xl' />
+                  <div>
+                    <h1 class='text-5xl font-bold mb-4'>".htmlspecialchars($row->band_name)."</h1>
+                    <p>Genre: ".htmlspecialchars($row->genre_band)."</p>
+                    <p>Tipe: ".htmlspecialchars($row->tipe)."</p>
+                    <p>Asal: ".htmlspecialchars($row->asal)."</p>
+                    <p class='mt-4'>
+                      ".htmlspecialchars($row->about)."
+                    </p>
+                  </div>
+                </div>
+              </div>";
+        }?>
+        </div>
         <div class="grid gap-16 grid-cols-4 grid-rows-6 ">
                 <?php
                 // Menampilkan hasil dalam tabel

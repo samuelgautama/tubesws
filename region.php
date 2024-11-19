@@ -3,7 +3,7 @@ error_reporting(E_ALL & ~E_DEPRECATED);
 require 'vendor/autoload.php'; // Pastikan autoload diinclude
 
 // Mengatur endpoint SPARQL
-$endpoint = 'http://localhost:3030/gig/query'; // Ganti dengan URL endpoint SPARQL Anda
+$endpoint = 'http://localhost:3030/band1/query'; // Ganti dengan URL endpoint SPARQL Anda
 
 // Membuat klien SPARQL
 $sparql = new EasyRdf\Sparql\Client($endpoint);
@@ -14,12 +14,13 @@ $region = isset($_POST['region']) ? $_POST['region'] : '';
 $query = '
 PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
 
-SELECT ?band_name ?asal ?about ?link ?genre_band WHERE {
+SELECT ?band_name ?asal ?about ?link ?genre_band ?tipe WHERE {
         ?band uni:nama_band ?band_name;
           uni:asal_band ?asal;
           uni:about_band ?about;
           uni:link_gambar ?link;
-          uni:genre ?genre_band.
+          uni:genre ?genre_band;
+          uni:band_type ?tipe.
     
     FILTER (regex(?asal, "' . htmlspecialchars($region) . '", "i"))
 }
@@ -69,6 +70,7 @@ $result = $sparql->query($query);
                       "'/>
                       <h2 class='card-title'>".htmlspecialchars($row->band_name)."</h2>
                       <p>Genre: ".htmlspecialchars($row->genre_band)."</p>
+                      <p>Tipe: ".htmlspecialchars($row->tipe)."</p>
                       <p>Asal: ".htmlspecialchars($row->asal)."</p>
                       <p>".htmlspecialchars($row->about)."</p>
                       <div class='card-actions justify-end'>

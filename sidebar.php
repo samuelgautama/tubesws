@@ -3,7 +3,7 @@ error_reporting(E_ALL & ~E_DEPRECATED);
 require 'vendor/autoload.php'; 
 
 
-$endpoint = 'http://localhost:3030/gig/query'; 
+$endpoint = 'http://localhost:3030/band1/query'; 
 
 $searchQuery = '';
 
@@ -18,11 +18,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST['searchQuery'])) {
 $asalQuery = '
 PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
 
-SELECT DISTINCT ?asal  WHERE {
-    ?band uni:asal_band ?asal.
+SELECT DISTINCT ?asal ?tipe WHERE {
+    ?band uni:asal_band ?asal;
+          uni:band_type ?tipe.
 
+    FILTER (regex(?tipe, "Lokal", "i"))
 }
 ';
+
+$asalQuery2 = '
+PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
+
+SELECT DISTINCT ?asal ?tipe WHERE {
+    ?band uni:asal_band ?asal;
+          uni:band_type ?tipe.
+
+    FILTER (regex(?tipe, "Internasional", "i"))
+}
+';
+
 
 $genreQuery = '
 PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
@@ -35,6 +49,7 @@ SELECT DISTINCT  ?genre_band WHERE {
 
 
 $resultAsal = $sparql->query($asalQuery);
+$resultAsal2 = $sparql->query($asalQuery2);
 $resultGenre = $sparql->query($genreQuery);
 
 
@@ -59,7 +74,7 @@ $resultGenre = $sparql->query($genreQuery);
             GigsPedia
         </a>
         <div class="flex justify-center">
-            <form method="POST" class="input input-bordered flex items-center gap-2 border-zinc-50 bg-gray-700 mb-4 mt-4" action="search.php">
+            <form method="POST" class="input input-bordered flex items-center gap-2 border-white bg-transparent mb-4 mt-4" action="search.php">
             <input type="text" name="searchQuery" class="grow" placeholder="Search" value="<?php echo htmlspecialchars($searchQuery); ?>" required />
             <button type="submit" class="h-4 w-4 opacity-70">
                 <svg
@@ -77,7 +92,7 @@ $resultGenre = $sparql->query($genreQuery);
         <div class="overflow-y-auto h-full">
             <details class="group">
                 <summary class="px-6 py-2 bg-gray-700 cursor-pointer group-open:bg-gray-600 hover:bg-gray-600">
-                    Region
+                    Lokal
                 </summary>
                 <div class="px-4 py-2">
                     <ul class="space-y-2">
@@ -98,6 +113,31 @@ $resultGenre = $sparql->query($genreQuery);
                     </ul>
                 </div>
             </details>
+
+            <details class="group">
+                <summary class="px-6 py-2 bg-gray-700 cursor-pointer group-open:bg-gray-600 hover:bg-gray-600">
+                    Internasional
+                </summary>
+                <div class="px-4 py-2">
+                    <ul class="space-y-2">
+                        <?php 
+                        foreach($resultAsal2 as $row) {
+                            echo  "<li>
+                                    <form method='POST' action='region.php'>
+                                    <input type='hidden' name='region' value='"
+                                    .htmlspecialchars($row->asal).
+                                    "'>
+                                    <button type='submit' class='w-full text-left bg-gray-500 hover:bg-gray-400 text-white py-1 px-2 rounded'>
+                                    " . htmlspecialchars($row->asal) . "
+                                    </button>
+                                    </form>
+                                </li>";
+                        }
+                        ?>
+                    </ul>
+                </div>
+            </details>
+
             <details class="group">
                 <summary class="px-6 py-2 bg-gray-700 cursor-pointer group-open:bg-gray-600 hover:bg-gray-600">
                     Genre
