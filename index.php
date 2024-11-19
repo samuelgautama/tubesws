@@ -3,125 +3,75 @@ error_reporting(E_ALL & ~E_DEPRECATED);
 require 'vendor/autoload.php'; 
 
 
-$endpoint = 'http://localhost:3030/rocksearch/query'; 
+$endpoint = 'http://localhost:3030/gig/query'; 
 
-$searchQuery = '';
 
 $sparql = new EasyRdf\Sparql\Client($endpoint);
 
-
-if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST['searchQuery'])) {
-    $searchQuery = trim($_POST['searchQuery']);
-}
-
 // Menyusun query SPARQL
-$asalQuery = '
+$random = '
 PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
 
-SELECT DISTINCT ?asal  WHERE {
-    ?band uni:asal_band ?asal.
-
+SELECT ?band_name ?link WHERE {
+    ?band uni:link_gambar ?link;
+        uni:nama_band ?band_name.
 }
-';
+ORDER BY RAND()
+LIMIT 10
 
-$genreQuery = '
-PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
-
-SELECT DISTINCT  ?genre_band WHERE {
-    ?band uni:genre ?genre_band.
-
-}
 ';
 
 
-$resultAsal = $sparql->query($asalQuery);
-$resultGenre = $sparql->query($genreQuery);
-
+$result = $sparql->query($random);
 
 ?>
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GigsPedia</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Gigspedia</title>
 </head>
-<body class="h-screen bg-gradient-to-r from-[color:#3C4048] to-gray-700 flex">
+<body class="min-h-screen bg-gradient-to-r from-[color:#3C4048] to-gray-700 flex">
 
-    <!-- Sidebar -->
-    <div class="w-64 bg-gradient-to-r from-[color:#3C4048] to-gray-700 text-white shadow-lg h-full">
-        <div class="text-xl font-bold italic py-4 px-6 border-b border-gray-700">
-            GigsPedia
-        </div>
-        <div class="overflow-y-auto h-[calc(100%-4rem)]">
-            <details class="group">
-                <summary class="px-6 py-2 bg-gray-700 cursor-pointer group-open:bg-gray-600 hover:bg-gray-600">
-                    Region
-                </summary>
-                <div class="px-4 py-2">
-                    <ul class="space-y-2">
-                        <?php 
-                        foreach($resultAsal as $row) {
-                            echo  "<li>
-                                    <form method='POST' action='region.php'>
-                                    <input type='hidden' name='region' value='"
-                                    .htmlspecialchars($row->asal).
-                                    "'>
-                                    <button type='submit' class='w-full text-left bg-gray-500 hover:bg-gray-400 text-white py-1 px-2 rounded'>
-                                    " . htmlspecialchars($row->asal) . "
-                                    </button>
-                                    </form>
-                                </li>";
-                        }
-                        ?>
-                    </ul>
-                </div>
-            </details>
-            <details class="group">
-                <summary class="px-6 py-2 bg-gray-700 cursor-pointer group-open:bg-gray-600 hover:bg-gray-600">
-                    Genre
-                </summary>
-                <div class="px-4 py-2">
-                    <ul class="space-y-2">
-                        <?php 
-                        foreach($resultGenre as $row) {
-                            echo  "<li>
-                                    <form method='POST' action='genre.php'>
-                                    <input type='hidden' name='genre' value='"
-                                    .htmlspecialchars($row->genre_band).
-                                    "'>
-                                    <button type='submit' class='w-full text-left bg-gray-500 hover:bg-gray-400 text-white py-1 px-2 rounded'>
-                                    " . htmlspecialchars($row->genre_band) . "
-                                    </button>
-                                    </form>
-                                </li>";
-                        }
-                        ?>
-                    </ul>
-                </div>
-            </details>
-        </div>
-    </div>
+        <?php include 'sidebar.php';?>
 
-    <!-- Main Content -->
-    <div class="flex-grow">
-        <div class="hero min-h-screen">
+        <!-- Main Content -->
+        <div class="flex-grow">
+        <div class="hero mb-24 mt-56">
             <div class="hero-content flex-col lg:flex-row">
                 <img src="media/gigs2.png" class="max-w-sm rounded-lg shadow-2xl" />
                 <div>
                     <h1 class="text-5xl font-bold text-white">GigsPedia</h1>
-                    <p class="py-6 text-gray-300">
+                    <p class="py-6 text-gray-300 text-1xl">
                         Ready to Rock? Maintain to Metal? Hype to Hardcore? Find your precious music style here!
                         <br>Also recognize your local bands and listen to them!
                     </p>
                 </div>
             </div>
         </div>
-    </div>
 
+        <h class="text-5xl font-bold flex justify-center mb-12 text-zinc-50">Recommendation For You</h>
+        <div class="grid gap-2 grid-cols-5 grid-rows-2 ml-6">
+        <?php foreach($result as $row){
+            echo " <form method='POST' action='band_track.php'>
+            <input type='hidden' name='band_name' value='" . htmlspecialchars($row->band_name) . "'>
+            <button type='submit' class='card bg-base-100 max-w-72 max-h-72 shadow-xl mb-4'>
+            <figure>
+              <img class='min-w-32 min-h-48' src='".htmlspecialchars($row->link)."'/>
+           </figure>
+            <div class='card-body'>
+            <h2 class='card-title'>".htmlspecialchars($row->band_name)."</h2>
+            </div>
+          </button>
+        </form>";
+        }?>
+    </div>
+    </div>
+    
 </body>
 </html>
+
+
+
+

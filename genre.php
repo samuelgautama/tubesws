@@ -3,7 +3,7 @@ error_reporting(E_ALL & ~E_DEPRECATED);
 require 'vendor/autoload.php'; // Pastikan autoload diinclude
 
 // Mengatur endpoint SPARQL
-$endpoint = 'http://localhost:3030/rocksearch/query'; // Ganti dengan URL endpoint SPARQL Anda
+$endpoint = 'http://localhost:3030/gig/query'; // Ganti dengan URL endpoint SPARQL Anda
 
 // Membuat klien SPARQL
 $sparql = new EasyRdf\Sparql\Client($endpoint);
@@ -14,11 +14,12 @@ $genre = isset($_POST['genre']) ? $_POST['genre'] : '';
 $query = '
 PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
 
-SELECT  ?band_name ?genre_band ?about ?link WHERE {
+SELECT  ?band_name ?genre_band ?about ?genre_band ?asal ?link WHERE {
         ?band uni:nama_band ?band_name;
           uni:genre ?genre_band;
           uni:about_band ?about;
-          uni:link_gambar ?link.
+          uni:link_gambar ?link;
+          uni:asal_band ?asal.
     
     FILTER (regex(?genre_band, "' . htmlspecialchars($genre) . '", "i"))
 }
@@ -36,25 +37,21 @@ $result = $sparql->query($query);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GigsPedia</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-base-50">
+<body class="bg-gradient-to-r from-[color:#3C4048] to-gray-700 flex min-h-screen">
 
 <script>
   AOS.init();
 </script>
 
-<div class="navbar bg-base-100">
-  <div class="flex-1">
-    <a class="btn" href="index.php">GigsPedia</a>
-  </div>
-</div>
-
+<?php include 'sidebar.php';?>
+<div class=" ml-4 flex justify-center">
     <div class="container mt-5">
-        <h1>Daftar Band</h1>
+     <h class='font-bold text-3xl flex justify-center mb-4'>Daftar Band</h>
         <table class="table table-bordered">
             <thead>
                 <tr>
@@ -64,12 +61,14 @@ $result = $sparql->query($query);
                 <?php
                 // Menampilkan hasil dalam tabel
                 foreach ($result as $row) {
-                    echo "<div data-aos='fade-right' data-aos-duration='1000' class='card lg:card-side bg-base-50 shadow-xl mb-4'>
+                    echo "<div class='card lg:card-side bg-base-100 shadow-xl mb-6 ml-24'>
                     <div class='card-body'>
                     <img class='w-32 h-48 w-48 rounded-lg' src='"
                       .htmlspecialchars($row->link).
                       "'/>
                       <h2 class='card-title'>".htmlspecialchars($row->band_name)."</h2>
+                      <p>Genre: ".htmlspecialchars($row->genre_band)."</p>
+                      <p>Asal: ".htmlspecialchars($row->asal)."</p>
                       <p>".htmlspecialchars($row->about)."</p>
                       <div class='card-actions justify-end'>
                         <form method='POST' action='band_track.php'>
@@ -84,5 +83,6 @@ $result = $sparql->query($query);
             </tbody>
         </table>
     </div>
+</div>
 </body>
 </html>
