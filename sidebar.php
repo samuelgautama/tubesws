@@ -3,7 +3,7 @@ error_reporting(E_ALL & ~E_DEPRECATED);
 require 'vendor/autoload.php'; 
 
 
-$endpoint = 'http://localhost:3030/band1/query'; 
+$endpoint = 'http://localhost:3030/gigspedia/query'; 
 
 $searchQuery = '';
 
