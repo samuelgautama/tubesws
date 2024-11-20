@@ -3,7 +3,7 @@ error_reporting(E_ALL & ~E_DEPRECATED);
 require 'vendor/autoload.php'; 
 
 
-$endpoint = 'http://localhost:3030/gigspedia/query'; 
+$endpoint = 'http://localhost:3030/band1/query'; 
 
 $searchQuery = '';
 
@@ -66,14 +66,14 @@ $resultGenre = $sparql->query($genreQuery);
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 
     <!-- Sidebar -->
-    <div class="w-64 bg-gradient-to-r from-[color:#3C4048]/60 to-gray-700/60 text-white shadow-lg min-h-screen mt-4">
+    <div class="w-64 bg-gradient-to-r from-[color:#3C4048]/60 to-gray-700/60 text-white shadow-2xl min-h-screen mt-4">
         
-        <a href="index.php" class="text-2xl font-bold italic py-4 px-6 border-b border-gray-700">
+        <a href="index.php" class="text-2xl font-bold italic py-4 px-6">
             GigsPedia
         </a>
         <div class="flex justify-center">
@@ -94,7 +94,7 @@ $resultGenre = $sparql->query($genreQuery);
         </div>
         <div class="overflow-y-auto h-full">
             <details class="group">
-                <summary class="px-6 py-2 bg-gradient-to-r from-[color:#3C4048]/60 to-gray-700/60 cursor-pointer group-open:bg-gray-700 hover:bg-gray-800">
+                <summary class="px-6 py-2 bg-gradient-to-r from-[color:#3C4048]/60 to-gray-700/60 cursor-pointer group-open:bg-gray-700 hover:bg-gray-700">
                     Lokal
                 </summary>
                 <div class="px-4 py-2">
@@ -106,7 +106,7 @@ $resultGenre = $sparql->query($genreQuery);
                                     <input type='hidden' name='region' value='"
                                     .htmlspecialchars($row->asal).
                                     "'>
-                                    <button type='submit' class='w-full text-left bg-gradient-to-r from-[color:#3C4048]/60 to-gray-700/60 hover:bg-gray-800 text-white py-1 px-2 rounded'>
+                                    <button type='submit' class='w-full text-left bg-gradient-to-r from-[color:#3C4048]/60 to-gray-700/60 hover:bg-gray-700 text-white py-1 px-2 rounded'>
                                     " . htmlspecialchars($row->asal) . "
                                     </button>
                                     </form>
@@ -118,7 +118,7 @@ $resultGenre = $sparql->query($genreQuery);
             </details>
 
             <details class="group">
-                <summary class="px-6 py-2 bg-gradient-to-r from-[color:#3C4048]/60 to-gray-700/60-gray-700 cursor-pointer group-open:bg-gray-700 hover:bg-gray-800">
+                <summary class="px-6 py-2 bg-gradient-to-r from-[color:#3C4048]/60 to-gray-700/60-gray-700 cursor-pointer group-open:bg-gray-700 hover:bg-gray-700">
                     Internasional
                 </summary>
                 <div class="px-4 py-2">
@@ -130,7 +130,7 @@ $resultGenre = $sparql->query($genreQuery);
                                     <input type='hidden' name='region' value='"
                                     .htmlspecialchars($row->asal).
                                     "'>
-                                    <button type='submit' class='w-full text-left bg-gradient-to-r from-[color:#3C4048]/60 to-gray-700/60 hover:bg-gray-800 text-white py-1 px-2 rounded'>
+                                    <button type='submit' class='w-full text-left bg-gradient-to-r from-[color:#3C4048]/60 to-gray-700/60 hover:bg-gray-700 text-white py-1 px-2 rounded'>
                                     " . htmlspecialchars($row->asal) . "
                                     </button>
                                     </form>
@@ -142,7 +142,7 @@ $resultGenre = $sparql->query($genreQuery);
             </details>
 
             <details class="group">
-                <summary class="px-6 py-2 bg-gradient-to-r from-[color:#3C4048]/60 to-gray-700/60 cursor-pointer group-open:bg-gray-700 hover:bg-gray-800">
+                <summary class="px-6 py-2 bg-gradient-to-r from-[color:#3C4048]/60 to-gray-700/60 cursor-pointer group-open:bg-gray-700 hover:bg-gray-700">
                     Genre
                 </summary>
                 <div class="px-4 py-2">
@@ -154,7 +154,7 @@ $resultGenre = $sparql->query($genreQuery);
                                     <input type='hidden' name='genre' value='"
                                     .htmlspecialchars($row->genre_band).
                                     "'>
-                                    <button type='submit' class='w-full text-left bg-gradient-to-r from-[color:#3C4048]/60 to-gray-700/60 hover:bg-gray-800 text-white py-1 px-2 rounded'>
+                                    <button type='submit' class='w-full text-left bg-gradient-to-r from-[color:#3C4048]/60 to-gray-700/60 hover:bg-gray-700 text-white py-1 px-2 rounded'>
                                     " . htmlspecialchars($row->genre_band) . "
                                     </button>
                                     </form>
@@ -163,6 +163,10 @@ $resultGenre = $sparql->query($genreQuery);
                         ?>
                     </ul>
                 </div>
+            </details>
+                <a href="recommendation.php" class="button px-6 py-2 bg-gradient-to-r from-[color:#3C4048]/60 to-gray-700/60 hover:bg-gray-700 w-full flex justify-start">
+                    Recommendation
+                </a>
             </details>
         </div>
     </div>

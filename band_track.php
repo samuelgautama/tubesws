@@ -3,7 +3,7 @@ error_reporting(E_ALL & ~E_DEPRECATED);
 require 'vendor/autoload.php'; // Pastikan autoload diinclude
 
 // Mengatur endpoint SPARQL
-$endpoint = 'http://localhost:3030/gigspedia/query'; // Ganti dengan URL endpoint SPARQL Anda
+$endpoint = 'http://localhost:3030/band1/query'; // Ganti dengan URL endpoint SPARQL Anda
 
 // Membuat klien SPARQL
 $sparql = new EasyRdf\Sparql\Client($endpoint);
@@ -55,10 +55,11 @@ $result2 = $sparql->query($query2);
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
 
 </head>
-<body class="bg-gradient-to-r from-[color:#3C4048] to-gray-700 flex min-h-screen">
+<body class="flex min-h-screen">
 
 <?php include 'sidebar.php';?>
 
@@ -68,7 +69,7 @@ $result2 = $sparql->query($query2);
     <div class="container mt-5">
         <div class="flex justify-center">
         <?php foreach($result2 as $row){
-               echo"<div class='hero bg-base-200  rounded-lg mb-6 ml-8 mr-8'>
+               echo"<div class='hero bg-base-200 rounded-lg mb-8 ml-8 mr-8'>
                 <div class='hero-content flex-col lg:flex-row'>
                   <img
                     src='".htmlspecialchars($row->link)."'
@@ -86,7 +87,8 @@ $result2 = $sparql->query($query2);
               </div>";
         }?>
         </div>
-        <div class="grid gap-16 grid-cols-4 grid-rows-6 ">
+        <h class="flex justify-center font-bold text-3xl mb-8">Tracks</h>
+        <div class="grid gap-16 grid-cols-4 grid-rows-6 ml-8 mr-8">
                 <?php
                 // Menampilkan hasil dalam tabel
                 foreach ($result as $row) {

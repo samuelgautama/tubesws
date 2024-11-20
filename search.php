@@ -3,7 +3,7 @@ error_reporting(E_ALL & ~E_DEPRECATED);
 require 'vendor/autoload.php'; 
 
 
-$endpoint = 'http://localhost:3030/gigspedia/query'; 
+$endpoint = 'http://localhost:3030/band1/query'; 
 
 
 $sparql = new EasyRdf\Sparql\Client($endpoint);
@@ -50,9 +50,10 @@ $result = $sparql->query($query);
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gradient-to-r from-[color:#3C4048] to-gray-700 flex min-h-screen">
+<body class="flex min-h-screen">
 
 <?php include 'sidebar.php';?>
 
@@ -73,7 +74,7 @@ $result = $sparql->query($query);
                 <?php
                 // Menampilkan hasil dalam tabel
                 foreach ($result as $row) {
-                    echo "<div class='card lg:card-side bg-base-100 shadow-xl flex ml-24'>
+                    echo "<div class='card lg:card-side bg-base-100 shadow-xl flex ml-24 mr-24'>
                     <div class='card-body'>
                       <img class='w-32 h-32' src='"
                       .htmlspecialchars($row->link).

@@ -3,7 +3,7 @@ error_reporting(E_ALL & ~E_DEPRECATED);
 require 'vendor/autoload.php'; // Pastikan autoload diinclude
 
 // Mengatur endpoint SPARQL
-$endpoint = 'http://localhost:3030/gigspedia/query'; // Ganti dengan URL endpoint SPARQL Anda
+$endpoint = 'http://localhost:3030/band1/query'; // Ganti dengan URL endpoint SPARQL Anda
 
 // Membuat klien SPARQL
 $sparql = new EasyRdf\Sparql\Client($endpoint);
@@ -42,9 +42,10 @@ $result = $sparql->query($query);
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gradient-to-r from-[color:#3C4048] to-gray-700 flex min-h-screen">
+<body class="flex min-h-screen">
 
 <script>
   AOS.init();
