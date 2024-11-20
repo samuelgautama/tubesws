@@ -68,7 +68,7 @@ $result2 = $sparql->query($query2);
     <div class="container mt-5">
         <div class="flex justify-center">
         <?php foreach($result2 as $row){
-               echo"<div class='hero bg-base-200  rounded-lg mb-6'>
+               echo"<div class='hero bg-base-200  rounded-lg mb-6 ml-8 mr-8'>
                 <div class='hero-content flex-col lg:flex-row'>
                   <img
                     src='".htmlspecialchars($row->link)."'
@@ -91,7 +91,8 @@ $result2 = $sparql->query($query2);
                 // Menampilkan hasil dalam tabel
                 foreach ($result as $row) {
                     echo "<td>" .
-                    '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/' . htmlspecialchars($row->id_spotify) . '?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>' .
+                    '<iframe
+                     style="border-radius:12px" src="https://open.spotify.com/embed/track/' . htmlspecialchars($row->id_spotify) . '?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>' .
                     "</td>";
                 echo "</tr>";
                 }

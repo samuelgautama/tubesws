@@ -60,7 +60,7 @@ $result = $sparql->query($query);
                 <?php
                 // Menampilkan hasil dalam tabel
                 foreach ($result as $row) {
-                    echo "<div class='card lg:card-side bg-base-100 shadow-xl mb-6 ml-24'>
+                    echo "<div class='card lg:card-side bg-base-100 shadow-xl mb-6 ml-8 mr-8'>
                     <div class='card-body'>
                     <img class='min-w-32 min-h-48 w-48 rounded-lg' src='"
                       .htmlspecialchars($row->link).

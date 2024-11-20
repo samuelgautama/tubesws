@@ -8042,6 +8042,98 @@ Alpha Wolf&apos;s music is a force to be reckoned with, and their ferocious live
         <lokal_band:id_track>3uQpkClfVzSPnEXlNKYeCX</lokal_band:id_track>
         <lokal_band:nama_track>Deja Vu</lokal_band:nama_track>
     </owl:NamedIndividual>
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band54">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Band"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band54_track1"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band54_track10"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band54_track2"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band54_track3"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band54_track4"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band54_track5"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band54_track6"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band54_track7"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band54_track8"/>
+        <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band54_track9"/>
+        <lokal_band:band_type>Internasional</lokal_band:band_type>
+        <lokal_band:about_band>
+            Lacuna Coil has firmly etched its name into the annals of heavy music, offering an eclectic mix of gothic metal and atmospheric rock. Founded in Milan, Italy, the band has continuously evolved since their inception, creating albums that serve as both a reflection of their past and a vision of their future. In 2022, they celebrated their two-decade journey with the release of Comalies XX, a reimagining of their iconic 2002 album Comalies, which not only brought fresh life to their classic material but also set the stage for their next steps as they began work on their tenth studio album.
+Their sound is characterized by a unique blend of melodic vocals from Cristina Scabbia and Andrea Ferro, combined with dark, atmospheric instrumentation. The band's latest single, These Scars Won't Define Us, serves as a powerful reminder of their resilience and evolution in the metal world.
+With guest appearances from renowned artists like Randy Blythe of Lamb of God and Ash Costello of New Years Day, Lacuna Coil continues to push boundaries with their music, blending cinematic, haunting melodies with heavy, dynamic rhythms.
+        </lokal_band:about_band>
+        <lokal_band:asal_band>Italy</lokal_band:asal_band>
+        <lokal_band:genre>Gothic Metal</lokal_band:genre>
+        <lokal_band:link_gambar>https://i.scdn.co/image/ab676161000051748f989674720776c95065a68d</lokal_band:link_gambar>
+        <lokal_band:nama_band>Lacuna Coil</lokal_band:nama_band>
+    </owl:NamedIndividual>
+    
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band54_track1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>71KtwiEpzcn9WxwlaS7ZJY</lokal_band:id_track>
+        <lokal_band:nama_track>Enjoy the Silence (Cover Version) </lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band54_track2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>5kGYXoTex44RouWpcc6MD0</lokal_band:id_track>
+        <lokal_band:nama_track>Hosting the Shadow (feat. Randy Blythe) </lokal_band:nama_track>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band54_track3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>6vS5siwSidItcWFXskcpAA</lokal_band:id_track>
+        <lokal_band:nama_track>Our Truth</lokal_band:nama_track>
+    </owl:NamedIndividual>
+    
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band54_track4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>0I7y3aEavUHgkt4aCreBDa</lokal_band:id_track>
+        <lokal_band:nama_track>Heaven's a Lie</lokal_band:nama_track>
+    </owl:NamedIndividual>
+    
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band54_track5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>0ncGg1FsXkT3VDEjC229IU</lokal_band:id_track>
+        <lokal_band:nama_track>Oxygen</lokal_band:nama_track>
+    </owl:NamedIndividual>
+    
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band54_track6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>071qZ9lL7h6ULW1WNgQjE3</lokal_band:id_track>
+        <lokal_band:nama_track>Trip the Darkness</lokal_band:nama_track>
+    </owl:NamedIndividual>
+    
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band54_track7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>53h0CfeES5dh1ECvoNjlMu</lokal_band:id_track>
+        <lokal_band:nama_track>Never Dawn</lokal_band:nama_track>
+    </owl:NamedIndividual>
+    
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band54_track8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>0nHMHZpK4ybhSzKeOOOqjQ</lokal_band:id_track>
+        <lokal_band:nama_track>These Scars Won't Define Us</lokal_band:nama_track>
+    </owl:NamedIndividual>
+    
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band54_track9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>7tIXyFkZc4p3GTx5YQMbJl</lokal_band:id_track>
+        <lokal_band:nama_track>Losing My Religion</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band54_track10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+        <lokal_band:id_track>5mZuR1HQdk7WN8BQLogXGW</lokal_band:id_track>
+        <lokal_band:nama_track>Swamped</lokal_band:nama_track>
+    </owl:NamedIndividual>
+
 </rdf:RDF>
 
 
