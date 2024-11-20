@@ -31,8 +31,10 @@ $result = $sparql->query($random);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gigspedia</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="min-h-screen bg-gradient-to-r from-[color:#3C4048] to-gray-700 flex">
+
+<body class="min-h-screen flex">
 
         <?php include 'sidebar.php';?>
 
@@ -40,7 +42,7 @@ $result = $sparql->query($random);
         <div class="flex-grow">
         <div class="hero mb-24 mt-56">
             <div class="hero-content flex-col lg:flex-row">
-                <img src="media/gigs2.png" class="max-w-sm rounded-lg shadow-2xl" />
+                <img src="media/gigs2.png" class="max-w-sm rounded-lg shadow-2xl"/>
                 <div>
                     <h1 class="text-5xl font-bold text-white">GigsPedia</h1>
                     <p class="py-6 text-gray-300 text-1xl">

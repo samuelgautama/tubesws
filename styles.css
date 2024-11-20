@@ -1,0 +1,33 @@
+body {
+	background: linear-gradient(-45deg, #15100f, #2e151f, #253339, #293c38);
+	background-size: 400% 400%;
+	animation: gradient 8s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+		transform: translateY(1rem); /* Move items downward initially */
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0); /* Move items into their normal position */
+	}
+}
+
+.animate-fadeIn {
+	animation: fadeIn 0.5s ease-in-out forwards; /* Apply the fade-in animation */
+}
