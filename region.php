@@ -24,6 +24,7 @@ SELECT ?band_name ?asal ?about ?link ?genre_band ?tipe WHERE {
     
     FILTER (regex(?asal, "' . htmlspecialchars($region) . '", "i"))
 }
+  ORDER BY ?band_name
 ';
 
 // Menjalankan query

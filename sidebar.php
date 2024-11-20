@@ -24,6 +24,7 @@ SELECT DISTINCT ?asal ?tipe WHERE {
 
     FILTER (regex(?tipe, "Lokal", "i"))
 }
+  ORDER BY ?asal_band
 ';
 
 $asalQuery2 = '
@@ -35,6 +36,7 @@ SELECT DISTINCT ?asal ?tipe WHERE {
 
     FILTER (regex(?tipe, "Internasional", "i"))
 }
+  ORDER BY ?asal_band
 ';
 
 
@@ -45,6 +47,7 @@ SELECT DISTINCT  ?genre_band WHERE {
     ?band uni:genre ?genre_band.
 
 }
+  ORDER BY ?genre_band
 ';
 
 
