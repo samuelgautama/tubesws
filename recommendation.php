@@ -42,7 +42,7 @@ $result = $sparql->query($random);
             <?php foreach($result as $row){
             echo " <form method='POST' action='band_track.php'>
             <input type='hidden' name='band_name' value='" . htmlspecialchars($row->band_name) . "'>
-            <button type='submit' class='card bg-base-100 w-64 h-64 shadow-xl mb-4'>
+            <button type='submit' class='card backdrop-blur-sm bg-gray-900 bg-opacity-40 w-64 h-64 shadow-2xl mb-4 rounded-lg'>
             <figure>
               <img class='min-w-32 min-h-48' src='".htmlspecialchars($row->link)."'/>
            </figure>

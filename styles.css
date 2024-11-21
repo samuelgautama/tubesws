@@ -31,3 +31,4 @@ body {
 .animate-fadeIn {
 	animation: fadeIn 0.5s ease-in-out forwards; /* Apply the fade-in animation */
 }
+

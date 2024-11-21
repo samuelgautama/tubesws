@@ -68,11 +68,11 @@ $resultGenre = $sparql->query($genreQuery);
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
+    
 </head>
 
 <!-- Sidebar -->
-<div class="w-64 bg-gradient-to-r from-[color:#3C4048]/60 to-gray-700/60 text-white shadow-2xl min-h-screen mt-4">
+<div class="w-64 bg-gradient-to-r from-[color:#3C4048]/60 to-gray-700/60 text-white shadow-2xl min-h-screen mt-4 overflow-hidden">
 
     <a href="index.php" class="text-2xl font-bold italic py-4 px-6">
         GigsPedia
