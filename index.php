@@ -58,25 +58,43 @@ $result = $sparql->query($random);
                 </div>
             </div>
         </div>
-        <div class="grid absolute bottom-4 right-4">
+        <div id="popup-player" class="fixed bottom-4 -right-96 opacity-0 transform transition-all duration-500">
+            <!-- Text Label -->
+            <div class="flex justify-center items-center bg-gray-800 text-white text-sm font-semibold py-2 px-4 rounded-t-lg">
+                Special Picks for You
+            </div>
+
+            <!-- Spotify Players -->
             <?php
             foreach ($result as $row) {
-                echo "<div class='flex items-center space-x-4 p-2 rounded-lg'>" .
+                echo "<div class='flex items-center space-x-4 p-2 backdrop-blur-sm bg-gray-900 bg-opacity-40 rounded-b-lg'>" .
                     '<iframe
-          style="border-radius:14px" 
-          src="https://open.spotify.com/embed/track/' . htmlspecialchars($row->id_spotify) . '?utm_source=generator&theme=0" 
-          width="350" 
-          height="80" 
-          frameBorder="0" 
-          allowfullscreen="" 
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-          loading="lazy">
-          </iframe>' .
+              style="border-radius:14px" 
+              src="https://open.spotify.com/embed/track/' . htmlspecialchars($row->id_spotify) . '?utm_source=generator&theme=0&autoplay=1" 
+              width="350" 
+              height="80" 
+              frameBorder="0" 
+              allowfullscreen="" 
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+              loading="lazy">
+              </iframe>' .
                     "</div>";
             }
             ?>
         </div>
-    </div>
+
+        <script>
+            // Show the popup after a delay
+            window.addEventListener('DOMContentLoaded', () => {
+                const player = document.getElementById('popup-player');
+                setTimeout(() => {
+                    player.classList.remove('-right-96', 'opacity-0'); // Slide it into view
+                    player.classList.add('right-4', 'opacity-100'); // Make it fully visible
+                }, 2000); // Delay in milliseconds (1 second)
+            });
+        </script>
+
+
     </div>
 
 </body>
