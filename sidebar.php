@@ -68,15 +68,49 @@ $resultGenre = $sparql->query($genreQuery);
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
 </head>
 
 <!-- Sidebar -->
-<div class="w-64 bg-gradient-to-r from-[color:#3C4048]/60 to-gray-700/60 text-white shadow-2xl min-h-screen mt-4 overflow-hidden">
+<div class="w-64 bg-gradient-to-r from-[color:#3C4048]/60 to-gray-700/60 text-white shadow-2xl min-h-screen overflow-hidden">
 
-    <a href="index.php" class="text-2xl font-bold italic py-4 px-6">
-        GigsPedia
-    </a>
+<a href="index.php" 
+   class="text-3xl font-extrabold italic py-4 px-6 relative"
+   style="
+       color: #f7f7f7; 
+       animation: metal-glow 1.5s ease-in-out infinite; 
+       text-shadow: 
+           0 0 5px #000000, 
+           0 0 10px #bb0000, 
+           0 0 15px #880000, 
+           0 0 20px #ff0000;
+       transition: transform 0.3s ease, color 0.3s ease;
+   ">
+    GigsPedia
+</a>
+
+<style>
+    /* Metal Glow Animation */
+    @keyframes metal-glow {
+        0%, 100% {
+            text-shadow: 
+                0 0 5px #000000, 
+                0 0 10px #bb0000, 
+                0 0 15px #880000, 
+                0 0 20px #ff0000;
+        }
+        50% {
+            text-shadow: 
+                0 0 8px #220000, 
+                0 0 15px #bb0000, 
+                0 0 25px #ff4500, 
+                0 0 30px #ff0000;
+        }
+    }
+
+
+</style>
+
     <div class="flex justify-center">
         <form method="POST" class="input input-bordered flex items-center gap-2 border-white bg-transparent mb-4 mt-4" action="search.php">
             <input type="text" name="searchQuery" class="grow" placeholder="Search" value="<?php echo htmlspecialchars($searchQuery); ?>" required />

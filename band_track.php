@@ -51,7 +51,7 @@ $result2 = $sparql->query($query2);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RockSearch</title>
+    <title>Gigspedia</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -69,7 +69,7 @@ $result2 = $sparql->query($query2);
     <div class="container mt-5">
         <div class="flex justify-center">
         <?php foreach($result2 as $row){
-               echo"<div class='hero bg-base-200 rounded-lg mb-8 ml-8 mr-8'>
+               echo"<div class='hero backdrop-blur-sm bg-gray-900 bg-opacity-40 rounded-lg mb-8 ml-8 mr-8'>
                 <div class='hero-content flex-col lg:flex-row'>
                   <img
                     src='".htmlspecialchars($row->link)."'

@@ -18,9 +18,7 @@ SELECT ?band_name ?link WHERE {
 }
 ORDER BY RAND()
 LIMIT 8
-
 ';
-
 
 $result = $sparql->query($random);
 
@@ -47,7 +45,7 @@ $result = $sparql->query($random);
               <img class='min-w-32 min-h-48' src='".htmlspecialchars($row->link)."'/>
            </figure>
             <div class='card-body'>
-            <h2 class='card-title'>".htmlspecialchars($row->band_name)."</h2>
+<h2 class='card-title'>".htmlspecialchars(strlen($row->band_name) > 15 ? substr($row->band_name, 0, 15) . '...' : $row->band_name)."</h2>
             </div>
           </button>
         </form>";
