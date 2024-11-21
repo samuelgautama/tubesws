@@ -28,11 +28,12 @@ $result = $sparql->query($random);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GigsPedia</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="flex min-h-screen relative"> <!-- Add relative to the body -->
-<div class="absolute top-5 right-5 z-50">
+<div class="absolute top-14 right-24 z-50">
     <a href="javascript:void(0);" class="button" onclick="refreshPage()">
-        <img id="refresh-icon" src="media/refresh-page-option.png" alt="Refresh" class="w-6 h-6 transition-transform duration-1000 ease-in">
+        <img id="refresh-icon" src="media/refresh.png" alt="Refresh" class="w-10 h-10 transition-transform duration-1000 ease-in">
     </a>
 </div>
 
@@ -64,7 +65,7 @@ $result = $sparql->query($random);
             <?php foreach($result as $row) {
                 echo "<form method='POST' action='band_track.php'>
                 <input type='hidden' name='band_name' value='" . htmlspecialchars($row->band_name) . "'>
-                <button type='submit' class='card backdrop-blur-sm bg-gray-900 bg-opacity-40 w-64 h-64 shadow-2xl mb-4 rounded-lg'>
+                <button type='submit' class='card backdrop-blur-sm bg-gray-900 bg-opacity-40 w-64 h-64 shadow-2xl mb-4 rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-md hover:shadow-red-700'>
                     <figure>
                         <img class='min-w-32 min-h-48' src='".htmlspecialchars($row->link)."'/>
                     </figure>

@@ -1,9 +1,9 @@
 <?php
 error_reporting(E_ALL & ~E_DEPRECATED);
-require 'vendor/autoload.php'; 
+require 'vendor/autoload.php';
 
 
-$endpoint = 'http://localhost:3030/gigspedia/query'; 
+$endpoint = 'http://localhost:3030/gigspedia/query';
 
 
 $sparql = new EasyRdf\Sparql\Client($endpoint);
@@ -43,6 +43,7 @@ $result = $sparql->query($query);
 ?>
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -53,46 +54,50 @@ $result = $sparql->query($query);
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="flex min-h-screen">
 
-<?php include 'sidebar.php';?>
+<body class="min-h-screen flex relative">
 
-</div>
-    <div class="container mt-5">
-        <h1 class="font-bold text-3xl flex justify-center mb-4">Hasil Pencarian Band dari: 
-        <?php
-        echo $searchQuery ;
-        ?>
-        </h1>
-         
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                </tr>
-            </thead>
-            <tbody>
+    <?php include 'sidebar.php'; ?>
+
+    </div>
+    <div class="flex justify-center">
+        <div class="container mt-5">
+            <h1 class="font-bold text-3xl flex justify-center mb-4">Hasil Pencarian :
                 <?php
-                // Menampilkan hasil dalam tabel
-                foreach ($result as $row) {
-                    echo "<div class='card lg:card-side bg-base-100 shadow-xl flex ml-24 mr-24'>
+                echo $searchQuery;
+                ?>
+            </h1>
+
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                    // Menampilkan hasil dalam tabel
+                    foreach ($result as $row) {
+                        echo "<div class='card lg:card-side backdrop-blur-sm bg-gray-900 bg-opacity-40 shadow-xl flex ml-24 mr-24 mt-5'>
                     <div class='card-body'>
                       <img class='w-32 h-32' src='"
-                      .htmlspecialchars($row->link).
-                      "'/>
-                      <h2 class='card-title'>".htmlspecialchars($row->band_name)."</h2>
-                      <p>".htmlspecialchars($row->about)."</p>
+                            . htmlspecialchars($row->link) .
+                            "'/>
+                      <h2 class='card-title'>" . htmlspecialchars($row->band_name) . "</h2>
+                      <p>" . htmlspecialchars($row->about) . "</p>
                       <div class='card-actions justify-end'>
                         <form method='POST' action='band_track.php'>
                                 <input type='hidden' name='band_name' value='" . htmlspecialchars($row->band_name) . "'>
-                                 <button class='btn btn-primary'>Listen</button>
+                                     <button class='text-red font-bold hover:before:bg-redborder-red-500 relative h-[46px] w-36 overflow-hidden border border-red-500 backdrop-blur-sm bg-dark-900 px-3 text-red-500 shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-red-500 before:transition-all before:duration-500 hover:text-white hover:shadow-red-500 hover:before:left-0 hover:before:w-full'><span class='relative z-10'>Listen</span></button>
                         </form>
                       </div>
                     </div>
                   </div>";
-                }
-                ?>
-            </tbody>
-        </table>
+                    }
+                    ?>
+                </tbody>
+            </table>
+        </div>
     </div>
 </body>
+
 </html>
