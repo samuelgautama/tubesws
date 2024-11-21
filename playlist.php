@@ -6,19 +6,26 @@ $endpoint = 'http://localhost:3030/band1/query';
 
 $sparql = new EasyRdf\Sparql\Client($endpoint);
 
-// Menyusun query SPARQL
-$random = '
+$genre = isset($_POST['genre']) ? $_POST['genre'] : '';
+
+$random = "
 PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
 
-SELECT ?band_name ?link WHERE {
-    ?band uni:link_gambar ?link;
-        uni:nama_band ?band_name.
+SELECT ?id_spotify ?genre_band
+WHERE {
+    ?band uni:hasTrack ?track;
+          uni:genre ?genre_band.
+
+    ?track uni:id_track ?id_spotify.
+
+    FILTER(?genre_band = '" . $genre . "')
 }
 ORDER BY RAND()
-LIMIT 8
-';
+LIMIT 16
+";
 
 $result = $sparql->query($random);
+
 ?>
 <?php include 'sidebar.php'; ?>
 <!DOCTYPE html>
@@ -60,21 +67,17 @@ $result = $sparql->query($random);
 
 
     <div class="mt-12">
-        <h class="text-5xl font-bold flex justify-center mb-12 text-zinc-50">From GigsPedia To You</h>
-        <div class="grid gap-14 grid-cols-4 grid-rows-2 ml-6">
-            <?php foreach($result as $row) {
-                echo "<form method='POST' action='band_track.php'>
-                <input type='hidden' name='band_name' value='" . ($row->band_name) . "'>
-                <button type='submit' class='card backdrop-blur-sm bg-gray-900 bg-opacity-40 w-64 h-64 shadow-2xl mb-4 rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-md hover:shadow-red-700'>
-                    <figure>
-                        <img class='min-w-32 min-h-48' src='".($row->link)."'/>
-                    </figure>
-                    <div class='card-body'>
-                        <h2 class='card-title'>".(strlen($row->band_name) > 15 ? substr($row->band_name, 0, 15) . '...' : $row->band_name)."</h2>
-                    </div>
-                </button>
-                </form>";
-            }?>
+        <h class="text-5xl font-bold flex justify-center mb-12 text-zinc-50">Daftar Track</h>
+        <div class="grid gap-16 grid-cols-4 grid-rows-6 ml-8 mr-8">
+                <?php
+                foreach ($result as $row) {
+                    echo "<td>" .
+                    '<iframe
+                     style="border-radius:12px" src="https://open.spotify.com/embed/track/' . htmlspecialchars($row->id_spotify) . '?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>' .
+                    "</td>";
+                echo "</tr>";
+                }
+                ?>
         </div>
     </div>
 </body>

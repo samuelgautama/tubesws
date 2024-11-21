@@ -2,23 +2,27 @@
 error_reporting(E_ALL & ~E_DEPRECATED);
 require 'vendor/autoload.php';
 
-$endpoint = 'http://localhost:3030/gigspedia/query';
+$endpoint = 'http://localhost:3030/band1/query';
 
 $sparql = new EasyRdf\Sparql\Client($endpoint);
 
-// Menyusun query SPARQL
+
 $random = '
 PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
 
-SELECT  ?band_name ?id_spotify ?link WHERE {
-        ?band uni:nama_band ?band_name;
-                uni:hasTrack ?track;
-                uni:link_gambar ?link.
-
-        ?track uni:id_track ?id_spotify.
+SELECT ?id_spotify ?link WHERE {
+    {
+        SELECT DISTINCT ?id_spotify ?link WHERE {
+            ?band uni:hasTrack ?track.
+            ?track uni:id_track ?id_spotify.
+        }
+        ORDER BY RAND()
+        LIMIT 95
+    }
 }
 ORDER BY RAND()
 LIMIT 1
+
 ';
 
 
@@ -70,7 +74,7 @@ $result = $sparql->query($random);
                 echo "<div class='flex items-center space-x-4 p-2 backdrop-blur-sm bg-gray-900 bg-opacity-40 rounded-b-lg'>" .
                     '<iframe
               style="border-radius:14px" 
-              src="https://open.spotify.com/embed/track/' . htmlspecialchars($row->id_spotify) . '?utm_source=generator&theme=0&autoplay=1" 
+              src="https://open.spotify.com/embed/track/' . ($row->id_spotify) . '?utm_source=generator&theme=0&autoplay=1" 
               width="350" 
               height="80" 
               frameBorder="0" 

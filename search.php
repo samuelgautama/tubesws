@@ -3,7 +3,7 @@ error_reporting(E_ALL & ~E_DEPRECATED);
 require 'vendor/autoload.php';
 
 
-$endpoint = 'http://localhost:3030/gigspedia/query';
+$endpoint = 'http://localhost:3030/band1/query';
 
 
 $sparql = new EasyRdf\Sparql\Client($endpoint);
@@ -30,10 +30,10 @@ SELECT DISTINCT ?band_name ?asal ?about ?link WHERE {
     ?track uni:nama_track ?track_name.
     
     FILTER (
-        regex(?track_name, "' . htmlspecialchars($searchQuery) . '", "i") ||
-        regex(?band_name, "' . htmlspecialchars($searchQuery) . '", "i") ||
-        regex(?asal, "' . htmlspecialchars($searchQuery) . '", "i")||
-        regex(?genre_band, "' . htmlspecialchars($searchQuery) . '", "i")
+        regex(?track_name, "' . ($searchQuery) . '", "i") ||
+        regex(?band_name, "' . ($searchQuery) . '", "i") ||
+        regex(?asal, "' . ($searchQuery) . '", "i")||
+        regex(?genre_band, "' . ($searchQuery) . '", "i")
     )
 }
 ';
@@ -80,13 +80,13 @@ $result = $sparql->query($query);
                         echo "<div class='card lg:card-side backdrop-blur-sm bg-gray-900 bg-opacity-40 shadow-xl flex ml-24 mr-24 mt-5'>
                     <div class='card-body'>
                       <img class='w-32 h-32' src='"
-                            . htmlspecialchars($row->link) .
+                            . ($row->link) .
                             "'/>
-                      <h2 class='card-title'>" . htmlspecialchars($row->band_name) . "</h2>
-                      <p>" . htmlspecialchars($row->about) . "</p>
+                      <h2 class='card-title'>" . ($row->band_name) . "</h2>
+                      <p>" . ($row->about) . "</p>
                       <div class='card-actions justify-end'>
                         <form method='POST' action='band_track.php'>
-                                <input type='hidden' name='band_name' value='" . htmlspecialchars($row->band_name) . "'>
+                                <input type='hidden' name='band_name' value='" . ($row->band_name) . "'>
                                      <button class='text-red font-bold hover:before:bg-redborder-red-500 relative h-[46px] w-36 overflow-hidden border border-red-500 backdrop-blur-sm bg-dark-900 px-3 text-red-500 shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-red-500 before:transition-all before:duration-500 hover:text-white hover:shadow-red-500 hover:before:left-0 hover:before:w-full'><span class='relative z-10'>Listen</span></button>
                         </form>
                       </div>

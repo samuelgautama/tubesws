@@ -3,7 +3,7 @@ error_reporting(E_ALL & ~E_DEPRECATED);
 require 'vendor/autoload.php'; // Pastikan autoload diinclude
 
 // Mengatur endpoint SPARQL
-$endpoint = 'http://localhost:3030/gigspedia/query'; // Ganti dengan URL endpoint SPARQL Anda
+$endpoint = 'http://localhost:3030/band1/query'; // Ganti dengan URL endpoint SPARQL Anda
 
 // Membuat klien SPARQL
 $sparql = new EasyRdf\Sparql\Client($endpoint);
@@ -22,7 +22,7 @@ SELECT ?band_name ?asal ?about ?link ?genre_band ?tipe WHERE {
           uni:genre ?genre_band;
           uni:band_type ?tipe.
     
-    FILTER (regex(?asal, "' . htmlspecialchars($region) . '", "i"))
+    FILTER (regex(?asal, "' . ($region) . '", "i"))
 }
   ORDER BY ?band_name
 ';
@@ -55,7 +55,7 @@ $result = $sparql->query($query);
 
 <div class="flex justify-center">
     <div class="container mt-5">
-        <h class="flex justify-center text-3xl font-bold mb-4">Daftar Band</h>
+        <h class="flex justify-center text-3xl font-bold mb-4 text-zinc-50">Daftar Band</h>
         <table class="table table-bordered">
             <thead>
                 <tr>
@@ -68,16 +68,16 @@ $result = $sparql->query($query);
                     echo "<div class='card lg:card-side backdrop-blur-sm bg-gray-900 bg-opacity-40 shadow-2xl mb-6 ml-8 mr-8'>
                     <div class='card-body'>
                     <img class='min-w-32 min-h-48 w-48 rounded-lg' src='"
-                      .htmlspecialchars($row->link).
+                      .($row->link).
                       "'/>
-                      <h2 class='card-title'>".htmlspecialchars($row->band_name)."</h2>
-                      <p>Genre: ".htmlspecialchars($row->genre_band)."</p>
-                      <p>Tipe: ".htmlspecialchars($row->tipe)."</p>
-                      <p>Asal: ".htmlspecialchars($row->asal)."</p>
-                      <p>".htmlspecialchars($row->about)."</p>
+                      <h2 class='card-title'>".($row->band_name)."</h2>
+                      <p>Genre: ".($row->genre_band)."</p>
+                      <p>Tipe: ".($row->tipe)."</p>
+                      <p>Asal: ".($row->asal)."</p>
+                      <p>".($row->about)."</p>
                       <div class='card-actions justify-end'>
                         <form method='POST' action='band_track.php'>
-                                <input type='hidden' name='band_name' value='" . htmlspecialchars($row->band_name) . "'>
+                                <input type='hidden' name='band_name' value='" . ($row->band_name) . "'>
                                      <button class='text-red font-bold hover:before:bg-redborder-red-500 relative h-[46px] w-36 overflow-hidden border border-red-500 backdrop-blur-sm bg-dark-900 px-3 text-red-500 shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-red-500 before:transition-all before:duration-500 hover:text-white hover:shadow-red-500 hover:before:left-0 hover:before:w-full'><span class='relative z-10'>Listen</span></button>
                         </form>
                       </div>

@@ -3,7 +3,7 @@ error_reporting(E_ALL & ~E_DEPRECATED);
 require 'vendor/autoload.php'; // Pastikan autoload diinclude
 
 // Mengatur endpoint SPARQL
-$endpoint = 'http://localhost:3030/gigspedia/query'; // Ganti dengan URL endpoint SPARQL Anda
+$endpoint = 'http://localhost:3030/band1/query'; // Ganti dengan URL endpoint SPARQL Anda
 
 // Membuat klien SPARQL
 $sparql = new EasyRdf\Sparql\Client($endpoint);
@@ -21,7 +21,7 @@ SELECT  ?band_name ?id_spotify ?link WHERE {
 
         ?track uni:id_track ?id_spotify.
     
-    FILTER (regex(?band_name, "' . htmlspecialchars($band_name) . '", "i"))
+    FILTER (regex(?band_name, "' . ($band_name) . '", "i"))
 }
 ';
 
@@ -37,7 +37,7 @@ SELECT DISTINCT  ?band_name ?link ?tipe ?asal ?about ?genre_band WHERE {
                 uni:genre ?genre_band.
 
     
-    FILTER (regex(?band_name, "' . htmlspecialchars($band_name) . '", "i"))
+    FILTER (regex(?band_name, "' . ($band_name) . '", "i"))
 }
 ';
 
@@ -72,15 +72,15 @@ $result2 = $sparql->query($query2);
                echo"<div class='hero backdrop-blur-sm bg-gray-900 bg-opacity-40 rounded-lg mb-8 ml-8 mr-8'>
                 <div class='hero-content flex-col lg:flex-row'>
                   <img
-                    src='".htmlspecialchars($row->link)."'
+                    src='".($row->link)."'
                     class='max-w-sm rounded-lg shadow-2xl' />
                   <div>
-                    <h1 class='text-5xl font-bold mb-4'>".htmlspecialchars($row->band_name)."</h1>
-                    <p>Genre: ".htmlspecialchars($row->genre_band)."</p>
-                    <p>Tipe: ".htmlspecialchars($row->tipe)."</p>
-                    <p>Asal: ".htmlspecialchars($row->asal)."</p>
+                    <h1 class='text-5xl font-bold mb-4'>".($row->band_name)."</h1>
+                    <p>Genre: ".($row->genre_band)."</p>
+                    <p>Tipe: ".($row->tipe)."</p>
+                    <p>Asal: ".($row->asal)."</p>
                     <p class='mt-4'>
-                      ".htmlspecialchars($row->about)."
+                      ".($row->about)."
                     </p>
                   </div>
                 </div>
@@ -94,7 +94,7 @@ $result2 = $sparql->query($query2);
                 foreach ($result as $row) {
                     echo "<td>" .
                     '<iframe
-                     style="border-radius:12px" src="https://open.spotify.com/embed/track/' . htmlspecialchars($row->id_spotify) . '?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>' .
+                     style="border-radius:12px" src="https://open.spotify.com/embed/track/' . ($row->id_spotify) . '?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>' .
                     "</td>";
                 echo "</tr>";
                 }
