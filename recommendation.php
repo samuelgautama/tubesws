@@ -2,7 +2,7 @@
 error_reporting(E_ALL & ~E_DEPRECATED);
 require 'vendor/autoload.php'; 
 
-$endpoint = 'http://localhost:3030/band1/query'; 
+$endpoint = 'http://localhost:3030/gigspedia/query'; 
 
 $sparql = new EasyRdf\Sparql\Client($endpoint);
 
@@ -33,7 +33,7 @@ $result = $sparql->query($random);
 <body class="flex min-h-screen relative"> <!-- Add relative to the body -->
 <div class="absolute top-14 right-24 z-50">
     <a href="javascript:void(0);" class="button" onclick="refreshPage()">
-        <img id="refresh-icon" src="media/refresh2.png" alt="Refresh" class="w-10 h-10 transition-transform duration-1000 ease-in">
+        <img id="refresh-icon" src="media/refresh   .png" alt="Refresh" class="w-10 h-10 transition-transform duration-1000 ease-in">
     </a>
 </div>
 
