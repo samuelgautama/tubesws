@@ -13,7 +13,7 @@ album_name = input("Masukkan nama album yang ingin dicari: ")
 search_querystring = {"term": album_name, "type": "album"} 
 # Header untuk autentikasi
 headers = {
-    "x-rapidapi-key": "065afcc0camsh8ddd21794759830p109244jsn8afdeb992d97", 
+    "x-rapidapi-key": "fd44836f53msh38132121d4d2607p17b933jsnb886c23246ee", 
     "x-rapidapi-host": "spotify-scraper.p.rapidapi.com"
 }
 

@@ -22,7 +22,7 @@
                 <input type="hidden" name='genre' value="Metalcore">
                 <button type="submit" class="card backdrop-blur-sm bg-gray-900 bg-opacity-40 w-64 h-64 shadow-2xl mb-4 rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-md hover:shadow-red-700">
                     <figure>
-                        <img class="min-w-32 min-h-48" src="/media/1.jpg"/>
+                        <img class="min-w-32 min-h-48" src="/media/metalcore1.jpg"/>
                     </figure>
                 </button>
                 </form>
@@ -31,7 +31,7 @@
                     <input type="hidden" name='genre' value="Alternative Rock">
                     <button type="submit" class="card backdrop-blur-sm bg-gray-900 bg-opacity-40 w-64 h-64 shadow-2xl mb-4 rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-md hover:shadow-red-700">
                         <figure>
-                            <img class="min-w-32 min-h-48" src="/media/2.jpg"/>
+                            <img class="min-w-32 min-h-48" src="/media/rock1.jpg"/>
                         </figure>
                     </button>
                 </form>
@@ -40,7 +40,7 @@
                     <input type="hidden" name='genre' value="Modern Hardcore">
                     <button type="submit" class="card backdrop-blur-sm bg-gray-900 bg-opacity-40 w-64 h-64 shadow-2xl mb-4 rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-md hover:shadow-red-700">
                         <figure>
-                            <img class="min-w-32 min-h-48" src="/media/3.jpg"/>
+                            <img class="min-w-32 min-h-48" src="/media/hardcore1.jpg"/>
                         </figure>
                     </button>
                 </form>
@@ -49,7 +49,43 @@
                     <input type="hidden" name='genre' value="Thrash Metal">
                     <button type="submit" class="card backdrop-blur-sm bg-gray-900 bg-opacity-40 w-64 h-64 shadow-2xl mb-4 rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-md hover:shadow-red-700">
                         <figure>
-                            <img class="min-w-32 min-h-48" src="/media/4.jpg"/>
+                            <img class="min-w-32 min-h-48" src="/media/thrashmetal1.jpg"/>
+                        </figure>
+                    </button>
+                </form>
+
+                <form method="POST" action="playlist.php">
+                <input type="hidden" name='genre' value="Metalcore">
+                <button type="submit" class="card backdrop-blur-sm bg-gray-900 bg-opacity-40 w-64 h-64 shadow-2xl mb-4 rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-md hover:shadow-red-700">
+                    <figure>
+                        <img class="min-w-32 min-h-48" src="/media/metalcore2.jpg"/>
+                    </figure>
+                </button>
+                </form>
+
+                <form method="POST" action="playlist.php">
+                    <input type="hidden" name='genre' value="Alternative Rock">
+                    <button type="submit" class="card backdrop-blur-sm bg-gray-900 bg-opacity-40 w-64 h-64 shadow-2xl mb-4 rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-md hover:shadow-red-700">
+                        <figure>
+                            <img class="min-w-32 min-h-48" src="/media/rock2.jpg"/>
+                        </figure>
+                    </button>
+                </form>
+
+                <form method="POST" action="playlist.php">
+                    <input type="hidden" name='genre' value="Modern Hardcore">
+                    <button type="submit" class="card backdrop-blur-sm bg-gray-900 bg-opacity-40 w-64 h-64 shadow-2xl mb-4 rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-md hover:shadow-red-700">
+                        <figure>
+                            <img class="min-w-32 min-h-48" src="/media/hardcore2.jpg"/>
+                        </figure>
+                    </button>
+                </form>
+
+                <form method="POST" action="playlist.php">
+                    <input type="hidden" name='genre' value="Thrash Metal">
+                    <button type="submit" class="card backdrop-blur-sm bg-gray-900 bg-opacity-40 w-64 h-64 shadow-2xl mb-4 rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-md hover:shadow-red-700">
+                        <figure>
+                            <img class="min-w-32 min-h-48" src="/media/thrashmetal2.jpg"/>
                         </figure>
                     </button>
                 </form>

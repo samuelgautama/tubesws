@@ -50,12 +50,9 @@ SELECT DISTINCT  ?genre_band WHERE {
   ORDER BY ?genre_band
 ';
 
-
 $resultAsal = $sparql->query($asalQuery);
 $resultAsal2 = $sparql->query($asalQuery2);
 $resultGenre = $sparql->query($genreQuery);
-
-
 ?>
 <!DOCTYPE html>
 <html lang="id">

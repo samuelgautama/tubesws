@@ -9708,7 +9708,7 @@ The band is also known for their energetic live performances and their collabora
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band72_track4">
         <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
-        <lokal_band:id_track>2dwhns14pjuxxcM5a0eOow</lokal_band:id_track>
+        <lokal_band:id_track>2dwhlokal_band4pjuxxcM5a0eOow</lokal_band:id_track>
         <lokal_band:nama_track>I'm Made Of Wax, Larry, What Are You Made Of?</lokal_band:nama_track>
     </owl:NamedIndividual>
     
@@ -11784,6 +11784,803 @@ Periphery made their debut with a self-titled album in 2010, followed by several
         <lokal_band:nama_track>Lagu Terakhir Untukmu</lokal_band:nama_track>
     </owl:NamedIndividual>
 
+    <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band96">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Band"/>
+    <lokal_band:nama_band>Slayer</lokal_band:nama_band>
+    <lokal_band:genre>Thrash Metal</lokal_band:genre>
+    <lokal_band:asal_band>Internasional</lokal_band:asal_band>
+    <lokal_band:band_type>United States</lokal_band:band_type>
+    <lokal_band:about_band>Slayer were one of the most distinctive, influential, and extreme thrash metal bands of the 1980s. Their graphic lyrics dealt with everything from death and dismemberment to war and the horrors of hell. Their full-throttle velocity, wildly chaotic guitar solos, and powerful musical chops painted an effectively chilling sonic background for their obsessive chronicling of the dark side; this correspondence helped Slayer's music arguably hold up better than the remaining Big Three '80s thrash outfits (Metallica, Megadeth, Anthrax). Naturally, Slayer stirred up quite a bit of controversy over the years, with rumors flying about Satanism and Nazism that only added to their mystique. The band put out some undisputed classic albums (Reign in Blood, Hell Awaits, Seasons in the Abyss), and saw the number of naysayers and detractors shrink as their impact on the growing death metal scene was gradually and respectfully acknowledged. Slayer survived with the most vitality and the least compromise of any pre-Nirvana metal band, and their intensity inspired similar responses from their devoted fans. The band officially ceased operations in 2019.</lokal_band:about_band>
+    <lokal_band:link_gambar>https://i.scdn.co/image/c8b7671ef95a1b028a74fef6616111c3cd5c3039</lokal_band:link_gambar>
+    <lokal_band:genre>Thrash Metal</lokal_band:genre>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band96_track1"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band96_track2"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band96_track3"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band96_track4"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band96_track5"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band96_track6"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band96_track7"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band96_track8"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band96_track9"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band96_track10"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band96_track10">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>2KPcujYDaukvtfRR0Zmu0O</lokal_band:id_track>
+    <lokal_band:nama_track>Mandatory Suicide</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band96_track1">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>06WUUNf7q18NZfjIsQFsfa</lokal_band:id_track>
+    <lokal_band:nama_track>Delusions of Saviour</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band96_track5">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>3U9gogDStAfWxSm91PJuxb</lokal_band:id_track>
+    <lokal_band:nama_track>South Of Heaven</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band96_track6">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>3Ky8IzV8IVSwijtaTWB2SK</lokal_band:id_track>
+    <lokal_band:nama_track>Seasons In The Abyss</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band96_track9">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>1E0yt5XSdjE9NOu897RilW</lokal_band:id_track>
+    <lokal_band:nama_track>War Ensemble</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band96_track4">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>6W2KBpMMXW17r7dPyqi8Iu</lokal_band:id_track>
+    <lokal_band:nama_track>Repentless</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band96_track2">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>4fiOTntQKr24p07FvQDHZE</lokal_band:id_track>
+    <lokal_band:nama_track>Raining Blood</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band96_track8">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>0t1lDXmMWBzF6mfnQ6KwqZ</lokal_band:id_track>
+    <lokal_band:nama_track>Dead Skin Mask</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band96_track3">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>5ohfpKB5tt275f4Y4lQ9F7</lokal_band:id_track>
+    <lokal_band:nama_track>Angel Of Death</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band96_track7">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>27uDL5cAoMijxbDLfaz9Xv</lokal_band:id_track>
+    <lokal_band:nama_track>Bloodline</lokal_band:nama_track>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band97_track1">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>3cFnb3Rg9a7Gzqxc5QQ9YZ</lokal_band:id_track>
+    <lokal_band:nama_track>Got The Time</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band97_track5">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>0c6p9QomOhNU9uzujLjtsD</lokal_band:id_track>
+    <lokal_band:nama_track>Caught In A Mosh</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band97_track10">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>0MuJLuEaZuXX8aMBFCrTE4</lokal_band:id_track>
+    <lokal_band:nama_track>Among The Living</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band97_track8">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>6Aq0Lm7wQRRFYzBQz7pukW</lokal_band:id_track>
+    <lokal_band:nama_track>Only</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band97_track4">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>1fcyfC1KLSWVCIvALR5AxS</lokal_band:id_track>
+    <lokal_band:nama_track>Indians</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band97_track3">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>1p50Ir1Hm6Sa1urjaLGi7L</lokal_band:id_track>
+    <lokal_band:nama_track>Bring The Noise</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band97">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Band"/>
+    <lokal_band:nama_band>Anthrax</lokal_band:nama_band>
+    <lokal_band:genre>Thrash Metal</lokal_band:genre>
+    <lokal_band:asal_band>Internasional</lokal_band:asal_band>
+    <lokal_band:band_type>United States</lokal_band:band_type>
+    <lokal_band:about_band>Biography not available.</lokal_band:about_band>
+    <lokal_band:link_gambar>https://i.scdn.co/image/da07d910ce221d846e80e729293fabda53b5bc78</lokal_band:link_gambar>
+    <lokal_band:genre>Nearly as much as Metallica and Megadeth, Anthrax was pivotal in the emergence of speed and thrash metal. Combining the aggression of hardcore punk with the prominent guitars and vocals of heavy metal, they created a distinct subgenre on their early albums. Founding guitarists Scott Ian and Dan Spitz delivered lightning-fast riffs and solos that were technically proficient yet never overly indulgent. Unlike their peers, Anthrax infused their music with humor and realism, which set them apart from traditional metal stereotypes.
+    After their debut album, Fistful of Metal, vocalist Joey Belladonna and bassist Frank Bello joined the lineup. Belladonna's voice helped the band evolve beyond conventional metal, propelling them to become speed metal leaders through albums like Among the Living. Despite a slight dip with State of Euphoria (1988), they remained at the forefront of thrash. As the 1990s approached, Anthrax embraced hip-hop influences, famously collaborating with Public Enemy on "Bring the Noise" in 1991, which expanded their audience and musical reach.</lokal_band:genre>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band97_track1"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band97_track2"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band97_track3"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band97_track4"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band97_track5"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band97_track6"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band97_track7"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band97_track8"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band97_track9"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band97_track10"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band97_track9">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>0goVj3eJV1oD5yqXzkjqLA</lokal_band:id_track>
+    <lokal_band:nama_track>Bring Tha Noize</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band97_track6">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>2Hy27APwGt3lMfpZ0Bzf13</lokal_band:id_track>
+    <lokal_band:nama_track>Antisocial</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band97_track7">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>1dWs9fKUnDbW1vkkM5Votu</lokal_band:id_track>
+    <lokal_band:nama_track>I Am The Law</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band97_track2">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>76BYv24CcZt2u94JRjmATX</lokal_band:id_track>
+    <lokal_band:nama_track>Madhouse</lokal_band:nama_track>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band98_track7">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>42lC6bnDdAjRqZtsFe1tmg</lokal_band:id_track>
+    <lokal_band:nama_track>The Arms of Sorrow</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band98">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Band"/>
+    <lokal_band:nama_band>Killswitch Engage</lokal_band:nama_band>
+    <lokal_band:about_band>Killswitch Engage first shook the structure of heavy music upon climbing out of snowy industrialized Western Massachusetts in 2000. The band pioneered a union of thrashed-out European guitar pyrotechnics, East Coast hardcore spirit, on-stage hijinks, and enlightened lyricism that set the pace for what the turn-of-the-century deemed heavy. 2002’s Alive Or Just Breathing became avowed as a definitive album, being named among “The Top 100 Greatest Metal Albums of the Decade” by Decibel and celebrated by everyone from Metal Hammer to Revolver. They also garnered two GRAMMY® Award nominations in the category of “Best Metal Performance” in 2005 and 2014 and gold certifications for The End of Heartache [2004] and As Daylight Dies [2006]. The group landed three consecutive Top 10 debuts on the Billboard Top 200 with Killswitch Engage [2009], Disarm The Descent [2013], and their career high best bow at #6 with Incarnate [2016]. The latter two releases would also both capture #1 on the Top Rock Albums and Top Hard Rock Albums charts. Their total streams have exceeded half-a-billion to date.
+2019 represents another turning point. The quintet—Adam Dutkiewicz [lead guitar], Joel Stroetzel [rhythm guitar], Mike D’Antonio [bass], Justin Foley [drums], and Jesse Leach [vocals]—sharpen every side of this signature sound on their eighth full-length and first for Metal Blade, Atonement.</lokal_band:about_band>
+    <lokal_band:link_gambar>https://i.scdn.co/image/ab6761610000517449670e56bfa7556b4a255286</lokal_band:link_gambar>
+    <lokal_band:genre>Metalcore</lokal_band:genre>
+    <lokal_band:asal_band>United States</lokal_band:asal_band>
+    <lokal_band:band_type>Internasional</lokal_band:band_type>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band98_track1"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band98_track2"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band98_track3"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band98_track4"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band98_track5"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band98_track6"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band98_track7"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band98_track8"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band98_track9"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band98_track10"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band98_track1">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>6zKF4293k44ItKWJJgrhXv</lokal_band:id_track>
+    <lokal_band:nama_track>My Curse</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band98_track10">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>6lb2sSTeFSUWX1KQSDt8GL</lokal_band:id_track>
+    <lokal_band:nama_track>I Am Broken Too</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band98_track8">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>5kP32cKaf8ln4PSoY6sD13</lokal_band:id_track>
+    <lokal_band:nama_track>The Signal Fire</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band98_track9">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>6dLXK2ppW3GiNEHN2vcMWl</lokal_band:id_track>
+    <lokal_band:nama_track>Rose of Sharyn</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band98_track3">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>07ceEXOyS7ghQkyCOycXwP</lokal_band:id_track>
+    <lokal_band:nama_track>This Fire</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band98_track2">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>2nUy0ifVE7UwtOK4rugFsP</lokal_band:id_track>
+    <lokal_band:nama_track>The End of Heartache</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band98_track5">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>1HlOGL1p6wlpOZatJ2NwFk</lokal_band:id_track>
+    <lokal_band:nama_track>In Due Time</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band98_track6">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>2Ps4FrDiR6JcJfSZbXAPBz</lokal_band:id_track>
+    <lokal_band:nama_track>My Last Serenade</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band98_track4">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>3a9urnht8HvfFzPwd0ipx6</lokal_band:id_track>
+    <lokal_band:nama_track>Holy Diver</lokal_band:nama_track>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band99_track1">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>7ln7o4q6y9h8qEc6hGrtr1</lokal_band:id_track>
+    <lokal_band:nama_track>Tears Don't Fall</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band99_track7">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>1KCAEG6JcsTzi8ddZzs0nk</lokal_band:id_track>
+    <lokal_band:nama_track>You Want a Battle? (Here's a War)</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band99_track4">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>1EJzHoU6rg1afMozs9t6aM</lokal_band:id_track>
+    <lokal_band:nama_track>Hand Of Blood</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band99">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Band"/>
+    <lokal_band:nama_band>Bullet For My Valentine</lokal_band:nama_band>
+    <lokal_band:about_band>Metal veterans Bullet For My Valentine have announced their self-titled, seventh album, Bullet For My Valentine. The album, which will be released on 5 November 2021, via Spinefarm Records, sees the band open a bold new chapter and is easily their heaviest, fiercest album so far.
+Since Bullet For My Valentine formed in 1998, the Welsh metallers have become one of the biggest bands in metal, selling over 3 million albums worldwide and scoring three gold albums, as well as defining British metalcore with their now classic debut, The Poison.
+
+Bullet For My Valentine follows the success of their last album, 2018’s Gravity, which saw the metal juggernauts play their biggest shows to date, including a UK arena tour and a massive show at London’s Alexandra Palace. But this time around, the band have taken things back to basics. Bullet For My Valentine is stacked with squealing solos and monstrous riffs that will delight fans both new and old.</lokal_band:about_band>
+    <lokal_band:link_gambar>https://i.scdn.co/image/ab67616100005174083627f7d306f40cd7ff8893</lokal_band:link_gambar>
+    <lokal_band:genre>Metalcore</lokal_band:genre>
+    <lokal_band:asal>United Kingdom</lokal_band:asal>
+    <lokal_band:band_type>Internasional</lokal_band:band_type>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band99_track1"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band99_track2"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band99_track3"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band99_track4"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band99_track5"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band99_track6"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band99_track7"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band99_track8"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band99_track9"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band99_track10"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band99_track10">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>0CjJJrpnQCpQMsT4nzezII</lokal_band:id_track>
+    <lokal_band:nama_track>Halo</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band99_track9">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>6wxLzoQOePEa1hZjVJsIh8</lokal_band:id_track>
+    <lokal_band:nama_track>4 Words (To Choke Upon)</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band99_track6">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>6DsILuMLGYN6QqPXlhGHWo</lokal_band:id_track>
+    <lokal_band:nama_track>Hearts Burst into Fire</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band99_track3">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>4n0h6Qqf4TKeb2Bw1qC8PY</lokal_band:id_track>
+    <lokal_band:nama_track>All These Things I Hate (Revolve Around Me)</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band99_track8">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>7tFxCn0Qb75pbx993wqUIQ</lokal_band:id_track>
+    <lokal_band:nama_track>Scream Aim Fire</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band99_track2">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>25GC50HslaaruyrKjdu0lP</lokal_band:id_track>
+    <lokal_band:nama_track>Your Betrayal</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band99_track5">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>0k6wiMT26Wc3K4B2IiloUw</lokal_band:id_track>
+    <lokal_band:nama_track>Waking the Demon</lokal_band:nama_track>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band100_track4">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>3t5GlWUzGSt2lPuiSEPBFG</lokal_band:id_track>
+    <lokal_band:nama_track>Soft Spine</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band100_track9">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>2GWtLHhqPjvZt1aWiBDsTU</lokal_band:id_track>
+    <lokal_band:nama_track>Cellar Door</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band100_track1">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>3FI0iAAAjmR31xpZEwbdys</lokal_band:id_track>
+    <lokal_band:nama_track>Circle With Me</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band100_track10">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>6HNWDjbome8TQp0rYRZTQS</lokal_band:id_track>
+    <lokal_band:nama_track>Cobra (Rock Remix) [feat. Spiritbox]</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band100">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Band"/>
+    <lokal_band:nama_band>Spiritbox</lokal_band:nama_band>
+    <lokal_band:about_band>Our sophomore album Tsunami Sea will be out March 7th.</lokal_band:about_band>
+    <lokal_band:link_gambar>https://i.scdn.co/image/ab676161000051741f497cb1d8c477c3f5498f03</lokal_band:link_gambar>
+    <lokal_band:genre>Metalcore</lokal_band:genre>
+    <lokal_band:asal_band>Canada</lokal_band:asal_band>
+    <lokal_band:band_type>Internasional</lokal_band:band_type>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band100_track1"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band100_track2"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band100_track3"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band100_track4"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band100_track5"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band100_track6"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band100_track7"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band100_track8"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band100_track9"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band100_track10"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band100_track2">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>6IdyYbGg1jxiWhfwm2Ykjn</lokal_band:id_track>
+    <lokal_band:nama_track>Jaded</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band100_track5">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>2exVVVKvdymCwOFdvmA2bq</lokal_band:id_track>
+    <lokal_band:nama_track>The Void</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band100_track7">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>0qZ03ABKZsGbGhvh1zbbil</lokal_band:id_track>
+    <lokal_band:nama_track>Sun Killer</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band100_track8">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>6EJwjtqOu69c0NRAk4RRcA</lokal_band:id_track>
+    <lokal_band:nama_track>Blessed Be</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band100_track6">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>1LLiDI21J4WWlmqk7zsm9v</lokal_band:id_track>
+    <lokal_band:nama_track>Holy Roller</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band100_track3">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>39bBo9c52p4bcUMWBbuOaO</lokal_band:id_track>
+    <lokal_band:nama_track>TYG (feat. Spiritbox)</lokal_band:nama_track>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band101_track2">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>31iAZuJu1Obz239eDpMfee</lokal_band:id_track>
+    <lokal_band:nama_track>Make Believe</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band101_track9">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>6tw3xex5JwBWxEQOn1bxRk</lokal_band:id_track>
+    <lokal_band:nama_track>The Sinner</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band101_track7">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>2lUECytCuzKCCDSsUdIqyC</lokal_band:id_track>
+    <lokal_band:nama_track>Somebody</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band101_track3">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>0cyRTLChgQDVxrHqI6uHtC</lokal_band:id_track>
+    <lokal_band:nama_track>Blood &amp; Water</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band101_track4">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>4mdp26YsqfiqL6Fj9DJmaV</lokal_band:id_track>
+    <lokal_band:nama_track>Chaotic</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band101">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Band"/>
+    <lokal_band:nama_band>Memphis May Fire</lokal_band:nama_band>
+    <lokal_band:about_band>Memphis May Fire is a sonic confessional, confronting the brokenness so many feel, and challenging that darkness with an aggressive call toward a hard-won victory. They have steadily amassed a strong catalog while bringing a high level of audience participation and engagement to festivals, clubs, and theaters all around the globe.
+
+The band’s ambitious sixth record, Broken, is a bold declaration of resilience. It fashions music into a sharp sword, dedicated to cutting free the bonds of self-doubt. Broken is both a perfect distillation of everything the band has achieved creatively, with the group’s signature passion and diversity, and a bold leap into the future. Singer Matty Mullins, emboldened by a renewed purpose and the type of humility derived from personal struggles not dissimilar to the stories the band hears from their fans, leads the charge against a backdrop of instantly memorable hooks and bottom-heavy crunch, skillfully performed by guitarist/co-founder Kellen McGregor, longtime bassist Cory Elder, and drummer Jake Garland. Consistently journeying to connect with as many people as possible, Memphis May Fire has toured with a diverse list of important rock and metal acts that includes Killswitch Engage, Sleeping With Sirens, Black Veil Brides, Sevendust, and Atreyu.
+
+The unity of purpose is palpable at a Memphis May Fire show, as both the audience and band share their life experiences, their dreams and fears, through the power of transcendent music.</lokal_band:about_band>
+    <lokal_band:link_gambar>https://i.scdn.co/image/ab6761610000517497b338006d09399d93512ad3</lokal_band:link_gambar>
+    <lokal_band:genre>Metalcore</lokal_band:genre>
+    <lokal_band:band_type>Internasional</lokal_band:band_type>
+    <lokal_band:asal_band>United Stats</lokal_band:asal_band>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band101_track1"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band101_track2"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band101_track3"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band101_track4"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band101_track5"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band101_track6"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band101_track7"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band101_track8"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band101_track9"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band101_track10"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band101_track6">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>1TOMPmDRkQ9WBiYDZtcF98</lokal_band:id_track>
+    <lokal_band:nama_track>Necessary Evil</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band101_track10">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>73EIurQGydymTCrHuxYt3q</lokal_band:id_track>
+    <lokal_band:nama_track>Paralyzed</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band101_track8">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>5bENuUfvW1oOEmh2zvyowI</lokal_band:id_track>
+    <lokal_band:nama_track>Bleed Me Dry</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band101_track5">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>2iEgSrTskfVBlzoqOD9tll</lokal_band:id_track>
+    <lokal_band:nama_track>Hell Is Empty</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band101_track1">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>6gfUOprNMeD8amncMOSFl0</lokal_band:id_track>
+    <lokal_band:nama_track>Misery</lokal_band:nama_track>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band102">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Band"/>
+    <lokal_band:nama_band>Veil Of Maya</lokal_band:nama_band>
+    <lokal_band:about_band>Underneath a maelstrom of polyrhythmic guitars, sweeping vocals, and shuddering beats, Veil of Maya encode a ponderous narrative at the core of their sixth full-length album, False Idol [Sumerian Records]. This time around, a captivating concept drives the quartet—Marc Okubo, Sam Applebaum, Danny Hauser, and Lukas Magyar. 
+
+The first single “Overthrow” revs up from a crushing tidal wave of riffing into a soaring and striking clean refrain. It taps into the expansive energy of signature fan favorites, while elevating the group to a new level.
+
+Whether it’s the pulverizing power of “Lull” or knockout send-off of “Tyrant” and “Livestream,” False Idol exorcises an unforgettable narrative in the landscape of Veil of Maya’s most definitive work to date.</lokal_band:about_band>
+    <lokal_band:link_gambar>https://i.scdn.co/image/ab676161000051749f7d65d7aa5ca1c3d23b72fa</lokal_band:link_gambar>
+    <lokal_band:genre>Djent</lokal_band:genre>
+    <lokal_band:band_type>Internasional</lokal_band:band_type>
+    <lokal_band:asal_band>United States</lokal_band:asal_band>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band102_track1"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band102_track2"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band102_track3"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band102_track4"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band102_track5"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band102_track6"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band102_track7"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band102_track8"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band102_track9"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band102_track10"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band102_track3">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>2Hq9A0EbpApmncExOiG1oM</lokal_band:id_track>
+    <lokal_band:nama_track>Outsider</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band102_track9">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>7MGzYCopHEDP7dr1wnjgYb</lokal_band:id_track>
+    <lokal_band:nama_track>Synthwave Vegan</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band102_track10">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>3t3NfmOYCHmjuNGjesjWYw</lokal_band:id_track>
+    <lokal_band:nama_track>Doublespeak</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band102_track1">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>2HOzIImONoureOPryEFArI</lokal_band:id_track>
+    <lokal_band:nama_track>Mikasa</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band102_track4">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>6vAV50tvdt9xUXU361g7I0</lokal_band:id_track>
+    <lokal_band:nama_track>Red Fur</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band102_track8">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>2V7evXKVH9AleO5iLOdMtu</lokal_band:id_track>
+    <lokal_band:nama_track>Pool Spray</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band102_track5">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>2jMPFY1jaGEg1RnX5iHGdw</lokal_band:id_track>
+    <lokal_band:nama_track>Viscera</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band102_track6">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>0JAm1bwwN1m26hon8w4kEN</lokal_band:id_track>
+    <lokal_band:nama_track>Punisher</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band102_track2">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>2CruovQVFC9NdqOM40tObf</lokal_band:id_track>
+    <lokal_band:nama_track>Outrun</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band102_track7">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>3127U4kP1p1SxCkF3Q9czN</lokal_band:id_track>
+    <lokal_band:nama_track>Overthrow</lokal_band:nama_track>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band104">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Band"/>
+    <lokal_band:nama_band>Suicide Silence</lokal_band:nama_band>
+    <lokal_band:about_band>An American deathcore group that draws on elements of black metal, grindcore, mathcore, and groove metal, Suicide Silence emerged in 2007 with the punishing full-length debut The Cleansing. Subsequent albums continued to look to artists like &lt;a href="spotify:artist:6JW8wliOEwaDZ231ZY7cf4"&gt;Sepultura&lt;/a&gt;, &lt;a href="spotify:artist:0yLwGBQiBqhXOvmTfH2A7n"&gt;Cannibal Corpse&lt;/a&gt;, &lt;a href="spotify:artist:4f5V3PQ66nIrBCqugJtaGn"&gt;Death&lt;/a&gt;, and &lt;a href="spotify:artist:0ZEpcKtaM4ItvzHJCg5udc"&gt;Possessed&lt;/a&gt; for inspiration, while their eponymous fifth studio long-player, released in 2017, incorporated clean, nu-metal style vocals into the mix. 2020's Become the Hunter and 2023's Remember... You Must Die saw Suicide Silence return to the uncompromising deathcore sound of their earlier outings. &#13;
+
+Formed in Riverside, California in 2002, the band managed to get things rolling quickly, save for a few lineup changes, and went from formation to a deal with &lt;a href="spotify:search:label%3A%22Century+Media%22"&gt;Century Media&lt;/a&gt; in a mere two years. In the meantime, Suicide Silence issued one pre-deal EP -- the simply titled Suicide Silence -- which saw the light of day on indie labels &lt;a href="spotify:search:label%3A%22At+the+Deep+End%22"&gt;At the Deep End&lt;/a&gt; and &lt;a href="spotify:search:label%3A%22SOS+Records%22"&gt;SOS Records&lt;/a&gt;.&#13;
+
+The band's &lt;a href="spotify:search:label%3A%22Century+Media%22"&gt;Century Media&lt;/a&gt; debut album, The Cleansing, was released in September of 2007, and was produced by John Travis. The album was a bit of a mover and shaker in the genre, breaking through to the Top 100 on the Billboard charts, and became one of the label's biggest-ever sellers. Following the release of the album, the band toured steadily in the U.S. and Europe with &lt;a href="spotify:artist:159qqlGwzE04xyqpfAwRLo"&gt;Parkway Drive&lt;/a&gt; and &lt;a href="spotify:artist:2cGTjGiqVo9E2NQIz3lP9D"&gt;Bury Your Dead&lt;/a&gt;. Members Mitch Lucker (vocals), Chris Garza (guitar), Mark Heylmun (guitar), Mike Bodkins (bass, but later replaced by Dan Kenny), and Alex Lopez (drums) had more reason to celebrate in 2008, as the band was added to the Mayhem Metal Festival, which hit stages that summer.&#13;
+
+No Time to Bleed, released in 2009, found the band in the Top 40 of the album charts for the first time, accompanied by positive reviews. Third album The Black Crown switched from anti-religious topics to personal themes from lyricist Mitch Lucker, and it became the highest-charting album of their career. Lucker, however, died in November 2012 from injuries sustained in a motorcycle accident. A memorial tribute show later that year featured Suicide Silence backed by different vocalists for each song, and by the fall of 2013, the band had found their new lead vocalist, Hernan "Eddie" Hermida from &lt;a href="spotify:artist:7GkGdNLPzWw4e6ctwKvI2x"&gt;All Shall Perish&lt;/a&gt;. The Lucker memorial show was released early in 2014 as Ending Is the Beginning: The Mitch Lucker Memorial Show 12.21.12. 2017 saw the release of the band's eponymous fifth studio long-player, which featured a shift in tone from their deathcore roots into a more melodic, nu-metal-driven direction. For their sixth full-length effort, 2020's Become the Hunter, the band enlisted producer Steve Evetts (&lt;a href="spotify:artist:7IGcjaMGAtsvKBLQX26W4i"&gt;The Dillinger Escape Plan&lt;/a&gt;, &lt;a href="spotify:artist:6JW8wliOEwaDZ231ZY7cf4"&gt;Sepultura&lt;/a&gt;, &lt;a href="spotify:artist:17Mb968quDHpjCkIyq30QV"&gt;Hatebreed&lt;/a&gt;), and dialed down the clean singing in a return to their extreme metal roots. The band continued to embrace the brutality of modern deathcore on 2023's unrelenting Remember… You Must Die, which featured cover art by Necrosurrealist artist David Van Gough. ~ Chris True, Rovi</lokal_band:about_band>
+    <lokal_band:link_gambar>https://i.scdn.co/image/ab676161000051743d199e5cdd7d8e1f57c99a74</lokal_band:link_gambar>
+    <lokal_band:genre>Deathcore</lokal_band:genre>
+    <lokal_band:band_type>Internasional</lokal_band:band_type>
+    <lokal_band:asal_band>United States</lokal_band:asal_band>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band104_track1"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band104_track2"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band104_track3"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band104_track4"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band104_track5"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band104_track6"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band104_track7"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band104_track8"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band104_track9"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band104_track10"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band104_track7">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>7HiN5HVBXzWrfYPp65F8fM</lokal_band:id_track>
+    <lokal_band:nama_track>Last Breath</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band104_track2">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>08c44mv6lHEfUHlPtVg8Yp</lokal_band:id_track>
+    <lokal_band:nama_track>Unanswered</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band104_track6">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>0qJ8H7oyIt9JyWu9iXMKjx</lokal_band:id_track>
+    <lokal_band:nama_track>Feel Alive</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band104_track9">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>36w5Ai2rVganBlTiflogxT</lokal_band:id_track>
+    <lokal_band:nama_track>Wake Up</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band104_track1">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>4Ku3OOZWR4tpKNCVFXILY8</lokal_band:id_track>
+    <lokal_band:nama_track>You Only Live Once</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band104_track4">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>30xWVpvct6LewWIHFEWHdn</lokal_band:id_track>
+    <lokal_band:nama_track>Love Me to Death</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band104_track5">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>2SGmVE90PzF7iSbRbToHnk</lokal_band:id_track>
+    <lokal_band:nama_track>Disengage</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band104_track10">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>4PBOwceSDbHT7qiwUsBNQR</lokal_band:id_track>
+    <lokal_band:nama_track>Bludgeoned to Death</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band104_track8">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>005drRcJJFgFHgtxSJJO0v</lokal_band:id_track>
+    <lokal_band:nama_track>Fuck Everything</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band104_track3">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>70fiaCGcCBWCGKXXISgdJf</lokal_band:id_track>
+    <lokal_band:nama_track>No Pity for a Coward</lokal_band:nama_track>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band105_track8">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>1WH0HcFJhu5r6Jxqdsh54N</lokal_band:id_track>
+    <lokal_band:nama_track>Scene One - James Dean &amp; Audrey Hepburn</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band105">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Band"/>
+    <lokal_band:nama_band>Sleeping With Sirens</lokal_band:nama_band>
+    <lokal_band:about_band>Sleeping With Sirens breathe rarified air. After fourteen years, five studio albums, and thousands of shows, the band has outlasted many of their peers while crafting an undeniably unique path through modern alternative rock. With each release, the quintet — Kellin Quinn [vocals, keyboards], Jack Fowler [lead guitar], Nick Martin [rhythm guitar], Justin Hills [bass], and Matty Best [drums] - continue to hone their mix of unflinchingly honest lyricism, unforgettable riffs, and pulse-pounding percussion while boldly exploring new creative frontiers. That future-forward perspective, coupled with a deep connection to listeners, has established Sleeping With Sirens as a beacon of hope in a world desperate to find silver linings.
+On Complete Collapse, the band’s sixth studio album, Sleeping With Sirens cut straight to the bone, as they process life in modern times. “We’re coming to terms with the new reality we are in,” explains Quinn. “Things have changed so rapidly, and we’re all doing our best to process it. There’s a feeling of heaviness to the record, both in sound and emotion. We’re trying to figure out what’s going on and where we’re going. We’ve seen so much stagnation, but also a lot of change that wasn’t necessarily for the better. We’re realizing now that our voice, and what we’re able to say or should say, needs to come through the music. It’s not about what you can say on Instagram or Twitter, it’s about what you’re saying through your work.”</lokal_band:about_band>
+    <lokal_band:link_gambar>https://i.scdn.co/image/ab676161000051747fbe33148fe1ae267ddb2956</lokal_band:link_gambar>
+    <lokal_band:genre>Post-Hardcore</lokal_band:genre>
+    <lokal_band:band_type>Internasional</lokal_band:band_type>
+    <lokal_band:asal_band>United States</lokal_band:asal_band>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band105_track1"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band105_track2"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band105_track3"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band105_track4"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band105_track5"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band105_track6"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band105_track7"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band105_track8"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band105_track9"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band105_track10"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band105_track9">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>1ufmdhLiYExFU8lAVA9wjQ</lokal_band:id_track>
+    <lokal_band:nama_track>Scene Two - Roger Rabbit</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band105_track1">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>2Tc9VznHtQUmfOgE3L1RdN</lokal_band:id_track>
+    <lokal_band:nama_track>If You Can't Hang</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band105_track10">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>68t4Xfdn7tGagTY712tStZ</lokal_band:id_track>
+    <lokal_band:nama_track>With Ears to See, and Eyes to Hear</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band105_track2">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>2D4LEUzvLRCQOLMxnajH72</lokal_band:id_track>
+    <lokal_band:nama_track>If I'm James Dean, You're Audrey Hepburn</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band105_track5">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>3I9c2OFpB0al6qmYNcyMht</lokal_band:id_track>
+    <lokal_band:nama_track>Do It Now Remember It Later</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band105_track3">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>4zDhFZz6XsyUGFNduYb2nR</lokal_band:id_track>
+    <lokal_band:nama_track>A Trophy Fathers Trophy Son</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band105_track7">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>6WBkSZbGBaIWnEgnMoXEJU</lokal_band:id_track>
+    <lokal_band:nama_track>The Bomb Dot Com V2.0</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band105_track6">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>5LfFjqx9c83BMXrJVfYT0Y</lokal_band:id_track>
+    <lokal_band:nama_track>Kick Me</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band105_track4">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>4MjJlPgUYMQjvHOQq0uvOv</lokal_band:id_track>
+    <lokal_band:nama_track>Better Off Dead</lokal_band:nama_track>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band106_track3">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>1VLM75hY5fluRorkbIt6NT</lokal_band:id_track>
+    <lokal_band:nama_track>Might Love Myself</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band106_track8">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>7Csk3CTefKI9mEZvwNCjNX</lokal_band:id_track>
+    <lokal_band:nama_track>I Was Alive</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band106_track7">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>1hkm127hnTSa2xjGNw8IAE</lokal_band:id_track>
+    <lokal_band:nama_track>Disease</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band106">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Band"/>
+    <lokal_band:nama_band>Beartooth</lokal_band:nama_band>
+    <lokal_band:about_band>The fearlessly determined and creative Ohio-based powerhouse perfected a sound sought by a generation of bands, equal parts solitary musical confession and celebratory exorcism. BEARTOOTH music is an outright refusal to suffer in silence, weaponizing radio-ready bombast to deliver raw emotion mixed with noise-rock chaos. They combine hard rock and hardcore in a way that’s smart, lean, melodic, and irresistible, without apology.     
+
+After over 900 million streams from songs like “The Past is Dead,” “Fed Up,” and “In Between”, in addition to the band’s fourth album, Below, topping charts and finding its way into Best Rock/Metal Albums of the Year in 2021, Rolling Stone introduced BEARTOOTH as one of 10 New Artists You Need To Know.
+
+The 2013 Sick EP was an emotionally stranded Shomo’s “message in a bottle,” tossed into a figurative ocean. Disgusting (2014), Aggressive (2016), Disease (2018), and Below (2021) expanded those themes of desperation, each sonically getting a step closer to the magical balance between the blood, sweat, and tears of classic recordings and the smooth gloss of modern production. Their latest single “Riptide” is the culmination of that battle: a furiously courageous song of self-empowerment serving as a victory lap to memorialize a struggle with mental health and self-acceptance, which has defined so much of BEARTOOTH since its inception.
+
+BEARTOOTH offers no cure, but the recovery comes in the process; the journey is the destination. So enjoy the ride.</lokal_band:about_band>
+    <lokal_band:link_gambar>https://i.scdn.co/image/ab67616100005174d2219c00e2fa1f2aaddcbf24</lokal_band:link_gambar>
+    <lokal_band:genre>Metalcore</lokal_band:genre>
+    <lokal_band:band_type>Internasional</lokal_band:band_type>
+    <lokal_band:asal_band>United States</lokal_band:asal_band>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band106_track1"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band106_track2"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band106_track3"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band106_track4"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band106_track5"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band106_track6"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band106_track7"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band106_track8"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band106_track9"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band106_track10"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band106_track5">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>75jOZla67WCSH24GjJrq5r</lokal_band:id_track>
+    <lokal_band:nama_track>Sunshine!</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band106_track4">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>7lIeZcWnUovgdPUoZfhEdh</lokal_band:id_track>
+    <lokal_band:nama_track>ATTN.</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band106_track10">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>2eagADnpxQacZXpQxlZ8n3</lokal_band:id_track>
+    <lokal_band:nama_track>Doubt Me</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band106_track1">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>03jdl5GTBhKsgB1Yw8mVPh</lokal_band:id_track>
+    <lokal_band:nama_track>In Between</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band106_track2">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>4Xgono4pmRbojXlCIYh8or</lokal_band:id_track>
+    <lokal_band:nama_track>Riptide</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band106_track6">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>2NRa4W3rH4e5GKQMN5Qwyr</lokal_band:id_track>
+    <lokal_band:nama_track>Hated</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band106_track9">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>1DAaHUdfW4Y9hil4zrc2Q9</lokal_band:id_track>
+    <lokal_band:nama_track>The Better Me</lokal_band:nama_track>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band107_track9">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>4FkfB3YmuamZBv2Pa2GyH7</lokal_band:id_track>
+    <lokal_band:nama_track>Bound to the Burn</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band107">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Band"/>
+    <lokal_band:nama_band>Counterparts</lokal_band:nama_band>
+    <lokal_band:about_band>HEAVEN LET THEM DIE</lokal_band:about_band>
+    <lokal_band:link_gambar>https://i.scdn.co/image/ab676161000051746fd16de804ba359bdd7ea22f</lokal_band:link_gambar>
+    <lokal_band:genre>Hardcore Punk</lokal_band:genre>
+    <lokal_band:band_type>Internasional</lokal_band:band_type>
+    <lokal_band:asal_band>Canada</lokal_band:asal_band>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band107_track1"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band107_track2"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band107_track3"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band107_track4"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band107_track5"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band107_track6"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band107_track7"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band107_track8"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band107_track9"/>
+    <lokal_band:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band107_track10"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band107_track8">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>1Bg4qbrQjRJjoXZlB3y3Ot</lokal_band:id_track>
+    <lokal_band:nama_track>Love Me</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band107_track7">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>6zRRuVW7Wbew48zyOjiUOP</lokal_band:id_track>
+    <lokal_band:nama_track>Whispers of Your Death</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band107_track4">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>61a2WiofGziTrkjRPqxbhU</lokal_band:id_track>
+    <lokal_band:nama_track>No Lamb Was Lost</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band107_track5">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>0Kf19vhMiHVUSZ7ffYet0V</lokal_band:id_track>
+    <lokal_band:nama_track>Praise No Artery Intact</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band107_track1">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>6ajfXivkRaEKfnDWBYnN2D</lokal_band:id_track>
+    <lokal_band:nama_track>A Martyr Left Alive</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band107_track6">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>3vRVwCQNnWyhkgNbrbF6hN</lokal_band:id_track>
+    <lokal_band:nama_track>Heaven Let Them Die</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band107_track2">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>47WjNPlEK8CTOBHSOJKBB6</lokal_band:id_track>
+    <lokal_band:nama_track>With Loving Arms Disfigured</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band107_track3">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>04Q3C5cKe30TOOPQvO1Zml</lokal_band:id_track>
+    <lokal_band:nama_track>To Hear of War</lokal_band:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band107_track10">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <lokal_band:id_track>4VfMtL53N1ZBXbIl2qrKnX</lokal_band:id_track>
+    <lokal_band:nama_track>Nothing Left to Love</lokal_band:nama_track>
+  </rdf:Description>
 
 </rdf:RDF>
 

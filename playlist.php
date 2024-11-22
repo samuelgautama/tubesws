@@ -21,7 +21,7 @@ WHERE {
     FILTER(?genre_band = '" . $genre . "')
 }
 ORDER BY RAND()
-LIMIT 16
+LIMIT 8
 ";
 
 $result = $sparql->query($random);
@@ -38,34 +38,6 @@ $result = $sparql->query($random);
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="flex min-h-screen relative"> <!-- Add relative to the body -->
-<div class="absolute top-14 right-24 z-50">
-    <a href="javascript:void(0);" class="button" onclick="refreshPage()">
-        <img id="refresh-icon" src="media/refresh2.png" alt="Refresh" class="w-10 h-10 transition-transform duration-1000 ease-in">
-    </a>
-</div>
-
-<script>
-    function refreshPage() {
-        const refreshIcon = document.getElementById('refresh-icon');
-        
-        // Add the spinning animation for 1 second
-        refreshIcon.classList.add('animate-spin');
-        
-        // Reload the page after 1 second
-        setTimeout(() => {
-            window.location.reload();
-        }, 1000);
-        
-        // Optionally, remove the spinning effect after 1 second
-        setTimeout(() => {
-            refreshIcon.classList.remove('animate-spin');
-        }, 1000);
-    }
-</script>
-
-
-
-
     <div class="mt-12">
         <h class="text-5xl font-bold flex justify-center mb-12 text-zinc-50">Daftar Track</h>
         <div class="grid gap-16 grid-cols-4 grid-rows-6 ml-8 mr-8">

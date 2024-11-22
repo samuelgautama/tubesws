@@ -63,8 +63,6 @@ $result2 = $sparql->query($query2);
 
 <?php include 'sidebar.php';?>
 
-
-
 <div class="flex justify-center min-w-screen ml-6">
     <div class="container mt-5">
         <div class="flex justify-center">
@@ -87,10 +85,9 @@ $result2 = $sparql->query($query2);
               </div>";
         }?>
         </div>
-        <h class="flex justify-center font-bold text-3xl mb-8">Tracks</h>
+        <h class="flex justify-center font-bold text-3xl mb-8 text-zinc-50">Tracks</h>
         <div class="grid gap-16 grid-cols-4 grid-rows-6 ml-8 mr-8">
                 <?php
-                // Menampilkan hasil dalam tabel
                 foreach ($result as $row) {
                     echo "<td>" .
                     '<iframe

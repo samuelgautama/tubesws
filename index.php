@@ -17,7 +17,6 @@ SELECT ?id_spotify ?link WHERE {
             ?track uni:id_track ?id_spotify.
         }
         ORDER BY RAND()
-        LIMIT 95
     }
 }
 ORDER BY RAND()
@@ -62,44 +61,55 @@ $result = $sparql->query($random);
                 </div>
             </div>
         </div>
-        <div id="popup-player" class="fixed bottom-4 -right-96 opacity-0 transform transition-all duration-500">
-            <!-- Text Label -->
-            <div class="flex justify-center items-center bg-white text-black text-md font-bold py-2 px-4 rounded-t-lg" style="opacity: 0.5;">
-                Special Picks for You
-            </div>
 
-            <!-- Spotify Players -->
+        <div id="popup-player" class="fixed bottom-4 -right-96 opacity-0 transform transition-all duration-500">
+            <div class="flex justify-end ">
+            <h2 class="font-bold text-white text-xl flex justify-center mb-2 mr-20">Special Picks For You</h2>
+            <span onclick="closePopup()" >
+                <img class="w-6 h-6 mr-4 items-center" src="/media/close3.png"/>
+            </span>
+        </div>
+
+        <div role="alert" class="alert">
+        <span>
             <?php
             foreach ($result as $row) {
                 echo "<div class='flex items-center space-x-4 p-2 backdrop-blur-sm bg-white bg-opacity-40 rounded-b-lg'>" .
                     '<iframe
-              style="border-radius:14px" 
-              src="https://open.spotify.com/embed/track/' . ($row->id_spotify) . '?utm_source=generator&theme=0&autoplay=1" 
-              width="350" 
-              height="80" 
-              frameBorder="0" 
-              allowfullscreen="" 
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-              loading="lazy">
-              </iframe>' .
+                        style="border-radius:15px" 
+                        src="https://open.spotify.com/embed/track/' . ($row->id_spotify) . '?utm_source=generator&theme=0&autoplay=1" 
+                        width="350" 
+                        height="80" 
+                        frameBorder="0" 
+                        allowfullscreen="" 
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                        loading="lazy">
+                    </iframe>' .
                     "</div>";
             }
-            ?>
-        </div>
-
-        <script>
-            // Show the popup after a delay
-            window.addEventListener('DOMContentLoaded', () => {
-                const player = document.getElementById('popup-player');
-                setTimeout(() => {
-                    player.classList.remove('-right-96', 'opacity-0'); // Slide it into view
-                    player.classList.add('right-4', 'opacity-100'); // Make it fully visible
-                }, 1000); // Delay in milliseconds (1 second)
-            });
-        </script>
-
-
+            ?> 
+        </span>
+        
     </div>
+</div>
+
+<script>
+    // Show the popup after a delay
+    window.addEventListener('DOMContentLoaded', () => {
+        const player = document.getElementById('popup-player');
+        setTimeout(() => {
+            player.classList.remove('-right-96', 'opacity-0'); // Slide it into view
+            player.classList.add('right-4', 'opacity-100'); // Make it fully visible
+        }, 1000); // Delay in milliseconds (1 second)
+    });
+
+    function closePopup() {
+        console.log("Closing popup...");
+        const player = document.getElementById('popup-player');
+        player.style.display = 'none';
+    }
+</script>
+
 
 </body>
 
