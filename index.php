@@ -64,14 +64,14 @@ $result = $sparql->query($random);
         </div>
         <div id="popup-player" class="fixed bottom-4 -right-96 opacity-0 transform transition-all duration-500">
             <!-- Text Label -->
-            <div class="flex justify-center items-center bg-gray-800 text-white text-sm font-semibold py-2 px-4 rounded-t-lg">
+            <div class="flex justify-center items-center bg-white text-black text-md font-bold py-2 px-4 rounded-t-lg" style="opacity: 0.5;">
                 Special Picks for You
             </div>
 
             <!-- Spotify Players -->
             <?php
             foreach ($result as $row) {
-                echo "<div class='flex items-center space-x-4 p-2 backdrop-blur-sm bg-gray-900 bg-opacity-40 rounded-b-lg'>" .
+                echo "<div class='flex items-center space-x-4 p-2 backdrop-blur-sm bg-white bg-opacity-40 rounded-b-lg'>" .
                     '<iframe
               style="border-radius:14px" 
               src="https://open.spotify.com/embed/track/' . ($row->id_spotify) . '?utm_source=generator&theme=0&autoplay=1" 
@@ -94,7 +94,7 @@ $result = $sparql->query($random);
                 setTimeout(() => {
                     player.classList.remove('-right-96', 'opacity-0'); // Slide it into view
                     player.classList.add('right-4', 'opacity-100'); // Make it fully visible
-                }, 2000); // Delay in milliseconds (1 second)
+                }, 1000); // Delay in milliseconds (1 second)
             });
         </script>
 
