@@ -15,7 +15,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST['searchQuery'])) {
     $searchQuery = trim($_POST['searchQuery']);
 }
 
-// Menyusun query SPARQL
 $query = '
 PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
 
@@ -30,13 +29,16 @@ SELECT DISTINCT ?band_name ?asal ?about ?link WHERE {
     ?track uni:nama_track ?track_name.
     
     FILTER (
-        regex(?track_name, "' . ($searchQuery) . '", "i") ||
-        regex(?band_name, "' . ($searchQuery) . '", "i") ||
-        regex(?asal, "' . ($searchQuery) . '", "i")||
-        regex(?genre_band, "' . ($searchQuery) . '", "i")
+        regex(?track_name, "' . addslashes($searchQuery) . '", "i") ||
+        regex(?band_name, "' . addslashes($searchQuery) . '", "i") ||
+        regex(concat(?track_name, " ", ?band_name), "' . addslashes($searchQuery) . '", "i") ||
+        regex(concat(?band_name, " ", ?track_name), "' . addslashes($searchQuery) . '", "i") ||
+        regex(?asal, "' . addslashes($searchQuery) . '", "i") ||
+        regex(?genre_band, "' . addslashes($searchQuery) . '", "i")
     )
 }
 ';
+
 
 $result = $sparql->query($query);
 
