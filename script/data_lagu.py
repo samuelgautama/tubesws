@@ -9,7 +9,6 @@ headers = {
     "x-rapidapi-host": "spotify-statistics-and-stream-count.p.rapidapi.com"
 }
 
-
 # Permintaan ke API
 response = requests.get(url, headers=headers)
 data = response.json()

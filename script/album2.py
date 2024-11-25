@@ -6,10 +6,9 @@ search_url = "https://spotify-scraper.p.rapidapi.com/v1/search"
 
 tracks_url = "https://spotify-scraper.p.rapidapi.com/v1/album/tracks"
 
-
 album_name = input("Masukkan nama album yang ingin dicari: ")  
 
-# Parameter pencarian - nama album
+# Parameter pencarian - berdasarkan nama album
 search_querystring = {"term": album_name, "type": "album"} 
 # Header untuk autentikasi
 headers = {
