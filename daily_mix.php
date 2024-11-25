@@ -1,3 +1,4 @@
+<?php include 'sidebar.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,15 +13,13 @@
 <body class="flex min-h-screen relative">
 
 
-    <?php include 'sidebar.php'; ?>
-
-
     <div class="mt-12">
         <h class="text-5xl font-bold flex justify-center mb-12 text-zinc-50">Daily Mix For You</h>
         <div class="grid gap-14 grid-cols-4 grid-rows-2 ml-6">
 
+        <!-- Metalcore 1 -->
         <form method="POST" action="playlist.php" class="relative group">
-                <input type="hidden" name="genre" value="Metalcore">
+            <input type="hidden" name="genre" value="Metalcore">
                 <button type="submit" class="relative overflow-hidden bg-gray-900 bg-opacity-40 w-64 h-64 mb-4 rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-md">
                     <figure>
                         <img class="min-w-32 min-h-48" src="/media/metalcore1.png" />
@@ -35,11 +34,11 @@
                         </div>
                     </div>
                 </button>
-            </form>
-            
+        </form>
 
-            <form method="POST" action="playlist.php" class="relative group">
-                <input type="hidden" name="genre" value="Alternative Rock">
+        <!-- Rock 1 -->
+        <form method="POST" action="playlist.php" class="relative group">
+            <input type="hidden" name="genre" value="Alternative Rock">
                 <button type="submit" class="relative overflow-hidden bg-gray-900 bg-opacity-40 w-64 h-64 mb-4 rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-md">
                     <figure>
                         <img class="min-w-32 min-h-48" src="/media/rock1.jpg" />
@@ -54,10 +53,11 @@
                         </div>
                     </div>
                 </button>
-            </form>
+        </form>
 
-            <form method="POST" action="playlist.php" class="relative group">
-                <input type="hidden" name="genre" value="Modern Hardcore">
+        <!-- Hardcore 1 -->
+        <form method="POST" action="playlist.php" class="relative group">
+            <input type="hidden" name="genre" value="Modern Hardcore">
                 <button type="submit" class="relative overflow-hidden bg-gray-900 bg-opacity-40 w-64 h-64 mb-4 rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-md">
                     <figure>
                         <img class="min-w-32 min-h-48" src="/media/hardcore1.jpg" />
@@ -72,10 +72,11 @@
                         </div>
                     </div>
                 </button>
-            </form>
+        </form>
 
-            <form method="POST" action="playlist.php" class="relative group">
-                <input type="hidden" name="genre" value="Thrash Metal">
+        <!-- Trashmetal 1 -->
+        <form method="POST" action="playlist.php" class="relative group">
+            <input type="hidden" name="genre" value="Thrash Metal">
                 <button type="submit" class="relative overflow-hidden bg-gray-900 bg-opacity-40 w-64 h-64 mb-4 rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-md">
                     <figure>
                         <img class="min-w-32 min-h-48" src="/media/thrashmetal1.jpg" />
@@ -90,10 +91,11 @@
                         </div>
                     </div>
                 </button>
-            </form>
+        </form>
 
-            <form method="POST" action="playlist.php" class="relative group">
-                <input type="hidden" name="genre" value="Metalcore">
+        <!-- Metalcore 2 -->
+        <form method="POST" action="playlist.php" class="relative group">
+            <input type="hidden" name="genre" value="Metalcore">
                 <button type="submit" class="relative overflow-hidden bg-gray-900 bg-opacity-40 w-64 h-64 mb-4 rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-md">
                     <figure>
                         <img class="min-w-32 min-h-48" src="/media/metalcore2.jpg" />
@@ -108,10 +110,11 @@
                         </div>
                     </div>
                 </button>
-            </form>
+        </form>
 
-            <form method="POST" action="playlist.php" class="relative group">
-                <input type="hidden" name="genre" value="Alternative Rock">
+        <!-- Rock 2 -->
+        <form method="POST" action="playlist.php" class="relative group">
+            <input type="hidden" name="genre" value="Alternative Rock">
                 <button type="submit" class="relative overflow-hidden bg-gray-900 bg-opacity-40 w-64 h-64 mb-4 rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-md">
                     <figure>
                         <img class="min-w-32 min-h-48" src="/media/rock2.jpg" />
@@ -126,10 +129,11 @@
                         </div>
                     </div>
                 </button>
-            </form>
+        </form>
 
-            <form method="POST" action="playlist.php" class="relative group">
-                <input type="hidden" name="genre" value="Modern Hardcore">
+        <!-- Hardcore 2 -->
+        <form method="POST" action="playlist.php" class="relative group">
+            <input type="hidden" name="genre" value="Modern Hardcore">
                 <button type="submit" class="relative overflow-hidden bg-gray-900 bg-opacity-40 w-64 h-64 mb-4 rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-md">
                     <figure>
                         <img class="min-w-32 min-h-48" src="/media/hardcore2.jpg" />
@@ -144,10 +148,11 @@
                         </div>
                     </div>
                 </button>
-            </form>
+        </form>
 
-            <form method="POST" action="playlist.php" class="relative group">
-                <input type="hidden" name="genre" value="Thrash Metal">
+        <!-- Trashmetal 2 -->
+        <form method="POST" action="playlist.php" class="relative group">
+            <input type="hidden" name="genre" value="Thrash Metal">
                 <button type="submit" class="relative overflow-hidden bg-gray-900 bg-opacity-40 w-64 h-64 mb-4 rounded-lg transition-all duration-500 hover:scale-110 hover:shadow-md">
                     <figure>
                         <img class="min-w-32 min-h-48" src="/media/thrashmetal2.jpg" />
@@ -162,10 +167,10 @@
                         </div>
                     </div>
                 </button>
-            </form>
+        </form>
 
         </div>
     </div>
-</body>
 
+</body>
 </html>

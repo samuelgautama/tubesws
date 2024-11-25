@@ -10,7 +10,6 @@ $sparql = new EasyRdf\Sparql\Client($endpoint);
 
 $searchQuery = '';
 
-
 if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST['searchQuery'])) {
     $searchQuery = trim($_POST['searchQuery']);
 }
@@ -19,12 +18,12 @@ $query = '
 PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
 
 SELECT DISTINCT ?band_name ?asal ?about ?link WHERE {
-    ?band uni:nama_band ?band_name;
-          uni:hasTrack ?track;
-          uni:asal_band ?asal;
-          uni:about_band ?about;
-          uni:genre ?genre_band;
-          uni:link_gambar ?link.
+    ?band   uni:nama_band ?band_name;
+            uni:hasTrack ?track;
+            uni:asal_band ?asal;
+            uni:about_band ?about;
+            uni:genre ?genre_band;
+            uni:link_gambar ?link.
 
     ?track uni:nama_track ?track_name.
     
@@ -39,10 +38,10 @@ SELECT DISTINCT ?band_name ?asal ?about ?link WHERE {
 }
 ';
 
-
 $result = $sparql->query($query);
 
 ?>
+<?php include 'sidebar.php'; ?>
 <!DOCTYPE html>
 <html lang="id">
 
@@ -58,10 +57,6 @@ $result = $sparql->query($query);
 </head>
 
 <body class="min-h-screen flex relative">
-
-    <?php include 'sidebar.php'; ?>
-
-    </div>
     <div class="flex justify-center">
         <div class="container mt-5">
             <h1 class="font-bold text-3xl flex justify-center mb-4">Hasil Pencarian :
@@ -80,22 +75,22 @@ $result = $sparql->query($query);
                     // Menampilkan hasil dalam tabel
                     foreach ($result as $row) {
                         echo "<div class='card lg:card-side backdrop-blur-sm bg-gray-900 bg-opacity-40 shadow-xl flex ml-24 mr-24 mt-5'>
-                    <div class='card-body'>
-                      <img class='w-32 h-32' src='"
+                                <div class='card-body'>
+                                    <img class='w-32 h-32' src='"
                             . ($row->link) .
                             "'/>
-                      <h2 class='card-title'>" . ($row->band_name) . "</h2>
-                      <p>" . ($row->about) . "</p>
-                      <div class='card-actions justify-end'>
-                        <form method='POST' action='band_track.php'>
-                        <input type='hidden' name='band_name' value='".($row->band_name)."'/>
-                            <button class='text-red font-bold hover:before:bg-[#3CAEA3] relative h-[46px] w-36 overflow-hidden border border-[#3CAEA3] backdrop-blur-sm bg-dark-900 px-3 text-[#3CAEA3] shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#3CAEA3] before:transition-all before:duration-500 hover:text-white hover:shadow-[#3CAEA3] hover:before:left-0 hover:before:w-full'>
-                            <span class='relative z-10'>Listen</span>
-                      </button>
-                        </form>
-                      </div>
-                    </div>
-                  </div>";
+                                    <h2 class='card-title'>" . ($row->band_name) . "</h2>
+                        <p>" . ($row->about) . "</p>
+                        <div class='card-actions justify-end'>
+                            <form method='POST' action='band_track.php'>
+                                <input type='hidden' name='band_name' value='" . ($row->band_name) . "'/>
+                                    <button class='text-red font-bold hover:before:bg-[#3CAEA3] relative h-[46px] w-36 overflow-hidden border border-[#3CAEA3] backdrop-blur-sm bg-dark-900 px-3 text-[#3CAEA3] shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#3CAEA3] before:transition-all before:duration-500 hover:text-white hover:shadow-[#3CAEA3] hover:before:left-0 hover:before:w-full'>
+                                        <span class='relative z-10'>Listen</span>
+                                    </button>
+                            </form>
+                                </div>
+                            </div>
+                        </div>";
                     }
                     ?>
                 </tbody>

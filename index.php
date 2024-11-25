@@ -6,7 +6,6 @@ $endpoint = 'http://localhost:3030/gigspedia/query';
 
 $sparql = new EasyRdf\Sparql\Client($endpoint);
 
-
 $random = '
 PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
 
@@ -21,14 +20,12 @@ SELECT ?id_spotify ?link WHERE {
 }
 ORDER BY RAND()
 LIMIT 1
-
 ';
-
 
 $result = $sparql->query($random);
 
 ?>
-
+<?php include 'sidebar.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,14 +39,12 @@ $result = $sparql->query($random);
 
 <body class="min-h-screen flex">
 
-    <?php include 'sidebar.php'; ?>
 
-    <!-- Main Content -->
     <div class="flex-grow">
         <div class="hero mt-44">
 
             <div class="hero-content flex-col lg:flex-row">
-                <img src="media/gigs2.png"
+                <img src="media/logo.png"
                     class="max-w-sm rounded-lg shadow-2xl transform transition duration-300 hover:brightness-125" />
 
                 <div>
@@ -94,13 +89,12 @@ $result = $sparql->query($random);
 </div>
 
 <script>
-    // Show the popup after a delay
     window.addEventListener('DOMContentLoaded', () => {
         const player = document.getElementById('popup-player');
         setTimeout(() => {
-            player.classList.remove('-right-96', 'opacity-0'); // Slide it into view
-            player.classList.add('right-4', 'opacity-100'); // Make it fully visible
-        }, 1000); // Delay in milliseconds (1 second)
+            player.classList.remove('-right-96', 'opacity-0'); 
+            player.classList.add('right-4', 'opacity-100'); 
+        }, 1000);
     });
 
     function closePopup() {
@@ -110,7 +104,5 @@ $result = $sparql->query($random);
     }
 </script>
 
-
 </body>
-
 </html>

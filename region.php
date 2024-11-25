@@ -30,9 +30,8 @@ SELECT ?band_name ?asal ?about ?link ?genre_band ?tipe WHERE {
 // Menjalankan query
 $result = $sparql->query($query);
 
-
-// Mulai tampilan HTML
 ?>
+<?php include 'sidebar.php';?>
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -51,7 +50,6 @@ $result = $sparql->query($query);
   AOS.init();
 </script>
 
-<?php include 'sidebar.php';?>
 
 <div class="flex justify-center">
     <div class="container mt-5">

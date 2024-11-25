@@ -16,11 +16,10 @@ PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
 
 SELECT  ?band_name ?id_spotify ?link WHERE {
         ?band uni:nama_band ?band_name;
-                uni:hasTrack ?track;
-                uni:link_gambar ?link.
-
+              uni:hasTrack ?track;
+              uni:link_gambar ?link.
         ?track uni:id_track ?id_spotify.
-    
+
     FILTER (regex(?band_name, "' . ($band_name) . '", "i"))
 }
 ';
@@ -30,17 +29,15 @@ PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
 
 SELECT DISTINCT  ?band_name ?link ?tipe ?asal ?about ?genre_band WHERE {
         ?band uni:nama_band ?band_name;
-                uni:link_gambar ?link;
-                uni:band_type ?tipe;
-                uni:asal_band ?asal;
-                uni:about_band ?about;
-                uni:genre ?genre_band.
+          uni:link_gambar ?link;
+          uni:band_type ?tipe;
+          uni:asal_band ?asal;
+          uni:about_band ?about;
+          uni:genre ?genre_band.
 
-    
     FILTER (regex(?band_name, "' . ($band_name) . '", "i"))
 }
 ';
-
 
 $result = $sparql->query($query);
 $result2 = $sparql->query($query2);
@@ -66,36 +63,36 @@ $result2 = $sparql->query($query2);
 <div class="flex justify-center min-w-screen ml-6">
     <div class="container mt-5">
         <div class="flex justify-center">
-        <?php foreach($result2 as $row){
-               echo"<div class='hero backdrop-blur-sm bg-gray-900 bg-opacity-40 rounded-lg mb-8 ml-8 mr-8'>
-                <div class='hero-content flex-col lg:flex-row'>
-                  <img
-                    src='".($row->link)."'
-                    class='max-w-sm rounded-lg shadow-2xl' />
-                  <div>
-                    <h1 class='text-5xl font-bold mb-4'>".($row->band_name)."</h1>
-                    <p>Genre: ".($row->genre_band)."</p>
-                    <p>Tipe: ".($row->tipe)."</p>
-                    <p>Asal: ".($row->asal)."</p>
-                    <p class='mt-4'>
-                      ".($row->about)."
-                    </p>
+          <?php foreach($result2 as $row){
+            echo"<div class='hero backdrop-blur-sm bg-gray-900 bg-opacity-40 rounded-lg mb-8 ml-8 mr-8'>
+                  <div class='hero-content flex-col lg:flex-row'>
+                    <img
+                      src='".($row->link)."'
+                      class='max-w-sm rounded-lg shadow-2xl' />
+                    <div>
+                      <h1 class='text-5xl font-bold mb-4'>".($row->band_name)."</h1>
+                      <p>Genre: ".($row->genre_band)."</p>
+                      <p>Tipe: ".($row->tipe)."</p>
+                      <p>Asal: ".($row->asal)."</p>
+                      <p class='mt-4'>
+                        ".($row->about)."
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </div>";
-        }?>
+                </div>";
+          }?>
         </div>
         <h class="flex justify-center font-bold text-3xl mb-8 text-zinc-50">Tracks</h>
         <div class="grid gap-16 grid-cols-4 grid-rows-6 ml-8 mr-8">
-                <?php
-                foreach ($result as $row) {
-                    echo "<td>" .
+          <?php
+            foreach ($result as $row) {
+              echo "<td>" .
                     '<iframe
                       style="border-radius:14px" src="https://open.spotify.com/embed/track/' . ($row->id_spotify) . '?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>' .
                     "</td>";
-                echo "</tr>";
-                }
-                ?>
+              echo "</tr>";
+            }
+          ?>
         </div>
     </div>
 </div>

@@ -2,13 +2,11 @@
 error_reporting(E_ALL & ~E_DEPRECATED);
 require 'vendor/autoload.php';
 
-
 $endpoint = 'http://localhost:3030/gigspedia/query';
 
 $searchQuery = '';
 
 $sparql = new EasyRdf\Sparql\Client($endpoint);
-
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST['searchQuery'])) {
     $searchQuery = trim($_POST['searchQuery']);
@@ -19,7 +17,7 @@ $asalQuery = '
 PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
 
 SELECT DISTINCT ?asal ?tipe WHERE {
-    ?band uni:asal_band ?asal;
+    ?band   uni:asal_band ?asal;
             uni:band_type ?tipe.
 
     FILTER (regex(?tipe, "Lokal", "i"))
@@ -39,13 +37,11 @@ SELECT DISTINCT ?asal ?tipe WHERE {
     ORDER BY ?asal_band
 ';
 
-
 $genreQuery = '
 PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
 
 SELECT DISTINCT  ?genre_band WHERE {
     ?band uni:genre ?genre_band.
-
 }
     ORDER BY ?genre_band
 ';
@@ -72,31 +68,10 @@ $resultGenre = $sparql->query($genreQuery);
 <!-- Sidebar -->
 <div class="w-64 bg-gradient-to-r from-[color:#3C4048]/60 to-gray-700/60 text-white shadow-2xl min-h-screen overflow-hidden">
 
-<a href="index.php" 
-    class="text-3xl font-extrabold italic py-4 px-6 relative">
-    GigsPedia
-</a>
-
-<style>
-    /* Metal Glow Animation */
-    @keyframes metal-glow {
-        0%, 100% {
-            text-shadow: 
-                0 0 5px #000000, 
-                0 0 10px #bb0000, 
-                0 0 15px #880000, 
-                0 0 20px #ff0000;
-        }
-        50% {
-            text-shadow: 
-                0 0 8px #220000, 
-                0 0 15px #bb0000, 
-                0 0 25px #ff4500, 
-                0 0 30px #ff0000;
-        }
-    }
-
-</style>
+    <a href="index.php"
+        class="text-3xl font-extrabold italic py-4 px-6 relative">
+        GigsPedia
+    </a>
 
     <div class="flex justify-center">
         <form method="POST" class="input input-bordered flex items-center gap-2 border-white bg-transparent mb-4 mt-4" action="search.php">
@@ -115,7 +90,7 @@ $resultGenre = $sparql->query($genreQuery);
         </form>
     </div>
     <div class="overflow-y-auto h-full">
-        
+
         <a href="recommendation.php" class="button px-6 py-2 bg-gradient-to-r from-[color:#3C4048]/60 to-gray-700/60 hover:bg-gray-700 w-full flex justify-start">
             Recommendation
         </a>
@@ -123,7 +98,7 @@ $resultGenre = $sparql->query($genreQuery);
         <a href="daily_mix.php" class="button px-6 py-2 bg-gradient-to-r from-[color:#3C4048]/60 to-gray-700/60 hover:bg-gray-700 w-full flex justify-start">
             Daily Mix
         </a>
-        
+
         <details class="group">
             <summary class="px-6 py-2 bg-gradient-to-r from-[color:#3C4048]/60 to-gray-700/60 cursor-pointer group-open:bg-gray-700 hover:bg-gray-700">
                 Lokal
