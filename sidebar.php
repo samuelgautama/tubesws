@@ -20,11 +20,11 @@ PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
 
 SELECT DISTINCT ?asal ?tipe WHERE {
     ?band uni:asal_band ?asal;
-          uni:band_type ?tipe.
+            uni:band_type ?tipe.
 
     FILTER (regex(?tipe, "Lokal", "i"))
 }
-  ORDER BY ?asal_band
+    ORDER BY ?asal_band
 ';
 
 $asalQuery2 = '
@@ -32,11 +32,11 @@ PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
 
 SELECT DISTINCT ?asal ?tipe WHERE {
     ?band uni:asal_band ?asal;
-          uni:band_type ?tipe.
+            uni:band_type ?tipe.
 
     FILTER (regex(?tipe, "Internasional", "i"))
 }
-  ORDER BY ?asal_band
+    ORDER BY ?asal_band
 ';
 
 
@@ -47,7 +47,7 @@ SELECT DISTINCT  ?genre_band WHERE {
     ?band uni:genre ?genre_band.
 
 }
-  ORDER BY ?genre_band
+    ORDER BY ?genre_band
 ';
 
 $resultAsal = $sparql->query($asalQuery);
@@ -73,7 +73,7 @@ $resultGenre = $sparql->query($genreQuery);
 <div class="w-64 bg-gradient-to-r from-[color:#3C4048]/60 to-gray-700/60 text-white shadow-2xl min-h-screen overflow-hidden">
 
 <a href="index.php" 
-   class="text-3xl font-extrabold italic py-4 px-6 relative">
+    class="text-3xl font-extrabold italic py-4 px-6 relative">
     GigsPedia
 </a>
 
@@ -96,7 +96,6 @@ $resultGenre = $sparql->query($genreQuery);
         }
     }
 
-
 </style>
 
     <div class="flex justify-center">
@@ -116,6 +115,10 @@ $resultGenre = $sparql->query($genreQuery);
         </form>
     </div>
     <div class="overflow-y-auto h-full">
+        <a href="index.php" class="button px-6 py-2 bg-gradient-to-r from-[color:#3C4048]/60 to-gray-700/60 hover:bg-gray-700 w-full flex justify-start">
+            Home
+        </a>
+
         <a href="recommendation.php" class="button px-6 py-2 bg-gradient-to-r from-[color:#3C4048]/60 to-gray-700/60 hover:bg-gray-700 w-full flex justify-start">
             Recommendation
         </a>
