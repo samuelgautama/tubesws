@@ -115,10 +115,7 @@ $resultGenre = $sparql->query($genreQuery);
         </form>
     </div>
     <div class="overflow-y-auto h-full">
-        <a href="index.php" class="button px-6 py-2 bg-gradient-to-r from-[color:#3C4048]/60 to-gray-700/60 hover:bg-gray-700 w-full flex justify-start">
-            Home
-        </a>
-
+        
         <a href="recommendation.php" class="button px-6 py-2 bg-gradient-to-r from-[color:#3C4048]/60 to-gray-700/60 hover:bg-gray-700 w-full flex justify-start">
             Recommendation
         </a>

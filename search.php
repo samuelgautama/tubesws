@@ -88,8 +88,9 @@ $result = $sparql->query($query);
                       <p>" . ($row->about) . "</p>
                       <div class='card-actions justify-end'>
                         <form method='POST' action='band_track.php'>
-                                <input type='hidden' name='band_name' value='" . ($row->band_name) . "'>
-                                     <button class='text-red font-bold hover:before:bg-redborder-red-500 relative h-[46px] w-36 overflow-hidden border border-red-500 backdrop-blur-sm bg-dark-900 px-3 text-red-500 shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-red-500 before:transition-all before:duration-500 hover:text-white hover:shadow-red-500 hover:before:left-0 hover:before:w-full'><span class='relative z-10'>Listen</span></button>
+                            <button class='text-red font-bold hover:before:bg-[#3CAEA3] relative h-[46px] w-36 overflow-hidden border border-[#3CAEA3] backdrop-blur-sm bg-dark-900 px-3 text-[#3CAEA3] shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#3CAEA3] before:transition-all before:duration-500 hover:text-white hover:shadow-[#3CAEA3] hover:before:left-0 hover:before:w-full'>
+                            <span class='relative z-10'>Listen</span>
+                      </button>
                         </form>
                       </div>
                     </div>

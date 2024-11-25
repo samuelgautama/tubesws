@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ns1="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band120_track5">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <ns1:id_track>1EAIXFenkNoB8svFGUfd5m</ns1:id_track>
+    <ns1:nama_track>Parabolica</ns1:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band120">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Band"/>
+    <ns1:nama_band>Bulb</ns1:nama_band>
+    <ns1:about_band>Guitarist-producer Misha Mansoor, a native of Bethesda, Maryland, had &amp;quot;no real aspirations of a music career.&amp;quot; Instead, he was just writing for the thrill of discovery and community. Emboldened by the camaraderie he found online, he started sharing his home recordings, which he&amp;#39;d uploaded to the early streaming site SoundClick under the moniker Bulb. Those exploratory early recordings started to build their own cult following — expanding beyond SoundClick to become a sort of treasure trove for the most rabid fans. After watching these songs circulate at random for years on the Internet, Mansoor finally decided to reclaim his past: On June 12, 2020, via Periphery&amp;#39;s 3DOT Recordings, he released Bulb Archives: Volume 8, the first of 10 volumes collecting roughly 110 songs. The project marks the first time all of this myriad music has been available officially, in one place, and through current, popular streaming platforms. The collection presents the songs almost entirely as they were on SoundClick, spruced up slightly with mastering from longtime Periphery collaborator Ermin Hamidovic. The engineer worked from the original MP3s —&amp;quot;not an ideal scenario,&amp;quot; Mansoor admits. But preservation is the point — there&amp;#39;s no &amp;quot;touching up&amp;quot; of individual parts or added overdubs. This is Bulb in its purest form: Mansoor capturing lightning in a bottle and stashing it away.</ns1:about_band>
+    <ns1:link_gambar>https://i.scdn.co/image/ab676161000051749afc0ebf8a196aafeb62f101</ns1:link_gambar>
+    <ns1:genre>Unknown</ns1:genre>
+    <ns1:band_type>Internasional</ns1:band_type>
+    <ns1:asal_band>Unknown</ns1:asal_band>
+    <ns1:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band120_track1"/>
+    <ns1:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band120_track2"/>
+    <ns1:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band120_track3"/>
+    <ns1:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band120_track4"/>
+    <ns1:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band120_track5"/>
+    <ns1:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band120_track6"/>
+    <ns1:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band120_track7"/>
+    <ns1:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band120_track8"/>
+    <ns1:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band120_track9"/>
+    <ns1:hasTrack rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band120_track10"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band120_track7">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <ns1:id_track>0FNoDf6AYbJpnYMFhB6bRR</ns1:id_track>
+    <ns1:nama_track>Godma</ns1:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band120_track10">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <ns1:id_track>1oJiBjpJVLkVerrCCBIGZJ</ns1:id_track>
+    <ns1:nama_track>Axe 2 High Gain Test</ns1:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band120_track4">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <ns1:id_track>3dSalSaw1AyL004WwkNtQ2</ns1:id_track>
+    <ns1:nama_track>Echo Teuffel</ns1:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band120_track2">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <ns1:id_track>5VlokeJ0UYfQsEKODOhtIU</ns1:id_track>
+    <ns1:nama_track>Breeze</ns1:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band120_track9">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <ns1:id_track>1obQuPAUWPAFA2jUzxEjKY</ns1:id_track>
+    <ns1:nama_track>Füf Redux</ns1:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band120_track8">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <ns1:id_track>2tvwOy5mUeEAn1QZ8Hh5lP</ns1:id_track>
+    <ns1:nama_track>Press Enter Redux</ns1:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band120_track1">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <ns1:id_track>4wVL5wXMdpGSr2TQBoRG7I</ns1:id_track>
+    <ns1:nama_track>Breeze Redux</ns1:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band120_track6">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <ns1:id_track>6YysbXFY5nZMRvSzCwKENy</ns1:id_track>
+    <ns1:nama_track>Unleash the Pwnies</ns1:nama_track>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#band120_track3">
+    <rdf:type rdf:resource="http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#Single"/>
+    <ns1:id_track>5dn2DXDc7yvsFFGg4WkhZt</ns1:id_track>
+    <ns1:nama_track>Archon Test</ns1:nama_track>
+  </rdf:Description>
+</rdf:RDF>

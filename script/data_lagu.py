@@ -3,13 +3,12 @@ from rdflib import Graph, Namespace, URIRef, Literal
 from rdflib.namespace import RDF
 
 # Konfigurasi API
-url = "https://spotify-statistics-and-stream-count.p.rapidapi.com/artist/5LyRnL0rysObxDRxzSfV1z"
+url = "https://spotify-statistics-and-stream-count.p.rapidapi.com/artist/2VD2tCp2pxWqsguRJUsSCB"
 headers = {
     "x-rapidapi-key": "fd44836f53msh38132121d4d2607p17b933jsnb886c23246ee",
     "x-rapidapi-host": "spotify-statistics-and-stream-count.p.rapidapi.com"
 }
 
-id_artist = ""
 
 # Permintaan ke API
 response = requests.get(url, headers=headers)
@@ -25,7 +24,7 @@ def create_rdf_from_api(data):
     g = Graph()
     
     # Band URI
-    band_uri = BASE["band107"]
+    band_uri = BASE["band120"]
     
     # Data Band
     band_name = data.get("name", "Unknown Artist")
@@ -44,7 +43,7 @@ def create_rdf_from_api(data):
     
     # Menambahkan top tracks
     for i, track in enumerate(top_tracks, start=1):
-        track_uri = BASE[f"band107_track{i}"]
+        track_uri = BASE[f"band120_track{i}"]
         g.add((band_uri, LOKAL_BAND.hasTrack, track_uri))
         g.add((track_uri, RDF.type, LOKAL_BAND.Single))
         g.add((track_uri, LOKAL_BAND.id_track, Literal(track["id"])))
