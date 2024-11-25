@@ -6,13 +6,12 @@ $endpoint = 'http://localhost:3030/gigspedia/query';
 
 $sparql = new EasyRdf\Sparql\Client($endpoint);
 
-// Menyusun query SPARQL
 $random = '
 PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
 
 SELECT ?band_name ?link WHERE {
-    ?band uni:link_gambar ?link;
-        uni:nama_band ?band_name.
+    ?band   uni:link_gambar ?link;
+            uni:nama_band ?band_name.
 }
 ORDER BY RAND()
 LIMIT 8
@@ -20,6 +19,7 @@ LIMIT 8
 
 $result = $sparql->query($random);
 ?>
+
 <?php include 'sidebar.php'; ?>
 <!DOCTYPE html>
 <html lang="en">

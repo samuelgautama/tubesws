@@ -25,8 +25,8 @@ LIMIT 8
 ";
 
 $result = $sparql->query($random);
-
 ?>
+
 <?php include 'sidebar.php'; ?>
 <!DOCTYPE html>
 <html lang="en">

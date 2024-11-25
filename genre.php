@@ -23,7 +23,6 @@ SELECT  ?band_name ?genre_band ?about ?genre_band ?asal ?link WHERE {
 ';
 
 $result = $sparql->query($query);
-
 ?>
 
 <!DOCTYPE html>

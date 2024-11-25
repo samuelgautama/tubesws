@@ -88,7 +88,9 @@ $result2 = $sparql->query($query2);
             foreach ($result as $row) {
               echo "<td>" .
                     '<iframe
-                      style="border-radius:14px" src="https://open.spotify.com/embed/track/' . ($row->id_spotify) . '?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>' .
+                      style="border-radius:14px" src="https://open.spotify.com/embed/track/' . ($row->id_spotify) . '?utm_source=generator" 
+                      width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; 
+                      picture-in-picture" loading="lazy"></iframe>' .
                     "</td>";
               echo "</tr>";
             }

@@ -2,9 +2,7 @@
 error_reporting(E_ALL & ~E_DEPRECATED);
 require 'vendor/autoload.php';
 
-
 $endpoint = 'http://localhost:3030/gigspedia/query';
-
 
 $sparql = new EasyRdf\Sparql\Client($endpoint);
 
@@ -39,8 +37,8 @@ SELECT DISTINCT ?band_name ?asal ?about ?link WHERE {
 ';
 
 $result = $sparql->query($query);
-
 ?>
+
 <?php include 'sidebar.php'; ?>
 <!DOCTYPE html>
 <html lang="id">

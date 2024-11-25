@@ -23,8 +23,8 @@ LIMIT 1
 ';
 
 $result = $sparql->query($random);
-
 ?>
+
 <?php include 'sidebar.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -66,26 +66,25 @@ $result = $sparql->query($random);
         </div>
 
         <div role="alert" class="alert">
-        <span>
-            <?php
-            foreach ($result as $row) {
-                echo "<div class='flex items-center space-x-4 p-2 backdrop-blur-sm bg-white bg-opacity-40 rounded-b-lg'>" .
-                    '<iframe
-                        style="border-radius:15px" 
-                        src="https://open.spotify.com/embed/track/' . ($row->id_spotify) . '?utm_source=generator&theme=0&autoplay=1" 
-                        width="350" 
-                        height="80" 
-                        frameBorder="0" 
-                        allowfullscreen="" 
-                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-                        loading="lazy">
-                    </iframe>' .
-                    "</div>";
-            }
-            ?> 
-        </span>
-        
-    </div>
+            <span>
+                <?php
+                foreach ($result as $row) {
+                    echo "<div class='flex items-center space-x-4 p-2 backdrop-blur-sm bg-white bg-opacity-40 rounded-b-lg'>" .
+                        '<iframe
+                            style="border-radius:15px" 
+                            src="https://open.spotify.com/embed/track/' . ($row->id_spotify) . '?utm_source=generator&theme=0&autoplay=1" 
+                            width="350" 
+                            height="80" 
+                            frameBorder="0" 
+                            allowfullscreen="" 
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                            loading="lazy">
+                        </iframe>' .
+                        "</div>";
+                }
+                ?> 
+            </span>
+        </div>
 </div>
 
 <script>
