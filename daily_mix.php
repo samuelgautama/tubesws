@@ -26,7 +26,7 @@
                     </figure>
 
                     <!-- Playback Button -->
-                    <div class='absolute bottom-4 right-4 transform translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-[1500ms]'>
+                    <div class='absolute bottom-4 right-4 transform translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-[800ms]'>
                         <div class='flex items-center justify-center w-12 h-12 rounded-full border border-black transition-all' style='background-color: #3CAEA3;'>
                             <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6 text-white' viewBox='0 0 24 24' fill='currentColor'>
                                 <path d='M4 3v18l17-9L4 3z' />
@@ -45,7 +45,7 @@
                     </figure>
 
                     <!-- Playback Button -->
-                    <div class='absolute bottom-4 right-4 transform translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-[1500ms]'>
+                    <div class='absolute bottom-4 right-4 transform translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-[800ms]'>
                         <div class='flex items-center justify-center w-12 h-12 rounded-full border border-black transition-all' style='background-color: #3CAEA3;'>
                             <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6 text-white' viewBox='0 0 24 24' fill='currentColor'>
                                 <path d='M4 3v18l17-9L4 3z' />
@@ -64,7 +64,7 @@
                     </figure>
 
                     <!-- Playback Button -->
-                    <div class='absolute bottom-4 right-4 transform translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-[1500ms]'>
+                    <div class='absolute bottom-4 right-4 transform translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-[800ms]'>
                         <div class='flex items-center justify-center w-12 h-12 rounded-full border border-black transition-all' style='background-color: #3CAEA3;'>
                             <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6 text-white' viewBox='0 0 24 24' fill='currentColor'>
                                 <path d='M4 3v18l17-9L4 3z' />
@@ -83,7 +83,7 @@
                     </figure>
 
                     <!-- Playback Button -->
-                    <div class='absolute bottom-4 right-4 transform translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-[1500ms]'>
+                    <div class='absolute bottom-4 right-4 transform translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-[800ms]'>
                         <div class='flex items-center justify-center w-12 h-12 rounded-full border border-black transition-all' style='background-color: #3CAEA3;'>
                             <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6 text-white' viewBox='0 0 24 24' fill='currentColor'>
                                 <path d='M4 3v18l17-9L4 3z' />
@@ -102,7 +102,7 @@
                     </figure>
 
                     <!-- Playback Button -->
-                    <div class='absolute bottom-4 right-4 transform translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-[1500ms]'>
+                    <div class='absolute bottom-4 right-4 transform translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-[800ms]'>
                         <div class='flex items-center justify-center w-12 h-12 rounded-full border border-black transition-all' style='background-color: #3CAEA3;'>
                             <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6 text-white' viewBox='0 0 24 24' fill='currentColor'>
                                 <path d='M4 3v18l17-9L4 3z' />
@@ -121,7 +121,7 @@
                     </figure>
 
                     <!-- Playback Button -->
-                    <div class='absolute bottom-4 right-4 transform translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-[1500ms]'>
+                    <div class='absolute bottom-4 right-4 transform translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-[800ms]'>
                         <div class='flex items-center justify-center w-12 h-12 rounded-full border border-black transition-all' style='background-color: #3CAEA3;'>
                             <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6 text-white' viewBox='0 0 24 24' fill='currentColor'>
                                 <path d='M4 3v18l17-9L4 3z' />
@@ -140,7 +140,7 @@
                     </figure>
 
                     <!-- Playback Button -->
-                    <div class='absolute bottom-4 right-4 transform translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-[1500ms]'>
+                    <div class='absolute bottom-4 right-4 transform translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-[800ms]'>
                         <div class='flex items-center justify-center w-12 h-12 rounded-full border border-black transition-all' style='background-color: #3CAEA3;'>
                             <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6 text-white' viewBox='0 0 24 24' fill='currentColor'>
                                 <path d='M4 3v18l17-9L4 3z' />
@@ -159,7 +159,7 @@
                     </figure>
 
                     <!-- Playback Button -->
-                    <div class='absolute bottom-4 right-4 transform translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-[1500ms]'>
+                    <div class='absolute bottom-4 right-4 transform translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-[800ms]'>
                         <div class='flex items-center justify-center w-12 h-12 rounded-full border border-black transition-all' style='background-color: #3CAEA3;'>
                             <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6 text-white' viewBox='0 0 24 24' fill='currentColor'>
                                 <path d='M4 3v18l17-9L4 3z' />
