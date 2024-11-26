@@ -1,13 +1,16 @@
 <?php
 error_reporting(E_ALL & ~E_DEPRECATED);
-require 'vendor/autoload.php'; 
+require 'vendor/autoload.php'; // Pastikan autoload diinclude
 
-$endpoint = 'http://localhost:3030/gigspedia/query';
+// Mengatur endpoint SPARQL
+$endpoint = 'http://localhost:3030/gigspedia/query'; // Ganti dengan URL endpoint SPARQL Anda
 
+// Membuat klien SPARQL
 $sparql = new EasyRdf\Sparql\Client($endpoint);
 
 $region = isset($_POST['region']) ? $_POST['region'] : '';
 
+// Menyusun query SPARQL
 $query = '
 PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
 
@@ -24,10 +27,12 @@ SELECT ?band_name ?asal ?about ?link ?genre_band ?tipe WHERE {
   ORDER BY ?band_name
 ';
 
+// Menjalankan query
 $result = $sparql->query($query);
-?>
 
-<?php include 'sidebar.php';?>
+
+// Mulai tampilan HTML
+?>
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -46,6 +51,7 @@ $result = $sparql->query($query);
   AOS.init();
 </script>
 
+<?php include 'sidebar.php';?>
 
 <div class="flex justify-center">
     <div class="container mt-5">

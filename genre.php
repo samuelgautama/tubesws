@@ -1,13 +1,16 @@
 <?php
 error_reporting(E_ALL & ~E_DEPRECATED);
-require 'vendor/autoload.php';
+require 'vendor/autoload.php'; // Pastikan autoload diinclude
 
-$endpoint = 'http://localhost:3030/gigspedia/query'; 
+// Mengatur endpoint SPARQL
+$endpoint = 'http://localhost:3030/gigspedia/query'; // Ganti dengan URL endpoint SPARQL Anda
 
+// Membuat klien SPARQL
 $sparql = new EasyRdf\Sparql\Client($endpoint);
 
 $genre = isset($_POST['genre']) ? $_POST['genre'] : '';
 
+// Menyusun query SPARQL
 $query = '
 PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
 
@@ -22,50 +25,52 @@ SELECT  ?band_name ?genre_band ?about ?genre_band ?asal ?link WHERE {
 }
 ';
 
+// Menjalankan query
 $result = $sparql->query($query);
-?>
 
+
+// Mulai tampilan HTML
+?>
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GigsPedia</title>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GigsPedia</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body class="flex">
 
-  <script>
-    AOS.init();
-  </script>
+<script>
+  AOS.init();
+</script>
 
-  <?php include 'sidebar.php'; ?>
-  <div class=" ml-4 flex justify-center">
+<?php include 'sidebar.php';?>
+<div class=" ml-4 flex justify-center">
     <div class="container mt-5">
       <h class="flex justify-center text-3xl font-bold mb-4 text-zinc-50">Daftar Band</h>
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-          </tr>
-        </thead>
-        <tbody>
-          <?php
-          foreach ($result as $row) {
-            echo "<div class='card lg:card-side backdrop-blur-sm bg-gray-900 bg-opacity-40 shadow-2xl mb-6 ml-8 mr-8'>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                // Menampilkan hasil dalam tabel
+                foreach ($result as $row) {
+                    echo "<div class='card lg:card-side backdrop-blur-sm bg-gray-900 bg-opacity-40 shadow-2xl mb-6 ml-8 mr-8'>
                     <div class='card-body'>
                     <img class='min-w-32 min-h-48 w-48 rounded-lg' src='"
-              . ($row->link) .
-              "'/>
-                      <h2 class='card-title'>" . ($row->band_name) . "</h2>
-                      <p>Genre: " . ($row->genre_band) . "</p>
-                      <p>Asal: " . ($row->asal) . "</p>
-                      <p>" . ($row->about) . "</p>
+                      .($row->link).
+                      "'/>
+                      <h2 class='card-title'>".($row->band_name)."</h2>
+                      <p>Genre: ".($row->genre_band)."</p>
+                      <p>Asal: ".($row->asal)."</p>
+                      <p>".($row->about)."</p>
                       <div class='card-actions justify-end'>
                         <form method='POST' action='band_track.php'>
                           <input type='hidden' name='band_name' value='" . ($row->band_name) . "'>
@@ -76,12 +81,11 @@ $result = $sparql->query($query);
                       </div>
                     </div>
                   </div>";
-          }
-          ?>
-        </tbody>
-      </table>
+                }
+                ?>
+            </tbody>
+        </table>
     </div>
-  </div>
+</div>
 </body>
-
 </html>

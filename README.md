@@ -1,4 +1,4 @@
-# Gigspedia
+# tubesws
 Ini merupakan repository tugas besar mata kuliah Web Semantik (Semester 3)
 
 ## Anggota kelompok :

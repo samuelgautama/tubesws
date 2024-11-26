@@ -9,9 +9,9 @@ $sparql = new EasyRdf\Sparql\Client($endpoint);
 $random = '
 PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
 
-SELECT ?id_spotify ?link WHERE {
+SELECT ?id_spotify WHERE {
     {
-        SELECT DISTINCT ?id_spotify ?link WHERE {
+        SELECT ?id_spotify WHERE {
             ?band uni:hasTrack ?track.
             ?track uni:id_track ?id_spotify.
         }
@@ -20,12 +20,12 @@ SELECT ?id_spotify ?link WHERE {
 }
 ORDER BY RAND()
 LIMIT 1
+
 ';
 
 $result = $sparql->query($random);
 ?>
 
-<?php include 'sidebar.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,12 +39,14 @@ $result = $sparql->query($random);
 
 <body class="min-h-screen flex">
 
+    <?php include 'sidebar.php'; ?>
 
+    <!-- Main Content -->
     <div class="flex-grow">
         <div class="hero mt-44">
 
             <div class="hero-content flex-col lg:flex-row">
-                <img src="media/logo.png"
+                <img src="media/gigs2.png"
                     class="max-w-sm rounded-lg shadow-2xl transform transition duration-300 hover:brightness-125" />
 
                 <div>
@@ -66,34 +68,36 @@ $result = $sparql->query($random);
         </div>
 
         <div role="alert" class="alert">
-            <span>
-                <?php
-                foreach ($result as $row) {
-                    echo "<div class='flex items-center space-x-4 p-2 backdrop-blur-sm bg-white bg-opacity-40 rounded-b-lg'>" .
-                        '<iframe
-                            style="border-radius:15px" 
-                            src="https://open.spotify.com/embed/track/' . ($row->id_spotify) . '?utm_source=generator&theme=0&autoplay=1" 
-                            width="350" 
-                            height="80" 
-                            frameBorder="0" 
-                            allowfullscreen="" 
-                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-                            loading="lazy">
-                        </iframe>' .
-                        "</div>";
-                }
-                ?> 
-            </span>
-        </div>
+        <span>
+            <?php
+            foreach ($result as $row) {
+                echo "<div class='flex items-center space-x-4 p-2 backdrop-blur-sm bg-white bg-opacity-40 rounded-b-lg'>" .
+                    '<iframe
+                        style="border-radius:15px" 
+                        src="https://open.spotify.com/embed/track/' . ($row->id_spotify) . '?utm_source=generator&theme=0&autoplay=1" 
+                        width="350" 
+                        height="80" 
+                        frameBorder="0" 
+                        allowfullscreen="" 
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                        loading="lazy">
+                    </iframe>' .
+                    "</div>";
+            }
+            ?> 
+        </span>
+        
+    </div>
 </div>
 
 <script>
+    // Show the popup after a delay
     window.addEventListener('DOMContentLoaded', () => {
         const player = document.getElementById('popup-player');
         setTimeout(() => {
-            player.classList.remove('-right-96', 'opacity-0'); 
-            player.classList.add('right-4', 'opacity-100'); 
-        }, 1000);
+            player.classList.remove('-right-96', 'opacity-0'); // Slide it into view
+            player.classList.add('right-4', 'opacity-100'); // Make it fully visible
+        }, 1000); // Delay in milliseconds (1 second)
     });
 
     function closePopup() {
@@ -103,5 +107,7 @@ $result = $sparql->query($random);
     }
 </script>
 
+
 </body>
+
 </html>

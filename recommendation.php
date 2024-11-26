@@ -6,12 +6,13 @@ $endpoint = 'http://localhost:3030/gigspedia/query';
 
 $sparql = new EasyRdf\Sparql\Client($endpoint);
 
+// Menyusun query SPARQL
 $random = '
 PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
 
 SELECT ?band_name ?link WHERE {
-    ?band   uni:link_gambar ?link;
-            uni:nama_band ?band_name.
+    ?band uni:link_gambar ?link;
+        uni:nama_band ?band_name.
 }
 ORDER BY RAND()
 LIMIT 8
@@ -19,7 +20,6 @@ LIMIT 8
 
 $result = $sparql->query($random);
 ?>
-
 <?php include 'sidebar.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -32,7 +32,7 @@ $result = $sparql->query($random);
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="flex min-h-screen relative"> 
+<body class="flex min-h-screen relative"> <!-- Add relative to the body -->
     <div class="absolute top-14 right-24 z-50">
         <a href="javascript:void(0);" class="button" onclick="refreshPage()">
             <img id="refresh-icon" src="media/refresh.png" alt="Refresh" class="w-10 h-10 transition-transform duration-1000 ease-in">
@@ -43,17 +43,21 @@ $result = $sparql->query($random);
         function refreshPage() {
             const refreshIcon = document.getElementById('refresh-icon');
 
+            // Add the spinning animation for 1 second
             refreshIcon.classList.add('animate-spin');
 
+            // Reload the page after 1 second
             setTimeout(() => {
                 window.location.reload();
             }, 1000);
 
+            // Optionally, remove the spinning effect after 1 second
             setTimeout(() => {
                 refreshIcon.classList.remove('animate-spin');
             }, 1000);
         }
     </script>
+
 
     <div class="mt-12">
         <h class="text-5xl font-bold flex justify-center mb-12 text-zinc-50">From GigsPedia To You</h>
@@ -86,6 +90,7 @@ $result = $sparql->query($random);
                 </button>
             </form>";
             } ?>
+
         </div>
     </div>
 
