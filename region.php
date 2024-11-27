@@ -1,16 +1,13 @@
 <?php
 error_reporting(E_ALL & ~E_DEPRECATED);
-require 'vendor/autoload.php'; // Pastikan autoload diinclude
+require 'vendor/autoload.php'; 
 
-// Mengatur endpoint SPARQL
-$endpoint = 'http://localhost:3030/gigspedia/query'; // Ganti dengan URL endpoint SPARQL Anda
+$endpoint = 'http://localhost:3030/gigspedia/query'; 
 
-// Membuat klien SPARQL
 $sparql = new EasyRdf\Sparql\Client($endpoint);
 
 $region = isset($_POST['region']) ? $_POST['region'] : '';
 
-// Menyusun query SPARQL
 $query = '
 PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
 
@@ -22,17 +19,16 @@ SELECT ?band_name ?asal ?about ?link ?genre_band ?tipe WHERE {
           uni:genre ?genre_band;
           uni:band_type ?tipe.
     
-    FILTER (regex(?asal, "' . ($region) . '", "i"))
-}
-  ORDER BY ?band_name
-';
-
-// Menjalankan query
+          FILTER (regex(?asal, "' . ($region) . '", "i"))
+          }
+          ORDER BY ?band_name
+          ';
+          
 $result = $sparql->query($query);
-
-
-// Mulai tampilan HTML
 ?>
+
+<?php include 'sidebar.php';?>
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -51,8 +47,6 @@ $result = $sparql->query($query);
   AOS.init();
 </script>
 
-<?php include 'sidebar.php';?>
-
 <div class="flex justify-center">
     <div class="container mt-5">
         <h class="flex justify-center text-3xl font-bold mb-4 text-zinc-50">Daftar Band</h>
@@ -63,7 +57,6 @@ $result = $sparql->query($query);
             </thead>
             <tbody>
                 <?php
-                // Menampilkan hasil dalam tabel
                 foreach ($result as $row) {
                     echo "<div class='card lg:card-side backdrop-blur-sm bg-gray-900 bg-opacity-40 shadow-2xl mb-6 ml-8 mr-8'>
                     <div class='card-body'>

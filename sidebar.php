@@ -9,12 +9,10 @@ $searchQuery = '';
 
 $sparql = new EasyRdf\Sparql\Client($endpoint);
 
-
 if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST['searchQuery'])) {
     $searchQuery = trim($_POST['searchQuery']);
 }
 
-// Menyusun query SPARQL
 $asalQuery = '
 PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
 
@@ -69,32 +67,12 @@ $resultGenre = $sparql->query($genreQuery);
 
 </head>
 
-<!-- Sidebar -->
 <div class="w-64 bg-gradient-to-r from-[color:#3C4048]/60 to-gray-700/60 text-white shadow-2xl min-h-screen overflow-hidden">
 
 <a href="index.php" 
     class="text-3xl font-extrabold italic py-4 px-6 relative">
     GigsPedia
 </a>
-
-<style>
-    /* Metal Glow Animation */
-    @keyframes metal-glow {
-        0%, 100% {
-            text-shadow: 
-                0 0 5px #000000, 
-                0 0 10px #bb0000, 
-                0 0 15px #880000, 
-                0 0 20px #ff0000;
-        }
-        50% {
-            text-shadow: 
-                0 0 8px #220000, 
-                0 0 15px #bb0000, 
-                0 0 25px #ff4500, 
-                0 0 30px #ff0000;
-        }
-    }
 
 </style>
 

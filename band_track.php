@@ -1,16 +1,13 @@
 <?php
 error_reporting(E_ALL & ~E_DEPRECATED);
-require 'vendor/autoload.php'; // Pastikan autoload diinclude
+require 'vendor/autoload.php';
 
-// Mengatur endpoint SPARQL
-$endpoint = 'http://localhost:3030/gigspedia/query'; // Ganti dengan URL endpoint SPARQL Anda
+$endpoint = 'http://localhost:3030/gigspedia/query';
 
-// Membuat klien SPARQL
 $sparql = new EasyRdf\Sparql\Client($endpoint);
 
 $band_name = isset($_POST['band_name']) ? $_POST['band_name'] : '';
 
-// Menyusun query SPARQL
 $query = '
 PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
 
@@ -66,7 +63,6 @@ $locations = [
   'Swedia' => ['lat' => 60.1282, 'lon' => 18.6435],
   'Australia' => ['lat' => -33.8688, 'lon' => 151.2093],
 ];
-
 ?>
 <!DOCTYPE html>
 <html lang="id">
@@ -91,7 +87,7 @@ $locations = [
     <div class="container mt-5">
         <div class="flex justify-center">
         <?php foreach($result2 as $row){
-               echo"<div class='hero backdrop-blur-sm bg-gray-900 bg-opacity-40 rounded-lg mb-8 ml-8 mr-8'>
+              echo"<div class='hero backdrop-blur-sm bg-gray-900 bg-opacity-40 rounded-lg mb-8 ml-8 mr-8'>
                 <div class='hero-content flex-col lg:flex-row'>
                   <img
                     src='".($row->link)."'
@@ -151,7 +147,6 @@ $locations = [
                 maxZoom: 19,
                 attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             }).addTo(map);
-
             
             L.marker([lat, lon]).addTo(map)
                 .bindPopup('Asal: ' + bandOrigin)

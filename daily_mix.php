@@ -1,3 +1,4 @@
+<?php include 'sidebar.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +13,6 @@
 <body class="flex min-h-screen relative">
 
 
-    <?php include 'sidebar.php'; ?>
 
 
     <div class="mt-12">
@@ -26,7 +26,6 @@
                         <img class="min-w-32 min-h-48" src="/media/metalcore1.png" />
                     </figure>
 
-                    <!-- Playback Button -->
                     <div class='absolute bottom-4 right-4 transform translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-[1500ms]'>
                         <div class='flex items-center justify-center w-12 h-12 rounded-full border border-black transition-all' style='background-color: #3CAEA3;'>
                             <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6 text-white' viewBox='0 0 24 24' fill='currentColor'>
@@ -45,7 +44,6 @@
                         <img class="min-w-32 min-h-48" src="/media/rock1.jpg" />
                     </figure>
 
-                    <!-- Playback Button -->
                     <div class='absolute bottom-4 right-4 transform translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-[1500ms]'>
                         <div class='flex items-center justify-center w-12 h-12 rounded-full border border-black transition-all' style='background-color: #3CAEA3;'>
                             <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6 text-white' viewBox='0 0 24 24' fill='currentColor'>
@@ -63,7 +61,6 @@
                         <img class="min-w-32 min-h-48" src="/media/hardcore1.jpg" />
                     </figure>
 
-                    <!-- Playback Button -->
                     <div class='absolute bottom-4 right-4 transform translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-[1500ms]'>
                         <div class='flex items-center justify-center w-12 h-12 rounded-full border border-black transition-all' style='background-color: #3CAEA3;'>
                             <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6 text-white' viewBox='0 0 24 24' fill='currentColor'>
@@ -81,7 +78,6 @@
                         <img class="min-w-32 min-h-48" src="/media/thrashmetal1.jpg" />
                     </figure>
 
-                    <!-- Playback Button -->
                     <div class='absolute bottom-4 right-4 transform translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-[1500ms]'>
                         <div class='flex items-center justify-center w-12 h-12 rounded-full border border-black transition-all' style='background-color: #3CAEA3;'>
                             <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6 text-white' viewBox='0 0 24 24' fill='currentColor'>
@@ -99,7 +95,6 @@
                         <img class="min-w-32 min-h-48" src="/media/metalcore2.jpg" />
                     </figure>
 
-                    <!-- Playback Button -->
                     <div class='absolute bottom-4 right-4 transform translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-[1500ms]'>
                         <div class='flex items-center justify-center w-12 h-12 rounded-full border border-black transition-all' style='background-color: #3CAEA3;'>
                             <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6 text-white' viewBox='0 0 24 24' fill='currentColor'>
@@ -117,7 +112,6 @@
                         <img class="min-w-32 min-h-48" src="/media/rock2.jpg" />
                     </figure>
 
-                    <!-- Playback Button -->
                     <div class='absolute bottom-4 right-4 transform translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-[1500ms]'>
                         <div class='flex items-center justify-center w-12 h-12 rounded-full border border-black transition-all' style='background-color: #3CAEA3;'>
                             <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6 text-white' viewBox='0 0 24 24' fill='currentColor'>
@@ -135,7 +129,6 @@
                         <img class="min-w-32 min-h-48" src="/media/hardcore2.jpg" />
                     </figure>
 
-                    <!-- Playback Button -->
                     <div class='absolute bottom-4 right-4 transform translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-[1500ms]'>
                         <div class='flex items-center justify-center w-12 h-12 rounded-full border border-black transition-all' style='background-color: #3CAEA3;'>
                             <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6 text-white' viewBox='0 0 24 24' fill='currentColor'>
@@ -153,7 +146,6 @@
                         <img class="min-w-32 min-h-48" src="/media/thrashmetal2.jpg" />
                     </figure>
 
-                    <!-- Playback Button -->
                     <div class='absolute bottom-4 right-4 transform translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-[1500ms]'>
                         <div class='flex items-center justify-center w-12 h-12 rounded-full border border-black transition-all' style='background-color: #3CAEA3;'>
                             <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6 text-white' viewBox='0 0 24 24' fill='currentColor'>
