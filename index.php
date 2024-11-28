@@ -67,9 +67,9 @@ $result = $sparql->query($random);
         </div>
 
         <div role="alert" class="alert">
-        <span>
-            <?php
-            foreach ($result as $row) {
+            <span>
+                <?php
+                foreach ($result as $row) {
                 echo "<div class='flex items-center space-x-4 p-2 backdrop-blur-sm bg-white bg-opacity-40 rounded-b-lg'>" .
                     '<iframe
                         style="border-radius:15px" 
@@ -82,10 +82,10 @@ $result = $sparql->query($random);
                         loading="lazy">
                     </iframe>' .
                     "</div>";
-            }
-            ?> 
-        </span>
-    </div>
+                }
+                ?> 
+            </span>
+        </div>
 </div>
 
 <script>

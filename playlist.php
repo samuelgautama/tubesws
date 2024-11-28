@@ -19,9 +19,9 @@ WHERE {
     ?track uni:id_track ?id_spotify.
 
     FILTER(?genre_band = '" . $genre . "')
-}
-ORDER BY RAND()
-LIMIT 8
+    }
+    ORDER BY RAND()
+    LIMIT 8
 ";
 
 $result = $sparql->query($random);

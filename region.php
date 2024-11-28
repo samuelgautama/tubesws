@@ -23,10 +23,9 @@ SELECT ?band_name ?asal ?about ?link ?genre_band ?tipe WHERE {
           }
           ORDER BY ?band_name
           ';
-          
+
 $result = $sparql->query($query);
 ?>
-
 
 <!DOCTYPE html>
 <html lang="id">
@@ -41,8 +40,9 @@ $result = $sparql->query($query);
     <link rel="stylesheet" href="styles.css">
   </head>
   <body class="flex min-h-screen">
-    
+
     <?php include 'sidebar.php';?>
+
 <script>
   AOS.init();
 </script>

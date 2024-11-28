@@ -64,112 +64,119 @@ $locations = [
 ];
 ?>
 
-
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $band_name ? ($band_name) . ' - Gigspedia' : 'Gigspedia'; ?></title>
-    
-    <?php
-    $ogp_band_name = '';
-    $ogp_about = '';
-    $ogp_image = '';
-    if (!empty($result2)) {
-        foreach ($result2 as $row) {
-            $ogp_band_name = $row->band_name;
-            $ogp_about = $row->about;
-            $ogp_image = $row->link;
-            break;
-          }
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><?php echo $band_name ? ($band_name) . ' - Gigspedia' : 'Gigspedia'; ?></title>
+  <?php
+  $ogp_band_name = '';
+  $ogp_about = '';
+  $ogp_image = '';
+  $ogp_spotify_url = '';
+
+  if (!empty($result2)) {
+    foreach ($result2 as $row) {
+      $ogp_band_name = $row->band_name;
+      $ogp_about = $row->about;
+      $ogp_image = $row->link;
+      break;
     }
-    ?>
-    <meta property="og:title" content="<?php echo htmlspecialchars($ogp_band_name, ENT_QUOTES, 'UTF-8'); ?>" />
-    <meta property="og:description" content="<?php echo htmlspecialchars($ogp_about, ENT_QUOTES, 'UTF-8'); ?>" />
-    <meta property="og:image" content="<?php echo htmlspecialchars($ogp_image, ENT_QUOTES, 'UTF-8'); ?>" />
-    <meta property="og:url" content="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>" />
-    <meta property="og:type" content="website" />
-    
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <?php include 'sidebar.php';?>
-  
+  }
+
+  if (!empty($result)) {
+    foreach ($result as $row) {
+      $ogp_spotify_url = 'https://open.spotify.com/track/' . $row->id_spotify;
+      break;
+    }
+  }?>
+  <meta property="og:title" content="<?php echo $ogp_band_name; ?>" />
+  <meta property="og:description" content="<?php echo $ogp_about; ?>" />
+  <meta property="og:image" content="<?php echo $ogp_image; ?>" />
+  <meta property="og:url" content="<?php echo $ogp_spotify_url; ?>" />
+  <meta property="og:type" content="music.song" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<?php include 'sidebar.php'; ?>
+
 <body class="flex min-h-screen">
 
-<div class="flex justify-center min-w-screen ml-6">
+  <div class="flex justify-center min-w-screen ml-6">
     <div class="container mt-5">
-        <div class="flex justify-center">
-        <?php foreach($result2 as $row){
-              echo"<div class='hero backdrop-blur-sm bg-gray-900 bg-opacity-40 rounded-lg mb-8 ml-8 mr-8'>
+      <div class="flex justify-center">
+        <?php foreach ($result2 as $row) {
+          echo "<div class='hero backdrop-blur-sm bg-gray-900 bg-opacity-40 rounded-lg mb-8 ml-8 mr-8'>
                 <div class='hero-content flex-col lg:flex-row'>
                   <img
-                    src='".($row->link)."'
+                    src='" . ($row->link) . "'
                     class='max-w-sm rounded-lg shadow-2xl' />
                   <div>
-                    <h1 class='text-5xl font-bold mb-4'>".($row->band_name)."</h1>
-                    <p>Genre: ".($row->genre_band)."</p>
-                    <p>Tipe: ".($row->tipe)."</p>
-                    <p>Asal: ".($row->asal)."</p>
+                    <h1 class='text-5xl font-bold mb-4'>" . ($row->band_name) . "</h1>
+                    <p>Genre: " . ($row->genre_band) . "</p>
+                    <p>Tipe: " . ($row->tipe) . "</p>
+                    <p>Asal: " . ($row->asal) . "</p>
                     <p class='mt-4'>
-                      ".($row->about)."
+                      " . ($row->about) . "
                     </p>
                   </div>
                 </div>
               </div>";
-        }?>
+        } ?>
 
         <div id="map" class="mr-6" style="height: 350px; width: 50%;"></div>
 
-        </div>
+      </div>
 
-        <h class="flex justify-center font-bold text-3xl mb-8 text-zinc-50">Tracks</h>
-        <div class="grid gap-16 grid-cols-4 grid-rows-6 ml-8 mr-8">
-                <?php
-                foreach ($result as $row) {
-                    echo "<td>" .
-                    '<iframe
+      <h class="flex justify-center font-bold text-3xl mb-8 text-zinc-50">Tracks</h>
+      <div class="grid gap-16 grid-cols-4 grid-rows-6 ml-8 mr-8">
+        <?php
+        foreach ($result as $row) {
+          echo "<td>" .
+            '<iframe
                       style="border-radius:14px" src="https://open.spotify.com/embed/track/' . ($row->id_spotify) . '?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>' .
-                    "</td>";
-                echo "</tr>";
-                }
-                ?>
-        </div>
+            "</td>";
+          echo "</tr>";
+        }
+        ?>
+      </div>
     </div>
-</div>
+  </div>
 
-<script>
+  <script>
     document.addEventListener('DOMContentLoaded', function() {
 
-        var bandOrigin = '<?php foreach($result2 as $row)
-        echo ($row->asal)
-        ; ?>'; 
-        var locations = <?php echo json_encode($locations); ?>; 
+      var bandOrigin = '<?php foreach ($result2 as $row)
+                          echo ($row->asal); ?>';
+      var locations = <?php echo json_encode($locations); ?>;
 
-        if (locations[bandOrigin]) {
-            var lat = locations[bandOrigin].lat;
-            var lon = locations[bandOrigin].lon;
+      if (locations[bandOrigin]) {
+        var lat = locations[bandOrigin].lat;
+        var lon = locations[bandOrigin].lon;
 
-            var map = L.map('map').setView([lat, lon], 6); 
+        var map = L.map('map').setView([lat, lon], 6);
 
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                maxZoom: 19,
-                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            }).addTo(map);
-            
-            L.marker([lat, lon]).addTo(map)
-                .bindPopup('Asal: ' + bandOrigin)
-                .openPopup();
-        } else {
-            console.log('Lokasi tidak ditemukan untuk asal band: ' + bandOrigin);
-        }
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          maxZoom: 19,
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        L.marker([lat, lon]).addTo(map)
+          .bindPopup('Asal: ' + bandOrigin)
+          .openPopup();
+      } else {
+        console.log('Lokasi tidak ditemukan untuk asal band: ' + bandOrigin);
+      }
     });
-</script>
+  </script>
 </body>
+
 </html>
