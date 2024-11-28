@@ -41,9 +41,9 @@ $result = $sparql->query($query);
 $result2 = $sparql->query($query2);
 
 $locations = [
-  'bandted States' => ['lat' => 37.0902, 'lon' => -95.7129],
+  'United States' => ['lat' => 37.0902, 'lon' => -95.7129],
   'Indonesia' => ['lat' => -0.7893, 'lon' => 113.9213],
-  'bandted Kingdom' => ['lat' => 55.378052, 'lon' => -3.435973],
+  'United Kingdom' => ['lat' => 55.378052, 'lon' => -3.435973],
   'Bali' => ['lat' => -8.340539, 'lon' => 115.091949],
   'Bandung' => ['lat' => -6.917464, 'lon' => 107.619125],
   'Medan' => ['lat' => 3.5950, 'lon' => 98.6740],
