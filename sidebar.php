@@ -14,11 +14,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST['searchQuery'])) {
 }
 
 $asalQuery = '
-PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
+PREFIX band: <http://www.semanticweb.org/nitro/ontologies/2024/10/band#>
 
 SELECT DISTINCT ?asal ?tipe WHERE {
-    ?band uni:asal_band ?asal;
-            uni:band_type ?tipe.
+    ?band   band:asal_band ?asal;
+            band:band_type ?tipe.
 
     FILTER (regex(?tipe, "Lokal", "i"))
 }
@@ -26,11 +26,11 @@ SELECT DISTINCT ?asal ?tipe WHERE {
 ';
 
 $asalQuery2 = '
-PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
+PREFIX band: <http://www.semanticweb.org/nitro/ontologies/2024/10/band#>
 
 SELECT DISTINCT ?asal ?tipe WHERE {
-    ?band uni:asal_band ?asal;
-            uni:band_type ?tipe.
+    ?band   band:asal_band ?asal;
+            band:band_type ?tipe.
 
     FILTER (regex(?tipe, "Internasional", "i"))
 }
@@ -39,10 +39,10 @@ SELECT DISTINCT ?asal ?tipe WHERE {
 
 
 $genreQuery = '
-PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
+PREFIX band: <http://www.semanticweb.org/nitro/ontologies/2024/10/band#>
 
 SELECT DISTINCT  ?genre_band WHERE {
-    ?band uni:genre ?genre_band.
+    ?band band:genre ?genre_band.
 
 }
     ORDER BY ?genre_band

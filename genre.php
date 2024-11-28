@@ -9,14 +9,14 @@ $sparql = new EasyRdf\Sparql\Client($endpoint);
 $genre = isset($_POST['genre']) ? $_POST['genre'] : '';
 
 $query = '
-PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
+PREFIX band: <http://www.semanticweb.org/nitro/ontologies/2024/10/band#>
 
 SELECT  ?band_name ?genre_band ?about ?genre_band ?asal ?link WHERE {
-        ?band uni:nama_band ?band_name;
-          uni:genre ?genre_band;
-          uni:about_band ?about;
-          uni:link_gambar ?link;
-          uni:asal_band ?asal.
+        ?band band:nama_band ?band_name;
+          band:genre ?genre_band;
+          band:about_band ?about;
+          band:link_gambar ?link;
+          band:asal_band ?asal.
     
     FILTER (regex(?genre_band, "' . ($genre) . '", "i"))
 }

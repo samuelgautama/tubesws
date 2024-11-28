@@ -7,13 +7,13 @@ $endpoint = 'http://localhost:3030/gigspedia/query';
 $sparql = new EasyRdf\Sparql\Client($endpoint);
 
 $random = '
-PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
+PREFIX band: <http://www.semanticweb.org/nitro/ontologies/2024/10/band#>
 
 SELECT ?id_spotify WHERE {
     {
         SELECT ?id_spotify WHERE {
-            ?band uni:hasTrack ?track.
-            ?track uni:id_track ?id_spotify.
+            ?band band:hasTrack ?track.
+            ?track band:id_track ?id_spotify.
         }
         ORDER BY RAND()
     }

@@ -9,29 +9,29 @@ $sparql = new EasyRdf\Sparql\Client($endpoint);
 $band_name = isset($_POST['band_name']) ? $_POST['band_name'] : '';
 
 $query = ' 
-PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
+PREFIX band: <http://www.semanticweb.org/nitro/ontologies/2024/10/band#>
 
 SELECT  ?band_name ?id_spotify ?link WHERE {
-        ?band uni:nama_band ?band_name;
-                uni:hasTrack ?track;
-                uni:link_gambar ?link.
+        ?band band:nama_band ?band_name;
+                band:hasTrack ?track;
+                band:link_gambar ?link.
 
-        ?track uni:id_track ?id_spotify.
+        ?track band:id_track ?id_spotify.
     
     FILTER (regex(?band_name, "' . ($band_name) . '", "i"))
 }
 ';
 
 $query2 = '
-PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
+PREFIX band: <http://www.semanticweb.org/nitro/ontologies/2024/10/band#>
 
 SELECT DISTINCT  ?band_name ?link ?tipe ?asal ?about ?genre_band WHERE {
-        ?band uni:nama_band ?band_name;
-                uni:link_gambar ?link;
-                uni:band_type ?tipe;
-                uni:asal_band ?asal;
-                uni:about_band ?about;
-                uni:genre ?genre_band
+        ?band band:nama_band ?band_name;
+                band:link_gambar ?link;
+                band:band_type ?tipe;
+                band:asal_band ?asal;
+                band:about_band ?about;
+                band:genre ?genre_band
     
     FILTER (regex(?band_name, "' . ($band_name) . '", "i"))
 }
@@ -41,9 +41,9 @@ $result = $sparql->query($query);
 $result2 = $sparql->query($query2);
 
 $locations = [
-  'United States' => ['lat' => 37.0902, 'lon' => -95.7129],
+  'bandted States' => ['lat' => 37.0902, 'lon' => -95.7129],
   'Indonesia' => ['lat' => -0.7893, 'lon' => 113.9213],
-  'United Kingdom' => ['lat' => 55.378052, 'lon' => -3.435973],
+  'bandted Kingdom' => ['lat' => 55.378052, 'lon' => -3.435973],
   'Bali' => ['lat' => -8.340539, 'lon' => 115.091949],
   'Bandung' => ['lat' => -6.917464, 'lon' => 107.619125],
   'Medan' => ['lat' => 3.5950, 'lon' => 98.6740],

@@ -9,14 +9,14 @@ $sparql = new EasyRdf\Sparql\Client($endpoint);
 $genre = isset($_POST['genre']) ? $_POST['genre'] : '';
 
 $random = "
-PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
+PREFIX band: <http://www.semanticweb.org/nitro/ontologies/2024/10/band#>
 
 SELECT ?id_spotify ?genre_band
 WHERE {
-    ?band   uni:hasTrack ?track;
-            uni:genre ?genre_band.
+    ?band   band:hasTrack ?track;
+            band:genre ?genre_band.
 
-    ?track uni:id_track ?id_spotify.
+    ?track band:id_track ?id_spotify.
 
     FILTER(?genre_band = '" . $genre . "')
     }

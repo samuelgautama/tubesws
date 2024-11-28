@@ -9,17 +9,17 @@ $sparql = new EasyRdf\Sparql\Client($endpoint);
 $searchQuery = isset($_POST['searchQuery']) ? $_POST['searchQuery'] : '';
 
 $query = '
-PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
+PREFIX band: <http://www.semanticweb.org/nitro/ontologies/2024/10/band#>
 
 SELECT DISTINCT ?band_name ?asal ?about ?link WHERE {
-    ?band   uni:nama_band ?band_name;
-            uni:hasTrack ?track;
-            uni:asal_band ?asal;
-            uni:about_band ?about;
-            uni:genre ?genre_band;
-            uni:link_gambar ?link.
+    ?band   band:nama_band ?band_name;
+            band:hasTrack ?track;
+            band:asal_band ?asal;
+            band:about_band ?about;
+            band:genre ?genre_band;
+            band:link_gambar ?link.
 
-    ?track uni:nama_track ?track_name.
+    ?track band:nama_track ?track_name.
     
     FILTER (
         regex(?track_name, "' . ($searchQuery) . '", "i") ||

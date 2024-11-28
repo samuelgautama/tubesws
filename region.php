@@ -9,15 +9,15 @@ $sparql = new EasyRdf\Sparql\Client($endpoint);
 $region = isset($_POST['region']) ? $_POST['region'] : '';
 
 $query = '
-PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
+PREFIX band: <http://www.semanticweb.org/nitro/ontologies/2024/10/band#>
 
 SELECT ?band_name ?asal ?about ?link ?genre_band ?tipe WHERE {
-        ?band uni:nama_band ?band_name;
-          uni:asal_band ?asal;
-          uni:about_band ?about;
-          uni:link_gambar ?link;
-          uni:genre ?genre_band;
-          uni:band_type ?tipe.
+        ?band band:nama_band ?band_name;
+          band:asal_band ?asal;
+          band:about_band ?about;
+          band:link_gambar ?link;
+          band:genre ?genre_band;
+          band:band_type ?tipe.
     
           FILTER (regex(?asal, "' . ($region) . '", "i"))
           }
