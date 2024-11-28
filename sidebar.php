@@ -69,7 +69,7 @@ $resultGenre = $sparql->query($genreQuery);
 
 <div class="w-64 bg-gradient-to-r from-[color:#3C4048]/60 to-gray-700/60 text-white shadow-2xl min-h-screen overflow-hidden">
 
-<a href="index.php" 
+<a href="../index.php" 
     class="text-3xl font-extrabold italic py-4 px-6 relative">
     GigsPedia
 </a>

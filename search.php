@@ -68,24 +68,30 @@ $result = $sparql->query($query);
                 </thead>
                 <tbody>
                     <?php
-                    foreach ($result as $row) {
-                        echo "<div class='card lg:card-side backdrop-blur-sm bg-gray-900 bg-opacity-40 shadow-xl flex ml-24 mr-24 mt-5'>
-                    <div class='card-body'>
-                        <img class='w-32 h-32' src='"
-                            . ($row->link) .
-                            "'/>
-                        <h2 class='card-title'>" . ($row->band_name) . "</h2>
-                        <p>" . ($row->about) . "</p>
-                        <div class='card-actions justify-end'>
-                        <form method='POST' action='band_track.php'>
-                        <input type='hidden' name='band_name' value='".($row->band_name)."'/>
-                            <button class='text-red font-bold hover:before:bg-[#3CAEA3] relative h-[46px] w-36 overflow-hidden border border-[#3CAEA3] backdrop-blur-sm bg-dark-900 px-3 text-[#3CAEA3] shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#3CAEA3] before:transition-all before:duration-500 hover:text-white hover:shadow-[#3CAEA3] hover:before:left-0 hover:before:w-full'>
-                                <span class='relative z-10'>Listen</span>
-                            </button>
-                        </form>
-                        </div>
-                    </div>
-                    </div>";
+                    if (count($result) == 0) {
+                        echo "<div class='flex justify-center text-center'>
+                                <p class='text-2xl text-zinc-500 mt-10 ml-96 pl-36 font-bold'>Yang kamu cari tidak ada</p>
+                              </div>";
+                    } else {
+                        foreach ($result as $row) {
+                            echo "<div class='card lg:card-side backdrop-blur-sm bg-gray-900 bg-opacity-40 shadow-xl flex ml-24 mr-24 mt-5'>
+                            <div class='card-body'>
+                                <img class='w-32 h-32' src='"
+                                . ($row->link) .
+                                "'/>
+                                <h2 class='card-title'>" . $row->band_name . "</h2>
+                                <p>" . $row->about . "</p>
+                                <div class='card-actions justify-end'>
+                                <form method='POST' action='band_track.php'>
+                                <input type='hidden' name='band_name' value='" . $row->band_name . "'/>
+                                    <button class='text-red font-bold hover:before:bg-[#3CAEA3] relative h-[46px] w-36 overflow-hidden border border-[#3CAEA3] backdrop-blur-sm bg-dark-900 px-3 text-[#3CAEA3] shadow-2xl transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#3CAEA3] before:transition-all before:duration-500 hover:text-white hover:shadow-[#3CAEA3] hover:before:left-0 hover:before:w-full'>
+                                        <span class='relative z-10'>Listen</span>
+                                    </button>
+                                </form>
+                                </div>
+                            </div>
+                            </div>";
+                        }
                     }
                     ?>
                 </tbody>

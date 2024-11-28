@@ -36,7 +36,7 @@ $result = $sparql->query($random);
 <body class="flex min-h-screen relative">
     <div class="absolute top-14 right-24 z-50">
         <a href="javascript:void(0);" class="button" onclick="refreshPage()">
-            <img id="refresh-icon" src="media/refresh.png" alt="Refresh" class="w-10 h-10 transition-transform duration-1000 ease-in">
+            <img id="refresh-icon" src="assets/refresh.png" alt="Refresh" class="w-10 h-10 transition-transform duration-1000 ease-in">
         </a>
     </div>
 

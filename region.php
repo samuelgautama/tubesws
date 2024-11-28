@@ -27,29 +27,31 @@ SELECT ?band_name ?asal ?about ?link ?genre_band ?tipe WHERE {
 $result = $sparql->query($query);
 ?>
 
-<?php include 'sidebar.php';?>
 
 <!DOCTYPE html>
 <html lang="id">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GigsPedia</title>
+    <title><?php echo $region ? $region . " - Gigspedia" : "Region";?></title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
-</head>
-<body class="flex min-h-screen">
-
+  </head>
+  <body class="flex min-h-screen">
+    
+    <?php include 'sidebar.php';?>
 <script>
   AOS.init();
 </script>
 
 <div class="flex justify-center">
     <div class="container mt-5">
-        <h class="flex justify-center text-3xl font-bold mb-4 text-zinc-50">Daftar Band</h>
+        <h class="flex justify-center text-3xl font-bold mb-4 text-zinc-50"> 
+          <?php echo $region ? "Asal : " . $region : "Region";?>
+        </h>
         <table class="table table-bordered">
             <thead>
                 <tr>

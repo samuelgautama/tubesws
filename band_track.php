@@ -8,7 +8,7 @@ $sparql = new EasyRdf\Sparql\Client($endpoint);
 
 $band_name = isset($_POST['band_name']) ? $_POST['band_name'] : '';
 
-$query = '
+$query = ' 
 PREFIX uni: <http://www.semanticweb.org/nitro/ontologies/2024/10/lokal_band#>
 
 SELECT  ?band_name ?id_spotify ?link WHERE {
@@ -31,13 +31,11 @@ SELECT DISTINCT  ?band_name ?link ?tipe ?asal ?about ?genre_band WHERE {
                 uni:band_type ?tipe;
                 uni:asal_band ?asal;
                 uni:about_band ?about;
-                uni:genre ?genre_band.
-
+                uni:genre ?genre_band
     
     FILTER (regex(?band_name, "' . ($band_name) . '", "i"))
 }
 ';
-
 
 $result = $sparql->query($query);
 $result2 = $sparql->query($query2);
@@ -54,6 +52,7 @@ $locations = [
   'Semarang' => ['lat' => -6.9663, 'lon' => 110.4194],
   'Surabaya' => ['lat' => -7.2504, 'lon' => 112.7688],
   'Yogyakarta' => ['lat' => -7.7956, 'lon' => 110.3695],
+  'Jakarta' => ['lat' => -6.175110, 'lon' => 106.865036],
   'Brazil' => ['lat' => -14.2350, 'lon' => -51.9253],
   'Canada' => ['lat' => 56.1304, 'lon' => -106.3468],
   'France' => ['lat' => 46.6034, 'lon' => 1.8883],
@@ -64,12 +63,34 @@ $locations = [
   'Australia' => ['lat' => -33.8688, 'lon' => 151.2093],
 ];
 ?>
+
+
 <!DOCTYPE html>
 <html lang="id">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gigspedia</title>
+    <title><?php echo $band_name ? ($band_name) . ' - Gigspedia' : 'Gigspedia'; ?></title>
+    
+    <?php
+    $ogp_band_name = '';
+    $ogp_about = '';
+    $ogp_image = '';
+    if (!empty($result2)) {
+        foreach ($result2 as $row) {
+            $ogp_band_name = $row->band_name;
+            $ogp_about = $row->about;
+            $ogp_image = $row->link;
+            break;
+          }
+    }
+    ?>
+    <meta property="og:title" content="<?php echo htmlspecialchars($ogp_band_name, ENT_QUOTES, 'UTF-8'); ?>" />
+    <meta property="og:description" content="<?php echo htmlspecialchars($ogp_about, ENT_QUOTES, 'UTF-8'); ?>" />
+    <meta property="og:image" content="<?php echo htmlspecialchars($ogp_image, ENT_QUOTES, 'UTF-8'); ?>" />
+    <meta property="og:url" content="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>" />
+    <meta property="og:type" content="website" />
+    
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -77,11 +98,10 @@ $locations = [
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <link rel="stylesheet" href="styles.css">
-
-</head>
+  </head>
+  <?php include 'sidebar.php';?>
+  
 <body class="flex min-h-screen">
-
-<?php include 'sidebar.php';?>
 
 <div class="flex justify-center min-w-screen ml-6">
     <div class="container mt-5">
@@ -105,12 +125,9 @@ $locations = [
               </div>";
         }?>
 
-
         <div id="map" class="mr-6" style="height: 350px; width: 50%;"></div>
 
         </div>
-
-        
 
         <h class="flex justify-center font-bold text-3xl mb-8 text-zinc-50">Tracks</h>
         <div class="grid gap-16 grid-cols-4 grid-rows-6 ml-8 mr-8">
@@ -126,8 +143,6 @@ $locations = [
         </div>
     </div>
 </div>
-
-
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {

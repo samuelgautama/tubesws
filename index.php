@@ -25,26 +25,27 @@ LIMIT 1
 $result = $sparql->query($random);
 ?>
 
+<?php include 'sidebar.php'; ?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: https://ogp.me/ns#">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Gigspedia</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
+
 <body class="min-h-screen flex">
-
-    <?php include 'sidebar.php'; ?>
-
     <div class="flex-grow">
         <div class="hero mt-44">
 
             <div class="hero-content flex-col lg:flex-row">
-                <img src="media/logo.png"
+                <img src="assets/logo.png"
                     class="max-w-sm rounded-lg shadow-2xl transform transition duration-300 hover:brightness-125" />
 
                 <div>
@@ -61,7 +62,7 @@ $result = $sparql->query($random);
             <div class="flex justify-end ">
             <h2 class="font-bold text-white text-xl flex justify-center mb-2 mr-20">Special Picks For You</h2>
             <span onclick="closePopup()" >
-                <img class="w-6 h-6 mr-4 items-center" src="/media/close3.png"/>
+                <img class="w-6 h-6 mr-4 items-center" src="/assets/close.png"/>
             </span>
         </div>
 
